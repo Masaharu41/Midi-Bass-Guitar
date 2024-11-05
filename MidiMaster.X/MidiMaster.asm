@@ -33,6 +33,10 @@
 ;	    MPPP PPPP 
 ;		P = The pitch index from 0-127, min is E1 // 28, max is D#4 // 63
 ;		M = Mute control boolean based on upper control, 0 = Mute
+;		    Pitch of E string = E1 to C3
+;		    Pitch of A string = A2 to F3
+;		    Pitch of D string = D2 to A#3
+;		    Pitch of G string = G2 to D#4
 ;
 ;	Pluck Slaves: <Velocity>, <String>
 ;	    xVVV VVVV,Fxxx  SSSS 
@@ -155,7 +159,9 @@ SETUP
     MOVWF PLUCKSLAVE	    ; SET ADDRESS OF 0X10 AND WRITE
     GOTO MAIN
     
-    
+MAIN
+    NOP
+    GOTO MAIN
     
     
     
