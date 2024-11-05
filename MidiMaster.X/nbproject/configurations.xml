@@ -20,6 +20,7 @@
       <itemPath>MidiMasterEEREAD.inc</itemPath>
       <itemPath>MidiMasterEEWRITE.inc</itemPath>
       <itemPath>MidiMasterPUSHin.inc</itemPath>
+      <itemPath>MidiMasterI2CWRITE.inc</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
