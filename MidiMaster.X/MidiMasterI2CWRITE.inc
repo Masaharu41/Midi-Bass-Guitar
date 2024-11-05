@@ -1,0 +1,83 @@
+;***************************************************************************
+;
+;	    Filename: I2CWRITE.inc
+;	    Date: 10/28/2024
+;	    File Version: 1
+;	    Author: Owen Fujii
+;	    Company: Idaho State University
+;	    Description: A Sub FOR I2c transmit of one byte and address
+;
+;*************************************************************************
+	
+;*************************************************************************
+; 
+;	    Revision History:
+;   
+;	    Modified as listed
+;	    Started 10/28/2024-10/31/2024
+;	    
+;
+;*************************************************************************
+	
+	ADDDRESS EQU H'30'
+	I2CBYTE  EQU H'31'
+
+I2CWRITE_CODE CODE
+ 
+I2CWRITE
+	CALL I2CIDLE	    ; WAIT FOR IDLE LINE
+	BANKSEL SSPCON2
+	BSF SSPCON2,SEN	    ; START BIT
+	BTFSC SSPCON2,SEN   ; WAIT FOR START
+	GOTO $-1
+	BANKSEL PORTB
+	BSF PORTB,1
+	MOVF ADDRESS,0	    ; MOVE ADDRESS INTO BUFFER
+	BANKSEL SSPBUF
+	MOVWF SSPBUF
+	BANKSEL SSPSTAT		; WAIT FOR CLEAR 
+	BTFSC SSPSTAT,BF
+	GOTO $-1
+	BANKSEL SSPCON2		
+	BTFSC SSPCON2,ACKSTAT	; VERIFY ACK FROM SLAVE
+	GOTO NACK		; EXIT WITH A START BIT 
+	CALL I2CIDLE		; WAIT FOR IDLE LINE
+	;FINISH ADDRESS BYTE REPEAT WITH DATA BYTES
+	BANKSEL PORTB
+	MOVF I2CBYTE,0	; SEND DATA BYTE
+	BANKSEL SSPBUF
+	MOVWF SSPBUF
+	BANKSEL SSPSTAT
+	BTFSC SSPSTAT,BF
+	GOTO $-1
+	BANKSEL SSPCON2
+	BTFSC SSPCON2,ACKSTAT
+	GOTO NACK
+	BANKSEL SSPCON2
+	BSF SSPCON2,PEN
+	BTFSC SSPCON2,PEN
+	GOTO $-1
+	RETURN
+	
+	
+NACK
+	BANKSEL PORTB
+	BCF PORTB,1
+	BANKSEL SSPCON2
+	BSF SSPCON2,PEN
+	BTFSC SSPCON2,PEN
+	GOTO $-1
+	RETURN
+	
+I2CIDLE
+	MOVLW H'01F'
+	BANKSEL SSPCON2
+	ANDWF SSPCON2,W ; COMPARE 1F TO CHECK FOR 5 BUSY CONDITIONS
+	BANKSEL STATUS
+	BTFSS STATUS,Z	; WAIT UNTIL BUSY CONDITIONS CLEARED
+	GOTO I2CIDLE
+CHECKW
+	BANKSEL SSPSTAT
+	BTFSC SSPSTAT,R_W   ; WAIT FOR LINE TO ALLOW NEXT BYTE
+	GOTO CHECKW
+	RETURN
