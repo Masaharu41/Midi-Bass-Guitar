@@ -16,7 +16,6 @@ Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERS
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERSETUP.INC 98 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERSETUP.INC 107 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERSETUP.INC 110 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Error[113]   C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTEREEWRITE.INC 26 : Symbol not previously defined (RP0)
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTEREEWRITE.INC 29 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTEREEWRITE.INC 30 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTEREEWRITE.INC 33 : Register in operand not in bank 0.  Ensure that bank bits are correct.
@@ -27,24 +26,56 @@ Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERE
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTEREEREAD.INC 26 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTEREEREAD.INC 28 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTEREEREAD.INC 29 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Error[113]   C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTEREEREAD.INC 30 : Symbol not previously defined (EEDATA)
-Error[113]   C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTEREEREAD.INC 31 : Symbol not previously defined (EEDATA)
-Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 68 : Found label after column 1. (ESLAVE)
-Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 69 : Found label after column 1. (ASLAVE)
-Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 70 : Found label after column 1. (DSLAVE)
-Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 71 : Found label after column 1. (GSLAVE)
-Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 73 : Found label after column 1. (PLUCKSLAVE)
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 86 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 90 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 92 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 97 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 99 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 101 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Error[107]   C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 102 : Illegal digit (- in hexidecimal)
-Error[107]   C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 102 : Illegal digit (M in hexidecimal)
-Warning[202] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 102 : Argument out of range.  Least significant bits used.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 103 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 105 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 107 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTEREEREAD.INC 31 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 22 : Found label after column 1. (ADDDRESS)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 23 : Found label after column 1. (I2CBYTE)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 24 : Found label after column 1. (I2CBYTE2)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 25 : Found label after column 1. (FLAG)
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 32 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 33 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 39 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 41 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 44 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 51 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 53 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 56 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 64 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 66 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 69 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 74 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 75 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 84 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 85 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 92 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTERI2CWRITE.INC 98 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 80 : Found label after column 1. (ESLAVE)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 81 : Found label after column 1. (ASLAVE)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 82 : Found label after column 1. (DSLAVE)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 83 : Found label after column 1. (GSLAVE)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 85 : Found label after column 1. (PLUCKSLAVE)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 87 : Found label after column 1. (ADDRESS)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 88 : Found label after column 1. (I2CBYTE)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 89 : Found label after column 1. (I2CBYTE2)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 90 : Found label after column 1. (FLAG)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 92 : Found label after column 1. (CTLBYTE)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 93 : Found label after column 1. (PBYTE)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 94 : Found label after column 1. (VBYTE)
+Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 95 : Found label after column 1. (BUFFER)
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 109 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Warning[205] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 116 : Found directive in column 1. (END)
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 113 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 115 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 120 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 122 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 124 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 126 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 128 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 130 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 132 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 134 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 137 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 139 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 143 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 146 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 148 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 150 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[205] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 195 : Found directive in column 1. (END)
