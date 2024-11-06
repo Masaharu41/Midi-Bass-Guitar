@@ -16,6 +16,10 @@
                    projectFiles="true">
       <itemPath>MidiMaster.asm</itemPath>
       <itemPath>MidiMasterSetup.inc</itemPath>
+      <itemPath>MidiMasterPOPout.inc</itemPath>
+      <itemPath>MidiMasterEEREAD.inc</itemPath>
+      <itemPath>MidiMasterEEWRITE.inc</itemPath>
+      <itemPath>MidiMasterPUSHin.inc</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
