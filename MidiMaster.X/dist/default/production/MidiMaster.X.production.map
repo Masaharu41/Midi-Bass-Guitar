@@ -1,0 +1,91 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Tue Nov 05 14:53:17 2024
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000004    program   0x0000f2
+               START_CODE       code   0x00007d    program   0x000080
+            I2CWRITE_CODE       code   0x0000bd    program   0x00007a
+             EEWRITE_CODE       code   0x0000fa    program   0x000020
+              EEREAD_CODE       code   0x00010a    program   0x000010
+              PUSHIN_CODE       code   0x000112    program   0x000008
+              POPOUT_CODE       code   0x000116    program   0x000008
+.config_8007_BUILD/DEFAULT/PRODUCTION/MIDIMAS       code   0x008007    program   0x000002
+.config_8008_BUILD/DEFAULT/PRODUCTION/MIDIMAS       code   0x008008    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x000119      
+                            0x008007    0x008008      
+            283 out of 16647 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    BYTE1   0x000077    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+                    BYTE2   0x00007a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+                   CHECKW   0x0000f6    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+                   EEREAD   0x00010a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterEEREAD.inc
+                  EEWRITE   0x0000fa    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterEEWRITE.inc
+                 FINISHED   0x0000e4    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+                  I2CIDLE   0x0000f0    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+                 I2CWRITE   0x0000bd    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+                    INTER   0x000055    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+                     MAIN   0x000041    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+                     NACK   0x0000e9    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+                   POPOUT   0x000116    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterPOPout.inc
+                   PUSHIN   0x000112    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterPUSHin.inc
+                  RECIEVE   0x00005f    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+                    SETUP   0x000005    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+                    START   0x00007d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterSetup.inc
+             _.org_1_0007   0x000007    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+             _.org_1_000D   0x00000d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+       _EEWRITE_CODE_000B   0x000105    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterEEWRITE.inc
+      _I2CWRITE_CODE_0004   0x0000c1    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+      _I2CWRITE_CODE_000C   0x0000c9    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+      _I2CWRITE_CODE_0017   0x0000d4    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+      _I2CWRITE_CODE_0023   0x0000e0    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+      _I2CWRITE_CODE_002A   0x0000e7    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+      _I2CWRITE_CODE_0031   0x0000ee    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    SETUP   0x000005    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+             _.org_1_0007   0x000007    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+             _.org_1_000D   0x00000d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+                     MAIN   0x000041    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+                    INTER   0x000055    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+                  RECIEVE   0x00005f    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+                    BYTE1   0x000077    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+                    BYTE2   0x00007a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMaster.asm
+                    START   0x00007d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterSetup.inc
+                 I2CWRITE   0x0000bd    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+      _I2CWRITE_CODE_0004   0x0000c1    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+      _I2CWRITE_CODE_000C   0x0000c9    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+      _I2CWRITE_CODE_0017   0x0000d4    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+      _I2CWRITE_CODE_0023   0x0000e0    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+                 FINISHED   0x0000e4    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+      _I2CWRITE_CODE_002A   0x0000e7    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+                     NACK   0x0000e9    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+      _I2CWRITE_CODE_0031   0x0000ee    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+                  I2CIDLE   0x0000f0    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+                   CHECKW   0x0000f6    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterI2CWRITE.inc
+                  EEWRITE   0x0000fa    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterEEWRITE.inc
+       _EEWRITE_CODE_000B   0x000105    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterEEWRITE.inc
+                   EEREAD   0x00010a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterEEREAD.inc
+                   PUSHIN   0x000112    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterPUSHin.inc
+                   POPOUT   0x000116    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\MidiMaster.X\MidiMasterPOPout.inc
+
+
