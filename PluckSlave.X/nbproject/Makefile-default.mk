@@ -99,7 +99,7 @@ ${OBJECTDIR}/Pluck\ Slave.o: Pluck\ Slave.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} "${OBJECTDIR}/Pluck Slave.o".d 
 	@${RM} "${OBJECTDIR}/Pluck Slave.o" 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/Pluck Slave.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG  -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/Pluck Slave.lst\" -e\"${OBJECTDIR}/Pluck Slave.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/Pluck Slave.o\" \"Pluck Slave.asm\" 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/Pluck Slave.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_PK3=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/Pluck Slave.lst\" -e\"${OBJECTDIR}/Pluck Slave.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/Pluck Slave.o\" \"Pluck Slave.asm\" 
 	@${DEP_GEN} -d "${OBJECTDIR}/Pluck Slave.o"
 	@${FIXDEPS} "${OBJECTDIR}/Pluck Slave.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
@@ -119,7 +119,7 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 dist/${CND_CONF}/${IMAGE_TYPE}/PluckSlave.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    ../../../../../Program\ Files\ (x86)/Microchip/MPLABX/v5.30/mpasmx/LKR/16f1789_g.lkr
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_LD} $(MP_EXTRA_LD_PRE) "..\..\..\..\..\Program Files (x86)\Microchip\MPLABX\v5.30\mpasmx\LKR\16f1789_g.lkr"  -p$(MP_PROCESSOR_OPTION)  -w -x -u_DEBUG -z__ICD2RAM=1 -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"   -z__MPLAB_BUILD=1  -z__MPLAB_DEBUG=1 $(MP_LINKER_DEBUG_OPTION) -odist/${CND_CONF}/${IMAGE_TYPE}/PluckSlave.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
+	${MP_LD} $(MP_EXTRA_LD_PRE) "..\..\..\..\..\Program Files (x86)\Microchip\MPLABX\v5.30\mpasmx\LKR\16f1789_g.lkr"  -p$(MP_PROCESSOR_OPTION)  -w -x -u_DEBUG -z__ICD2RAM=1 -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"   -z__MPLAB_BUILD=1  -z__MPLAB_DEBUG=1 -z__MPLAB_DEBUGGER_PK3=1 $(MP_LINKER_DEBUG_OPTION) -odist/${CND_CONF}/${IMAGE_TYPE}/PluckSlave.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/PluckSlave.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   ../../../../../Program\ Files\ (x86)/Microchip/MPLABX/v5.30/mpasmx/LKR/16f1789_g.lkr
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 

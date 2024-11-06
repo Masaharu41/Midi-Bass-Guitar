@@ -36,7 +36,7 @@
         <targetDevice>PIC16F1788</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool></platformTool>
+        <platformTool>PICkit3PlatformTool</platformTool>
         <languageToolchain>MPASMWIN</languageToolchain>
         <languageToolchainVersion>5.86</languageToolchainVersion>
         <platform>3</platform>
