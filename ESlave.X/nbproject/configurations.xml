@@ -15,6 +15,9 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>ESlave.asm</itemPath>
+      <itemPath>ESlaveSetup.inc</itemPath>
+      <itemPath>ESlavePOPout.inc</itemPath>
+      <itemPath>ESlavePUSHin.inc</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
