@@ -19,10 +19,10 @@
 ;
 ;*************************************************************************
 	
-	ADDDRESS EQU H'30'
-	I2CBYTE  EQU H'31'
-	I2CBYTE2 EQU H'32'
-	FLAG	 EQU H'33'
+	ADDDRESS EQU H'030'
+	I2CBYTE  EQU H'031'
+	I2CBYTE2 EQU H'032'
+	FLAG	 EQU H'033'
 
 I2CWRITE_CODE CODE
  
