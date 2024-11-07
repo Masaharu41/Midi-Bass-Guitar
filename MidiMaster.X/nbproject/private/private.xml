@@ -4,11 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/jackel/Documents/Midi-Bass-Guitar/MidiMaster.X/MidiMasterSetup.inc</file>
+            <file>file:/C:/Program%20Files%20(x86)/Microchip/MPLABX/v5.30/mpasmx/p16f1788.inc</file>
             <file>file:/C:/Users/jackel/Documents/Midi-Bass-Guitar/MidiMaster.X/MidiMaster.asm</file>
             <file>file:/C:/Users/jackel/Documents/Midi-Bass-Guitar/MidiMaster.X/MidiMasterI2CWRITE.inc</file>
-            <file>file:/C:/Users/jackel/Documents/Midi-Bass-Guitar/MidiMaster.X/MidiMasterEEWRITE.inc</file>
             <file>file:/C:/Users/jackel/Documents/Midi-Bass-Guitar/MidiMaster.X/MidiMasterPUSHin.inc</file>
-            <file>file:/C:/Users/jackel/Documents/Midi-Bass-Guitar/MidiMaster.X/MidiMasterEEREAD.inc</file>
         </group>
     </open-files>
 </project-private>
