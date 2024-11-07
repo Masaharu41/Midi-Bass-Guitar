@@ -26,6 +26,12 @@ Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 70 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 71 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 72 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 100 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 106 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Warning[205] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 111 : Found directive in column 1. (END)
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 74 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 76 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 78 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 86 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 92 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 95 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 117 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 123 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[205] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 128 : Found directive in column 1. (END)
