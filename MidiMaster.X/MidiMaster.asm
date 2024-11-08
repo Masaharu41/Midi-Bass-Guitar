@@ -5,8 +5,8 @@
 ;	    File Version: 1
 ;	    Author: Owen Fujii
 ;	    Company: Idaho State University
-;	    Description: The Program for the Master controller for the midi bass guitar
-;			
+;	    Description: The Program for the Master controller for the 
+;			    midi bass guitar
 ;**************************************************************************
 	
 ;*************************************************************************
@@ -17,8 +17,8 @@
 ;	    Started 
 ;
 ;*************************************************************************
-;  The Master will interpret the MIDI signal from UART and will then break up the info
-;   and then send this to the correseponding slave
+;  The Master will interpret the MIDI signal from UART and will 
+;   then break up the info and then send this to the correseponding slave
 ;    
 ;	MIDI: <Control>, <Pitch>, <Velocity>    
 ;	    Upper Nibble: Control Byte
@@ -31,7 +31,7 @@
 ;    
 ;	Note Slaves: <Pitch>
 ;	    MPPP PPPP 
-;		P = The pitch index from 0-127, min is E1 // 28, max is D#4 // 63
+;		P = The pitch index from 0-127, min is E1//28, max is D#4//63
 ;		M = Mute control boolean based on upper control, 0 = Mute
 ;		    Pitch of E string = E1 to C3
 ;		    Pitch of A string = A2 to F3
@@ -42,7 +42,7 @@
 ;	    xVVV VVVV,Fxxx  SSSS 
 ;		V = How Aggresive to attack string
 ;		F = select finger or pick, 0 = finger
-;		S = which string to pluck, E = bit0, A = bit1, D = bit2, G = bit3
+;		S = which string to pluck,E = bit0,A = bit1,D = bit2,G = bit3
 ;*************************************************************************    
     ; PIC16F1788 Configuration Bit Settings
 
