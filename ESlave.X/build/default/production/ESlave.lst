@@ -1,4 +1,4 @@
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE  1
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -57,7 +57,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00015 ;   1: Inc file to contain generic registry setups 
                       00016 ;
                       00017 ;       2: Removed GPR setup and added code reference 
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE  2
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -116,7 +116,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0017   0020           00062                 BANKSEL T2CON
 0018   019C           00063                 CLRF    T2CON                           ;DISABLE TIMER 2, 1:1 POST SCALE, PRESCALER 1
 0019   3000           00064                 MOVLW   H'000'                          ;SET PR2 FOR FULL COUNT 
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE  3
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -175,7 +175,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0039   0023           00105                 BANKSEL ANSELC
 003A   3000           00106                 MOVLW H'000'
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE  4
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -234,7 +234,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0000                  00023 POPOUT
 0000   0821           00024             MOVF H'21',0
 0001   0083           00025             MOVWF STATUS
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE  5
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -293,7 +293,7 @@ Warning[207]: Found label after column 1. (DISABLE)
   00000042            00044         DISABLE     EQU H'042'
                       00045 ; SET THE VALUE FOR ALL NOTES FOR E STRING
 Warning[207]: Found label after column 1. (E1MIDI)
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE  6
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -352,7 +352,7 @@ Warning[207]: Found label after column 1. (C3MIDI)
                       00076     
 0005                  00077 SETUP
 0005   0021           00078     BANKSEL OSCCON
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE  7
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -411,7 +411,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 002A   00A9           00118     MOVWF AS1MIDI
 002B   3023           00119     MOVLW H'023'    ; MIDI 35 // B1
 002C   00B0           00120     MOVWF B1MIDI
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE  8
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -462,413 +462,414 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0052   2???           00161     GOTO MAIN
 0053   1BA2           00162     BTFSC PITCH,7
 0054   1442           00163     BSF DISABLE,0       ; INDICATE NOTE IS TO BE ON
-                      00164     ; CHECK IF PITCH IS E1
-0055   0823           00165     MOVF E1MIDI,0
-0056   2???           00166     CALL EQUALS
-0057   1903           00167     BTFSC STATUS,Z
-0058   2???           00168     GOTO SETE1
-                      00169     ; CHECK IF PITCH IS F1
-0059   0824           00170     MOVF F1MIDI,0
-005A   2???           00171     CALL EQUALS
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE  9
+0055   13A2           00164     BCF PITCH,7
+                      00165     ; CHECK IF PITCH IS E1
+0056   0823           00166     MOVF E1MIDI,0
+0057   2???           00167     CALL EQUALS
+0058   1903           00168     BTFSC STATUS,Z
+0059   2???           00169     GOTO SETE1
+                      00170     ; CHECK IF PITCH IS F1
+005A   0824           00171     MOVF F1MIDI,0
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE  9
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-005B   1903           00172     BTFSC STATUS,Z
-005C   2???           00173     GOTO SETF1
-                      00174     ; CHECK IF PITCH IS F#1
-005D   0825           00175     MOVF FS1MIDI,0
-005E   2???           00176     CALL EQUALS
-005F   1903           00177     BTFSC STATUS,Z
-0060   2???           00178     GOTO SETFS1
-                      00179     ; CHECK IF PITCH IS G1
-0061   0826           00180     MOVF G1MIDI,0
-0062   2???           00181     CALL EQUALS
-0063   1903           00182     BTFSC STATUS,Z
-0064   2???           00183     GOTO SETG1
-                      00184     ; CHECK IF PITCH IS G#1
-0065   0827           00185     MOVF GS1MIDI,0
-0066   2???           00186     CALL EQUALS
-0067   1903           00187     BTFSC STATUS,Z
-0068   2???           00188     GOTO SETGS1
-                      00189     ; CHECK IF PITCH IS A1
-0069   0828           00190     MOVF A1MIDI,0
-006A   2???           00191     CALL EQUALS
-006B   1903           00192     BTFSC STATUS,Z
-006C   2???           00193     GOTO SETA1
-006D   2???           00194     GOTO MAIN
-                      00195     ; CHECK IF PITCH IS A#1
-006E   0829           00196     MOVF AS1MIDI,0
-006F   2???           00197     CALL EQUALS
-0070   1903           00198     BTFSC STATUS,Z
-0071   2???           00199     GOTO SETF1
-                      00200     ; CHECK IF PITCH IS B1
-0072   0830           00201     MOVF B1MIDI,0
-0073   2???           00202     CALL EQUALS
-0074   1903           00203     BTFSC STATUS,Z
-0075   2???           00204     GOTO SETB1
-                      00205     ; CHECK IF PITCH IS C2
-0076   0831           00206     MOVF C2MIDI,0
-0077   2???           00207     CALL EQUALS
-0078   1903           00208     BTFSC STATUS,Z
-0079   2???           00209     GOTO SETC2
-                      00210     ; CHECK IF PITCH IS C#2
-007A   0832           00211     MOVF CS2MIDI,0
-007B   2???           00212     CALL EQUALS
-007C   1903           00213     BTFSC STATUS,Z
-007D   2???           00214     GOTO SETCS2
-                      00215     ; CHECK IF PITCH IS D2
-007E   0833           00216     MOVF D2MIDI,0
-007F   2???           00217     CALL EQUALS
-0080   1903           00218     BTFSC STATUS,Z
-0081   2???           00219     GOTO SETD2
-                      00220     ; CHECK IF PITCH IS D#2
-0082   0834           00221     MOVF DS2MIDI,0
-0083   2???           00222     CALL EQUALS
-0084   1903           00223     BTFSC STATUS,Z
-0085   2???           00224     GOTO SETDS2
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 10
+005B   2???           00172     CALL EQUALS
+005C   1903           00173     BTFSC STATUS,Z
+005D   2???           00174     GOTO SETF1
+                      00175     ; CHECK IF PITCH IS F#1
+005E   0825           00176     MOVF FS1MIDI,0
+005F   2???           00177     CALL EQUALS
+0060   1903           00178     BTFSC STATUS,Z
+0061   2???           00179     GOTO SETFS1
+                      00180     ; CHECK IF PITCH IS G1
+0062   0826           00181     MOVF G1MIDI,0
+0063   2???           00182     CALL EQUALS
+0064   1903           00183     BTFSC STATUS,Z
+0065   2???           00184     GOTO SETG1
+                      00185     ; CHECK IF PITCH IS G#1
+0066   0827           00186     MOVF GS1MIDI,0
+0067   2???           00187     CALL EQUALS
+0068   1903           00188     BTFSC STATUS,Z
+0069   2???           00189     GOTO SETGS1
+                      00190     ; CHECK IF PITCH IS A1
+006A   0828           00191     MOVF A1MIDI,0
+006B   2???           00192     CALL EQUALS
+006C   1903           00193     BTFSC STATUS,Z
+006D   2???           00194     GOTO SETA1
+006E   2???           00195     GOTO MAIN
+                      00196     ; CHECK IF PITCH IS A#1
+006F   0829           00197     MOVF AS1MIDI,0
+0070   2???           00198     CALL EQUALS
+0071   1903           00199     BTFSC STATUS,Z
+0072   2???           00200     GOTO SETF1
+                      00201     ; CHECK IF PITCH IS B1
+0073   0830           00202     MOVF B1MIDI,0
+0074   2???           00203     CALL EQUALS
+0075   1903           00204     BTFSC STATUS,Z
+0076   2???           00205     GOTO SETB1
+                      00206     ; CHECK IF PITCH IS C2
+0077   0831           00207     MOVF C2MIDI,0
+0078   2???           00208     CALL EQUALS
+0079   1903           00209     BTFSC STATUS,Z
+007A   2???           00210     GOTO SETC2
+                      00211     ; CHECK IF PITCH IS C#2
+007B   0832           00212     MOVF CS2MIDI,0
+007C   2???           00213     CALL EQUALS
+007D   1903           00214     BTFSC STATUS,Z
+007E   2???           00215     GOTO SETCS2
+                      00216     ; CHECK IF PITCH IS D2
+007F   0833           00217     MOVF D2MIDI,0
+0080   2???           00218     CALL EQUALS
+0081   1903           00219     BTFSC STATUS,Z
+0082   2???           00220     GOTO SETD2
+                      00221     ; CHECK IF PITCH IS D#2
+0083   0834           00222     MOVF DS2MIDI,0
+0084   2???           00223     CALL EQUALS
+0085   1903           00224     BTFSC STATUS,Z
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 10
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00225     ; CHECK IF PITCH IS E2
-0086   0835           00226     MOVF E2MIDI,0
-0087   2???           00227     CALL EQUALS
-0088   1903           00228     BTFSC STATUS,Z
-0089   2???           00229     GOTO SETE2
-                      00230     ; CHECK IF PITCH IS F2
-008A   0836           00231     MOVF F2MIDI,0
-008B   2???           00232     CALL EQUALS
-008C   1903           00233     BTFSC STATUS,Z
-008D   2???           00234     GOTO SETF2
-                      00235     ; CHECK IF PITCH IS F#2
-008E   0837           00236     MOVF FS2MIDI,0
-008F   2???           00237     CALL EQUALS
-0090   1903           00238     BTFSC STATUS,Z
-0091   2???           00239     GOTO SETFS2
-                      00240     ; CHECK IF PITCH IS G2
-0092   0838           00241     MOVF G2MIDI,0
-0093   2???           00242     CALL EQUALS
-0094   1903           00243     BTFSC STATUS,Z
-0095   2???           00244     GOTO SETG2
-                      00245     ; CHECK IF PITCH IS G#2
-0096   0839           00246     MOVF GS2MIDI,0
-0097   2???           00247     CALL EQUALS
-0098   1903           00248     BTFSC STATUS,Z
-0099   2???           00249     GOTO SETGS2
-                      00250     ; CHECK IF PITCH IS A2
-009A   0840           00251      MOVF A2MIDI,0
-009B   2???           00252     CALL EQUALS
-009C   1903           00253     BTFSC STATUS,Z
-009D   2???           00254     GOTO SETA2
-                      00255     ; CHECK IF PITCH IS A#2
-009E   0841           00256     MOVF AS2MIDI,0
-009F   2???           00257     CALL EQUALS
-00A0   1903           00258     BTFSC STATUS,Z
-00A1   2???           00259     GOTO SETAS2
-                      00260     ; CHECK IF PITCH IS B2
-00A2   0842           00261     MOVF B2MIDI,0
-00A3   2???           00262     CALL EQUALS
-00A4   1903           00263     BTFSC STATUS,Z
-00A5   2???           00264     GOTO SETB2
-                      00265     ; CHECK IF PITCH IS C3
-00A6   0843           00266     MOVF C3MIDI,0
-00A7   2???           00267     CALL EQUALS
-00A8   1903           00268     BTFSC STATUS,Z
-00A9   2???           00269     GOTO SETC3
-                      00270     
+0086   2???           00225     GOTO SETDS2
+                      00226     ; CHECK IF PITCH IS E2
+0087   0835           00227     MOVF E2MIDI,0
+0088   2???           00228     CALL EQUALS
+0089   1903           00229     BTFSC STATUS,Z
+008A   2???           00230     GOTO SETE2
+                      00231     ; CHECK IF PITCH IS F2
+008B   0836           00232     MOVF F2MIDI,0
+008C   2???           00233     CALL EQUALS
+008D   1903           00234     BTFSC STATUS,Z
+008E   2???           00235     GOTO SETF2
+                      00236     ; CHECK IF PITCH IS F#2
+008F   0837           00237     MOVF FS2MIDI,0
+0090   2???           00238     CALL EQUALS
+0091   1903           00239     BTFSC STATUS,Z
+0092   2???           00240     GOTO SETFS2
+                      00241     ; CHECK IF PITCH IS G2
+0093   0838           00242     MOVF G2MIDI,0
+0094   2???           00243     CALL EQUALS
+0095   1903           00244     BTFSC STATUS,Z
+0096   2???           00245     GOTO SETG2
+                      00246     ; CHECK IF PITCH IS G#2
+0097   0839           00247     MOVF GS2MIDI,0
+0098   2???           00248     CALL EQUALS
+0099   1903           00249     BTFSC STATUS,Z
+009A   2???           00250     GOTO SETGS2
+                      00251     ; CHECK IF PITCH IS A2
+009B   0840           00252      MOVF A2MIDI,0
+009C   2???           00253     CALL EQUALS
+009D   1903           00254     BTFSC STATUS,Z
+009E   2???           00255     GOTO SETA2
+                      00256     ; CHECK IF PITCH IS A#2
+009F   0841           00257     MOVF AS2MIDI,0
+00A0   2???           00258     CALL EQUALS
+00A1   1903           00259     BTFSC STATUS,Z
+00A2   2???           00260     GOTO SETAS2
+                      00261     ; CHECK IF PITCH IS B2
+00A3   0842           00262     MOVF B2MIDI,0
+00A4   2???           00263     CALL EQUALS
+00A5   1903           00264     BTFSC STATUS,Z
+00A6   2???           00265     GOTO SETB2
+                      00266     ; CHECK IF PITCH IS C3
+00A7   0843           00267     MOVF C3MIDI,0
+00A8   2???           00268     CALL EQUALS
+00A9   1903           00269     BTFSC STATUS,Z
+00AA   2???           00270     GOTO SETC3
                       00271     
-00AA                  00272 EQUALS
-00AA   1103           00273     BCF STATUS,Z
-00AB   0222           00274     SUBWF PITCH,0       ; STORE IN WORKING
-00AC   0008           00275     RETURN
-                      00276  
-00AD                  00277 STOP
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 11
+                      00272     
+00AB                  00273 EQUALS
+00AB   1103           00274     BCF STATUS,Z
+00AC   0222           00275     SUBWF PITCH,0       ; STORE IN WORKING
+00AD   0008           00276     RETURN
+                      00277  
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 11
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-00AD   0024           00278     BANKSEL SSP1CON1
+00AE                  00278 STOP
+00AE   0024           00279     BANKSEL SSP1CON1
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-00AE   1295           00279     BCF SSP1CON1,SSPEN
-00AF   0000           00280     NOP
+00AF   1295           00280     BCF SSP1CON1,SSPEN
 00B0   0000           00281     NOP
+00B1   0000           00282     NOP
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-00B1   1695           00282     BSF SSP1CON1,SSPEN
-00B2   0008           00283     RETURN
-                      00284     
-00B3                  00285 SETE1
-00B3   0020           00286     BANKSEL PORTA
-00B4   01A2           00287     CLRF PITCH
-00B5   01C1           00288     CLRF BUFFER
-00B6   01C2           00289     CLRF DISABLE
-00B7   2???           00290     GOTO MAIN
-                      00291     
-00B8                  00292 SETF1
-00B8   0020           00293     BANKSEL PORTA
-00B9   140C           00294     BSF PORTA,0
-00BA   1C42           00295     BTFSS DISABLE,0
-00BB   100C           00296     BCF PORTA,0
-00BC   01A2           00297     CLRF PITCH
-00BD   01C1           00298     CLRF BUFFER
-00BE   01C2           00299     CLRF DISABLE
-00BF   2???           00300     GOTO MAIN
-                      00301    
-00C0                  00302 SETFS1
-00C0   0020           00303     BANKSEL PORTA
-00C1   148C           00304     BSF PORTA,1
-00C2   1C42           00305     BTFSS DISABLE,0
-00C3   108C           00306     BCF PORTA,1
-00C4   01A2           00307     CLRF PITCH
-00C5   01C1           00308     CLRF BUFFER
-00C6   01C2           00309     CLRF DISABLE
-00C7   2???           00310     GOTO MAIN    
-                      00311     
-00C8                  00312 SETG1
-00C8   0020           00313     BANKSEL PORTA
-00C9   150C           00314     BSF PORTA,2
-00CA   1C42           00315     BTFSS DISABLE,0
-00CB   110C           00316     BCF PORTA,2
-00CC   01A2           00317     CLRF PITCH
-00CD   01C1           00318     CLRF BUFFER
-00CE   01C2           00319     CLRF DISABLE
-00CF   2???           00320     GOTO MAIN    
-                      00321       
-00D0                  00322 SETGS1
-00D0   0020           00323     BANKSEL PORTA
-00D1   158C           00324     BSF PORTA,3
-00D2   1C42           00325     BTFSS DISABLE,0
-00D3   118C           00326     BCF PORTA,3
-00D4   01A2           00327     CLRF PITCH
-00D5   01C1           00328     CLRF BUFFER
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 12
+00B2   1695           00283     BSF SSP1CON1,SSPEN
+00B3   0008           00284     RETURN
+                      00285     
+00B4                  00286 SETE1
+00B4   0020           00287     BANKSEL PORTA
+00B5   01A2           00288     CLRF PITCH
+00B6   01C1           00289     CLRF BUFFER
+00B7   01C2           00290     CLRF DISABLE
+00B8   2???           00291     GOTO MAIN
+                      00292     
+00B9                  00293 SETF1
+00B9   0020           00294     BANKSEL PORTA
+00BA   140C           00295     BSF PORTA,0
+00BB   1C42           00296     BTFSS DISABLE,0
+00BC   100C           00297     BCF PORTA,0
+00BD   01A2           00298     CLRF PITCH
+00BE   01C1           00299     CLRF BUFFER
+00BF   01C2           00300     CLRF DISABLE
+00C0   2???           00301     GOTO MAIN
+                      00302    
+00C1                  00303 SETFS1
+00C1   0020           00304     BANKSEL PORTA
+00C2   148C           00305     BSF PORTA,1
+00C3   1C42           00306     BTFSS DISABLE,0
+00C4   108C           00307     BCF PORTA,1
+00C5   01A2           00308     CLRF PITCH
+00C6   01C1           00309     CLRF BUFFER
+00C7   01C2           00310     CLRF DISABLE
+00C8   2???           00311     GOTO MAIN    
+                      00312     
+00C9                  00313 SETG1
+00C9   0020           00314     BANKSEL PORTA
+00CA   150C           00315     BSF PORTA,2
+00CB   1C42           00316     BTFSS DISABLE,0
+00CC   110C           00317     BCF PORTA,2
+00CD   01A2           00318     CLRF PITCH
+00CE   01C1           00319     CLRF BUFFER
+00CF   01C2           00320     CLRF DISABLE
+00D0   2???           00321     GOTO MAIN    
+                      00322       
+00D1                  00323 SETGS1
+00D1   0020           00324     BANKSEL PORTA
+00D2   158C           00325     BSF PORTA,3
+00D3   1C42           00326     BTFSS DISABLE,0
+00D4   118C           00327     BCF PORTA,3
+00D5   01A2           00328     CLRF PITCH
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 12
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-00D6   01C2           00329     CLRF DISABLE
-00D7   2???           00330     GOTO MAIN    
-                      00331     
-00D8                  00332 SETA1
-00D8   0020           00333     BANKSEL PORTA
-00D9   160C           00334     BSF PORTA,4
-00DA   1C42           00335     BTFSS DISABLE,0
-00DB   120C           00336     BCF PORTA,4
-00DC   01A2           00337     CLRF PITCH
-00DD   01C1           00338     CLRF BUFFER
-00DE   01C2           00339     CLRF DISABLE
-00DF   2???           00340     GOTO MAIN   
-                      00341     
-00E0                  00342 SETAS1
-00E0   0020           00343     BANKSEL PORTA
-00E1   168C           00344     BSF PORTA,5
-00E2   1C42           00345     BTFSS DISABLE,0
-00E3   128C           00346     BCF PORTA,5
-00E4   01A2           00347     CLRF PITCH
-00E5   01C1           00348     CLRF BUFFER
-00E6   01C2           00349     CLRF DISABLE
-00E7   2???           00350     GOTO MAIN    
-                      00351    
-00E8                  00352 SETB1
-00E8   0020           00353     BANKSEL PORTA
-00E9   170C           00354     BSF PORTA,6
-00EA   1C42           00355     BTFSS DISABLE,0
-00EB   130C           00356     BCF PORTA,6
-00EC   01A2           00357     CLRF PITCH
-00ED   01C1           00358     CLRF BUFFER
-00EE   01C2           00359     CLRF DISABLE
-00EF   2???           00360     GOTO MAIN  
-                      00361     
-00F0                  00362 SETC2
-00F0   0020           00363     BANKSEL PORTA
-00F1   178C           00364     BSF PORTA,7
-00F2   1C42           00365     BTFSS DISABLE,0
-00F3   138C           00366     BCF PORTA,7
-00F4   01A2           00367     CLRF PITCH
-00F5   01C1           00368     CLRF BUFFER
-00F6   01C2           00369     CLRF DISABLE
-00F7   2???           00370     GOTO MAIN   
-                      00371     
-00F8                  00372 SETCS2
-00F8   0020           00373     BANKSEL PORTB
-00F9   140D           00374     BSF PORTB,0
-00FA   1C42           00375     BTFSS DISABLE,0
-00FB   100D           00376     BCF PORTB,0
-00FC   01A2           00377     CLRF PITCH
-00FD   01C1           00378     CLRF BUFFER
-00FE   01C2           00379     CLRF DISABLE
-00FF   2???           00380     GOTO MAIN    
-                      00381     
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 13
+00D6   01C1           00329     CLRF BUFFER
+00D7   01C2           00330     CLRF DISABLE
+00D8   2???           00331     GOTO MAIN    
+                      00332     
+00D9                  00333 SETA1
+00D9   0020           00334     BANKSEL PORTA
+00DA   160C           00335     BSF PORTA,4
+00DB   1C42           00336     BTFSS DISABLE,0
+00DC   120C           00337     BCF PORTA,4
+00DD   01A2           00338     CLRF PITCH
+00DE   01C1           00339     CLRF BUFFER
+00DF   01C2           00340     CLRF DISABLE
+00E0   2???           00341     GOTO MAIN   
+                      00342     
+00E1                  00343 SETAS1
+00E1   0020           00344     BANKSEL PORTA
+00E2   168C           00345     BSF PORTA,5
+00E3   1C42           00346     BTFSS DISABLE,0
+00E4   128C           00347     BCF PORTA,5
+00E5   01A2           00348     CLRF PITCH
+00E6   01C1           00349     CLRF BUFFER
+00E7   01C2           00350     CLRF DISABLE
+00E8   2???           00351     GOTO MAIN    
+                      00352    
+00E9                  00353 SETB1
+00E9   0020           00354     BANKSEL PORTA
+00EA   170C           00355     BSF PORTA,6
+00EB   1C42           00356     BTFSS DISABLE,0
+00EC   130C           00357     BCF PORTA,6
+00ED   01A2           00358     CLRF PITCH
+00EE   01C1           00359     CLRF BUFFER
+00EF   01C2           00360     CLRF DISABLE
+00F0   2???           00361     GOTO MAIN  
+                      00362     
+00F1                  00363 SETC2
+00F1   0020           00364     BANKSEL PORTA
+00F2   178C           00365     BSF PORTA,7
+00F3   1C42           00366     BTFSS DISABLE,0
+00F4   138C           00367     BCF PORTA,7
+00F5   01A2           00368     CLRF PITCH
+00F6   01C1           00369     CLRF BUFFER
+00F7   01C2           00370     CLRF DISABLE
+00F8   2???           00371     GOTO MAIN   
+                      00372     
+00F9                  00373 SETCS2
+00F9   0020           00374     BANKSEL PORTB
+00FA   140D           00375     BSF PORTB,0
+00FB   1C42           00376     BTFSS DISABLE,0
+00FC   100D           00377     BCF PORTB,0
+00FD   01A2           00378     CLRF PITCH
+00FE   01C1           00379     CLRF BUFFER
+00FF   01C2           00380     CLRF DISABLE
+0100   2???           00381     GOTO MAIN    
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 13
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0100                  00382 SETD2
-0100   0020           00383     BANKSEL PORTB
-0101   148D           00384     BSF PORTB,1
-0102   1C42           00385     BTFSS DISABLE,0
-0103   108D           00386     BCF PORTB,1
-0104   01A2           00387     CLRF PITCH
-0105   01C1           00388     CLRF BUFFER
-0106   01C2           00389     CLRF DISABLE
-0107   2???           00390     GOTO MAIN  
-                      00391     
-0108                  00392 SETDS2
-0108   0020           00393     BANKSEL PORTB
-0109   150D           00394     BSF PORTB,2
-010A   1C42           00395     BTFSS DISABLE,0
-010B   110D           00396     BCF PORTB,2
-010C   01A2           00397     CLRF PITCH
-010D   01C1           00398     CLRF BUFFER
-010E   01C2           00399     CLRF DISABLE
-010F   2???           00400     GOTO MAIN       
-                      00401     
-0110                  00402 SETE2
-0110   0020           00403     BANKSEL PORTB
-0111   158D           00404     BSF PORTB,3
-0112   1C42           00405     BTFSS DISABLE,0
-0113   118D           00406     BCF PORTB,3
-0114   01A2           00407     CLRF PITCH
-0115   01C1           00408     CLRF BUFFER
-0116   01C2           00409     CLRF DISABLE
-0117   2???           00410     GOTO MAIN   
-                      00411     
-0118                  00412 SETF2
-0118   0020           00413     BANKSEL PORTB
-0119   160D           00414     BSF PORTB,4
-011A   1C42           00415     BTFSS DISABLE,0
-011B   120D           00416     BCF PORTB,4
-011C   01A2           00417     CLRF PITCH
-011D   01C1           00418     CLRF BUFFER
-011E   01C2           00419     CLRF DISABLE
-011F   2???           00420     GOTO MAIN  
-                      00421     
-0120                  00422 SETFS2
-0120   0020           00423     BANKSEL PORTB
-0121   168D           00424     BSF PORTB,5
-0122   1C42           00425     BTFSS DISABLE,0
-0123   128D           00426     BCF PORTB,5
-0124   01A2           00427     CLRF PITCH
-0125   01C1           00428     CLRF BUFFER
-0126   01C2           00429     CLRF DISABLE
-0127   2???           00430     GOTO MAIN  
-                      00431     
-0128                  00432 SETG2
-0128   0020           00433     BANKSEL PORTB
-0129   170D           00434     BSF PORTB,6
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 14
+                      00382     
+0101                  00383 SETD2
+0101   0020           00384     BANKSEL PORTB
+0102   148D           00385     BSF PORTB,1
+0103   1C42           00386     BTFSS DISABLE,0
+0104   108D           00387     BCF PORTB,1
+0105   01A2           00388     CLRF PITCH
+0106   01C1           00389     CLRF BUFFER
+0107   01C2           00390     CLRF DISABLE
+0108   2???           00391     GOTO MAIN  
+                      00392     
+0109                  00393 SETDS2
+0109   0020           00394     BANKSEL PORTB
+010A   150D           00395     BSF PORTB,2
+010B   1C42           00396     BTFSS DISABLE,0
+010C   110D           00397     BCF PORTB,2
+010D   01A2           00398     CLRF PITCH
+010E   01C1           00399     CLRF BUFFER
+010F   01C2           00400     CLRF DISABLE
+0110   2???           00401     GOTO MAIN       
+                      00402     
+0111                  00403 SETE2
+0111   0020           00404     BANKSEL PORTB
+0112   158D           00405     BSF PORTB,3
+0113   1C42           00406     BTFSS DISABLE,0
+0114   118D           00407     BCF PORTB,3
+0115   01A2           00408     CLRF PITCH
+0116   01C1           00409     CLRF BUFFER
+0117   01C2           00410     CLRF DISABLE
+0118   2???           00411     GOTO MAIN   
+                      00412     
+0119                  00413 SETF2
+0119   0020           00414     BANKSEL PORTB
+011A   160D           00415     BSF PORTB,4
+011B   1C42           00416     BTFSS DISABLE,0
+011C   120D           00417     BCF PORTB,4
+011D   01A2           00418     CLRF PITCH
+011E   01C1           00419     CLRF BUFFER
+011F   01C2           00420     CLRF DISABLE
+0120   2???           00421     GOTO MAIN  
+                      00422     
+0121                  00423 SETFS2
+0121   0020           00424     BANKSEL PORTB
+0122   168D           00425     BSF PORTB,5
+0123   1C42           00426     BTFSS DISABLE,0
+0124   128D           00427     BCF PORTB,5
+0125   01A2           00428     CLRF PITCH
+0126   01C1           00429     CLRF BUFFER
+0127   01C2           00430     CLRF DISABLE
+0128   2???           00431     GOTO MAIN  
+                      00432     
+0129                  00433 SETG2
+0129   0020           00434     BANKSEL PORTB
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 14
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-012A   1C42           00435     BTFSS DISABLE,0
-012B   130D           00436     BCF PORTB,6
-012C   01A2           00437     CLRF PITCH
-012D   01C1           00438     CLRF BUFFER
-012E   01C2           00439     CLRF DISABLE
-012F   2???           00440     GOTO MAIN       
-                      00441     
-0130                  00442 SETGS2
-0130   0020           00443     BANKSEL PORTB
-0131   178D           00444     BSF PORTB,7
-0132   1C42           00445     BTFSS DISABLE,0
-0133   138D           00446     BCF PORTB,7
-0134   01A2           00447     CLRF PITCH
-0135   01C1           00448     CLRF BUFFER
-0136   01C2           00449     CLRF DISABLE
-0137   2???           00450     GOTO MAIN       
-                      00451     
-0138                  00452 SETA2
-0138   0020           00453     BANKSEL PORTD
-0139   140F           00454     BSF PORTD,0
-013A   1C42           00455     BTFSS DISABLE,0
-013B   100F           00456     BCF PORTD,0
-013C   01A2           00457     CLRF PITCH
-013D   01C1           00458     CLRF BUFFER
-013E   01C2           00459     CLRF DISABLE
-013F   2???           00460     GOTO MAIN
-                      00461     
-0140                  00462 SETAS2
-0140   0020           00463     BANKSEL PORTD
-0141   148F           00464     BSF PORTD,1
-0142   1C42           00465     BTFSS DISABLE,0
-0143   108F           00466     BCF PORTD,1
-0144   01A2           00467     CLRF PITCH
-0145   01C1           00468     CLRF BUFFER
-0146   01C2           00469     CLRF DISABLE
-0147   2???           00470     GOTO MAIN  
-                      00471     
-0148                  00472 SETB2
-0148   0020           00473     BANKSEL PORTD
-0149   150F           00474     BSF PORTD,2
-014A   1C42           00475     BTFSS DISABLE,0
-014B   110F           00476     BCF PORTD,2
-014C   01A2           00477     CLRF PITCH
-014D   01C1           00478     CLRF BUFFER
-014E   01C2           00479     CLRF DISABLE
-014F   2???           00480     GOTO MAIN  
-                      00481      
-                      00482     
-0150                  00483 SETC3
-0150   0020           00484     BANKSEL PORTD
-0151   158F           00485     BSF PORTD,3
-0152   1C42           00486     BTFSS DISABLE,0
-0153   118F           00487     BCF PORTD,3
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 15
+012A   170D           00435     BSF PORTB,6
+012B   1C42           00436     BTFSS DISABLE,0
+012C   130D           00437     BCF PORTB,6
+012D   01A2           00438     CLRF PITCH
+012E   01C1           00439     CLRF BUFFER
+012F   01C2           00440     CLRF DISABLE
+0130   2???           00441     GOTO MAIN       
+                      00442     
+0131                  00443 SETGS2
+0131   0020           00444     BANKSEL PORTB
+0132   178D           00445     BSF PORTB,7
+0133   1C42           00446     BTFSS DISABLE,0
+0134   138D           00447     BCF PORTB,7
+0135   01A2           00448     CLRF PITCH
+0136   01C1           00449     CLRF BUFFER
+0137   01C2           00450     CLRF DISABLE
+0138   2???           00451     GOTO MAIN       
+                      00452     
+0139                  00453 SETA2
+0139   0020           00454     BANKSEL PORTD
+013A   140F           00455     BSF PORTD,0
+013B   1C42           00456     BTFSS DISABLE,0
+013C   100F           00457     BCF PORTD,0
+013D   01A2           00458     CLRF PITCH
+013E   01C1           00459     CLRF BUFFER
+013F   01C2           00460     CLRF DISABLE
+0140   2???           00461     GOTO MAIN
+                      00462     
+0141                  00463 SETAS2
+0141   0020           00464     BANKSEL PORTD
+0142   148F           00465     BSF PORTD,1
+0143   1C42           00466     BTFSS DISABLE,0
+0144   108F           00467     BCF PORTD,1
+0145   01A2           00468     CLRF PITCH
+0146   01C1           00469     CLRF BUFFER
+0147   01C2           00470     CLRF DISABLE
+0148   2???           00471     GOTO MAIN  
+                      00472     
+0149                  00473 SETB2
+0149   0020           00474     BANKSEL PORTD
+014A   150F           00475     BSF PORTD,2
+014B   1C42           00476     BTFSS DISABLE,0
+014C   110F           00477     BCF PORTD,2
+014D   01A2           00478     CLRF PITCH
+014E   01C1           00479     CLRF BUFFER
+014F   01C2           00480     CLRF DISABLE
+0150   2???           00481     GOTO MAIN  
+                      00482      
+                      00483     
+0151                  00484 SETC3
+0151   0020           00485     BANKSEL PORTD
+0152   158F           00486     BSF PORTD,3
+0153   1C42           00487     BTFSS DISABLE,0
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 15
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0154   01A2           00488     CLRF PITCH
-0155   01C1           00489     CLRF BUFFER
-0156   01C2           00490     CLRF DISABLE
-0157   2???           00491     GOTO MAIN       
-                      00492     
-0158                  00493 INTER
-0158   0020           00494     BANKSEL INTCON
-0159   018B           00495     CLRF INTCON
-015A   2???           00496     CALL PUSHIN
-015B   110D           00497     BCF PORTB,2
-015C   0020           00498     BANKSEL PIR1
-015D   1991           00499     BTFSC PIR1,SSP1IF       ; CHECK MSSP INTERRUPT FLAG
-015E   2???           00500     CALL RECIEVE        
-015F   0020           00501     BANKSEL INTCON
-0160   178B           00502     BSF INTCON,GIE
-0161   170B           00503     BSF INTCON,PEIE
-0162   2???           00504     CALL POPOUT
-0163   0009           00505     RETFIE
-                      00506     
-0164                  00507 RECIEVE
-0164   0020           00508     BANKSEL PIR1
-0165   0191           00509     CLRF PIR1           ; CLEAR FLAG
-0166   110D           00510     BCF PORTB,2
-0167   0024           00511     BANKSEL SSP1BUF 
+0154   118F           00488     BCF PORTD,3
+0155   01A2           00489     CLRF PITCH
+0156   01C1           00490     CLRF BUFFER
+0157   01C2           00491     CLRF DISABLE
+0158   2???           00492     GOTO MAIN       
+                      00493     
+0159                  00494 INTER
+0159   0020           00495     BANKSEL INTCON
+015A   018B           00496     CLRF INTCON
+015B   2???           00497     CALL PUSHIN
+015C   110D           00498     BCF PORTB,2
+015D   0020           00499     BANKSEL PIR1
+015E   1991           00500     BTFSC PIR1,SSP1IF       ; CHECK MSSP INTERRUPT FLAG
+015F   2???           00501     CALL RECIEVE        
+0160   0020           00502     BANKSEL INTCON
+0161   178B           00503     BSF INTCON,GIE
+0162   170B           00504     BSF INTCON,PEIE
+0163   2???           00505     CALL POPOUT
+0164   0009           00506     RETFIE
+                      00507     
+0165                  00508 RECIEVE
+0165   0020           00509     BANKSEL PIR1
+0166   0191           00510     CLRF PIR1           ; CLEAR FLAG
+0167   110D           00511     BCF PORTB,2
+0168   0024           00512     BANKSEL SSP1BUF 
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0168   0811           00512     MOVF SSP1BUF,0      ; READ RECIEVED DATA
-0169   0020           00513     BANKSEL PORTB
-016A   00A2           00514     MOVWF PITCH         ; MOVE INTO GPR
-016B   1441           00515     BSF BUFFER,0
-016C   0024           00516     BANKSEL SSP1CON1    
+0169   0811           00513     MOVF SSP1BUF,0      ; READ RECIEVED DATA
+016A   0020           00514     BANKSEL PORTB
+016B   00A2           00515     MOVWF PITCH         ; MOVE INTO GPR
+016C   1441           00516     BSF BUFFER,0
+016D   0024           00517     BANKSEL SSP1CON1    
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-016D   1615           00517     BSF SSP1CON1,CKP    ; RELEASE CLOCK LINE
-016E   0008           00518     RETURN
-                      00519     
+016E   1615           00518     BSF SSP1CON1,CKP    ; RELEASE CLOCK LINE
+016F   0008           00519     RETURN
                       00520     
-                      00521 
+                      00521     
+                      00522 
 Warning[205]: Found directive in column 1. (END)
-29A4 1FFF             00522 END
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 16
+29A4 1FFF             00523 END
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 16
 
 
 SYMBOL TABLE
@@ -927,7 +928,7 @@ ANSB4                             00000004
 ANSB5                             00000005
 ANSB6                             00000006
 ANSC0                             00000000
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 17
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 17
 
 
 SYMBOL TABLE
@@ -986,7 +987,7 @@ BUF2                              00000002
 BUF3                              00000003
 BUF4                              00000004
 BUF5                              00000005
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 18
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 18
 
 
 SYMBOL TABLE
@@ -1045,7 +1046,7 @@ C3NCH1                            00000001
 C3NCH2                            00000002
 C3OE                              00000005
 C3ON                              00000007
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 19
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 19
 
 
 SYMBOL TABLE
@@ -1104,7 +1105,7 @@ CCP3SEL                           00000000
 CCPR1                             00000291
 CCPR1H                            00000292
 CCPR1L                            00000291
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 20
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 20
 
 
 SYMBOL TABLE
@@ -1163,7 +1164,7 @@ DAC1PSS0                          00000002
 DAC1PSS1                          00000003
 DAC1R0                            00000000
 DAC1R1                            00000001
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 21
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 21
 
 
 SYMBOL TABLE
@@ -1222,7 +1223,7 @@ DS2MIDI                           00000034
 D_NOT_A                           00000005
 E1MIDI                            00000023
 E2MIDI                            00000035
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 22
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 22
 
 
 SYMBOL TABLE
@@ -1240,7 +1241,7 @@ EEIE                              00000004
 EEIF                              00000004
 EEPGD                             00000007
 EN                                00000007
-EQUALS                            000000AA
+EQUALS                            000000AB
 F                                 00000001
 F1MIDI                            00000024
 F2MIDI                            00000036
@@ -1281,7 +1282,7 @@ INLVLA2                           00000002
 INLVLA3                           00000003
 INLVLA4                           00000004
 INLVLA5                           00000005
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 23
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 23
 
 
 SYMBOL TABLE
@@ -1324,7 +1325,7 @@ INLVLE3                           00000003
 INTCON                            0000000B
 INTE                              00000004
 INTEDG                            00000006
-INTER                             00000158
+INTER                             00000159
 INTF                              00000001
 IOCAF                             00000393
 IOCAF0                            00000000
@@ -1340,7 +1341,7 @@ IOCAN0                            00000000
 IOCAN1                            00000001
 IOCAN2                            00000002
 IOCAN3                            00000003
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 24
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 24
 
 
 SYMBOL TABLE
@@ -1399,7 +1400,7 @@ IOCCN                             00000398
 IOCCN0                            00000000
 IOCCN1                            00000001
 IOCCN2                            00000002
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 25
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 25
 
 
 SYMBOL TABLE
@@ -1458,7 +1459,7 @@ LATC4                             00000004
 LATC5                             00000005
 LATC6                             00000006
 LATC7                             00000007
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 26
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 26
 
 
 SYMBOL TABLE
@@ -1517,7 +1518,7 @@ ODCONB1                           00000001
 ODCONB2                           00000002
 ODCONB3                           00000003
 ODCONB4                           00000004
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 27
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 27
 
 
 SYMBOL TABLE
@@ -1576,7 +1577,7 @@ OSFIF                             00000007
 OSTS                              00000005
 P                                 00000004
 P1ARSEN                           00000005
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 28
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 28
 
 
 SYMBOL TABLE
@@ -1635,7 +1636,7 @@ P1OEB                             00000001
 P1OEC                             00000002
 P1OED                             00000003
 P1OEE                             00000004
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 29
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 29
 
 
 SYMBOL TABLE
@@ -1694,7 +1695,7 @@ P2ASDLB                           00000001
 P2ASDOV                           00000000
 P2ASDSC1                          00000001
 P2ASDSC2                          00000002
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 30
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 30
 
 
 SYMBOL TABLE
@@ -1753,7 +1754,7 @@ P2PRPOL                           00000006
 P2PRSC1                           00000001
 P2PRSC2                           00000002
 P2PRSC3                           00000003
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 31
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 31
 
 
 SYMBOL TABLE
@@ -1812,7 +1813,7 @@ P3DCSC4                           00000004
 P3DCSIN                           00000007
 P3DCST                            00000000
 P3FEBM0                           00000004
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 32
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 32
 
 
 SYMBOL TABLE
@@ -1871,7 +1872,7 @@ P3REBSC2                          00000002
 P3REBSC3                          00000003
 P3REBSC4                          00000004
 P3REBSIN                          00000007
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 33
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 33
 
 
 SYMBOL TABLE
@@ -1930,7 +1931,7 @@ P4HSMEN                           00000000
 P4INPOL                           00000006
 P4LSMEN                           00000001
 P4MDLBIT                          00000005
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 34
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 34
 
 
 SYMBOL TABLE
@@ -1989,7 +1990,7 @@ PCH0                              00000000
 PCH1                              00000001
 PCH2                              00000002
 PCIE                              00000006
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 35
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 35
 
 
 SYMBOL TABLE
@@ -2048,7 +2049,7 @@ PSMC1BLNK                         00000E97
 PSMC1CLK                          00000E94
 PSMC1CON                          00000E91
 PSMC1DBF                          00000EAA
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 36
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 36
 
 
 SYMBOL TABLE
@@ -2107,7 +2108,7 @@ PSMC1PH0                          00000000
 PSMC1PH1                          00000001
 PSMC1PH10                         00000002
 PSMC1PH11                         00000003
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 37
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 37
 
 
 SYMBOL TABLE
@@ -2166,7 +2167,7 @@ PSMC1TMR12                        00000004
 PSMC1TMR13                        00000005
 PSMC1TMR14                        00000006
 PSMC1TMR15                        00000007
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 38
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 38
 
 
 SYMBOL TABLE
@@ -2225,7 +2226,7 @@ PSMC2DBR5                         00000005
 PSMC2DBR6                         00000006
 PSMC2DBR7                         00000007
 PSMC2DC                           00000EC3
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 39
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 39
 
 
 SYMBOL TABLE
@@ -2284,7 +2285,7 @@ PSMC2PHS                          00000EBA
 PSMC2POL                          00000EB6
 PSMC2PR                           00000EC5
 PSMC2PR0                          00000000
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 40
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 40
 
 
 SYMBOL TABLE
@@ -2343,7 +2344,7 @@ PSMC3BLKF0                        00000000
 PSMC3BLKF1                        00000001
 PSMC3BLKF2                        00000002
 PSMC3BLKF3                        00000003
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 41
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 41
 
 
 SYMBOL TABLE
@@ -2402,7 +2403,7 @@ PSMC3DC8                          00000000
 PSMC3DC9                          00000001
 PSMC3DCH                          00000EE4
 PSMC3DCL                          00000EE3
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 42
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 42
 
 
 SYMBOL TABLE
@@ -2461,7 +2462,7 @@ PSMC3PR9                          00000001
 PSMC3PRH                          00000EE6
 PSMC3PRL                          00000EE5
 PSMC3PRS                          00000EDC
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 43
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 43
 
 
 SYMBOL TABLE
@@ -2520,7 +2521,7 @@ PSMC4CLK                          00000F14
 PSMC4CON                          00000F11
 PSMC4DBF                          00000F2A
 PSMC4DBF0                         00000000
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 44
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 44
 
 
 SYMBOL TABLE
@@ -2579,7 +2580,7 @@ PSMC4PH1                          00000001
 PSMC4PH10                         00000002
 PSMC4PH11                         00000003
 PSMC4PH12                         00000004
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 45
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 45
 
 
 SYMBOL TABLE
@@ -2638,7 +2639,7 @@ PSMC4TMR13                        00000005
 PSMC4TMR14                        00000006
 PSMC4TMR15                        00000007
 PSMC4TMR2                         00000002
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 46
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 46
 
 
 SYMBOL TABLE
@@ -2697,7 +2698,7 @@ RD4                               00000004
 RD5                               00000005
 RD6                               00000006
 RD7                               00000007
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 47
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 47
 
 
 SYMBOL TABLE
@@ -2707,7 +2708,7 @@ RE0                               00000000
 RE1                               00000001
 RE2                               00000002
 RE3                               00000003
-RECIEVE                           00000164
+RECIEVE                           00000165
 RSEN                              00000001
 RX9                               00000006
 RX9D                              00000000
@@ -2726,27 +2727,27 @@ SDISEL                            00000003
 SDOSEL                            00000005
 SEN                               00000000
 SENDB                             00000003
-SETA1                             000000D8
-SETA2                             00000138
-SETAS1                            000000E0
-SETAS2                            00000140
-SETB1                             000000E8
-SETB2                             00000148
-SETC2                             000000F0
-SETC3                             00000150
-SETCS2                            000000F8
-SETD2                             00000100
-SETDS2                            00000108
-SETE1                             000000B3
-SETE2                             00000110
-SETF1                             000000B8
-SETF2                             00000118
-SETFS1                            000000C0
-SETFS2                            00000120
-SETG1                             000000C8
-SETG2                             00000128
-SETGS1                            000000D0
-SETGS2                            00000130
+SETA1                             000000D9
+SETA2                             00000139
+SETAS1                            000000E1
+SETAS2                            00000141
+SETB1                             000000E9
+SETB2                             00000149
+SETC2                             000000F1
+SETC3                             00000151
+SETCS2                            000000F9
+SETD2                             00000101
+SETDS2                            00000109
+SETE1                             000000B4
+SETE2                             00000111
+SETF1                             000000B9
+SETF2                             00000119
+SETFS1                            000000C1
+SETFS2                            00000121
+SETG1                             000000C9
+SETG2                             00000129
+SETGS1                            000000D1
+SETGS2                            00000131
 SETUP                             00000005
 SLRCONA                           0000030C
 SLRCONA0                          00000000
@@ -2756,7 +2757,7 @@ SLRCONA3                          00000003
 SLRCONA4                          00000004
 SLRCONA5                          00000005
 SLRCONA6                          00000006
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 48
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 48
 
 
 SYMBOL TABLE
@@ -2815,7 +2816,7 @@ SSP1ADD3                          00000003
 SSP1ADD4                          00000004
 SSP1ADD5                          00000005
 SSP1ADD6                          00000006
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 49
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 49
 
 
 SYMBOL TABLE
@@ -2867,14 +2868,14 @@ STATUS_SHAD                       00000FE4
 STKOVF                            00000007
 STKPTR                            00000FED
 STKUNF                            00000006
-STOP                              000000AD
+STOP                              000000AE
 SWDTEN                            00000000
 SYNC                              00000004
 T0CS                              00000005
 T0IE                              00000005
 T0IF                              00000002
 T0SE                              00000004
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 50
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 50
 
 
 SYMBOL TABLE
@@ -2933,7 +2934,7 @@ TRISA2                            00000002
 TRISA3                            00000003
 TRISA4                            00000004
 TRISA5                            00000005
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 51
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 51
 
 
 SYMBOL TABLE
@@ -2992,7 +2993,7 @@ TXIF                              00000004
 TXREG                             0000019A
 TXREG1                            0000019A
 TXSEL                             00000002
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 52
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 52
 
 
 SYMBOL TABLE
@@ -3051,7 +3052,7 @@ WPUE                              00000210
 WPUE0                             00000000
 WPUE1                             00000001
 WPUE2                             00000002
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 53
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 53
 
 
 SYMBOL TABLE
@@ -3110,7 +3111,7 @@ _PWRTE_OFF                        00003FFF
 _PWRTE_ON                         00003FDF
 _STVREN_OFF                       00003DFF
 _STVREN_ON                        00003FFF
-MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:31:30         PAGE 54
+MPASM 5.86                        ESLAVE.ASM   11-8-2024  21:37:53         PAGE 54
 
 
 SYMBOL TABLE
