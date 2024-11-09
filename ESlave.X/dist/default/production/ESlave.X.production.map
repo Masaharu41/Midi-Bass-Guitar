@@ -1,5 +1,5 @@
 MPLINK 5.09, LINKER
-Linker Map File - Created Fri Nov 08 20:28:35 2024
+Linker Map File - Created Fri Nov 08 21:31:31 2024
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -7,9 +7,9 @@ Linker Map File - Created Fri Nov 08 20:28:35 2024
                    .org_0       code   0x000000    program   0x000002
                    .cinit    romdata   0x000001    program   0x000004
                    .org_1       code   0x000004    program   0x0002d6
-               START_CODE       code   0x00016f    program   0x000080
-              PUSHIN_CODE       code   0x0001af    program   0x000008
-              POPOUT_CODE       code   0x0001b3    program   0x000008
+               START_CODE       code   0x00016f    program   0x00009a
+              PUSHIN_CODE       code   0x0001bc    program   0x000008
+              POPOUT_CODE       code   0x0001c0    program   0x000008
 .config_8007_BUILD/DEFAULT/PRODUCTION/ESLAVE.       code   0x008007    program   0x000002
 .config_8008_BUILD/DEFAULT/PRODUCTION/ESLAVE.       code   0x008008    program   0x000002
 
@@ -19,9 +19,9 @@ Linker Map File - Created Fri Nov 08 20:28:35 2024
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000002      
-                            0x000004    0x0001b6      
+                            0x000004    0x0001c3      
                             0x008007    0x008008      
-            440 out of 16647 program addresses used, program memory utilization is 2%
+            453 out of 16647 program addresses used, program memory utilization is 2%
 
 
 
@@ -31,8 +31,8 @@ Linker Map File - Created Fri Nov 08 20:28:35 2024
                    EQUALS   0x0000aa    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
                     INTER   0x000158    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
                      MAIN   0x00004c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                   POPOUT   0x0001b3    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePOPout.inc
-                   PUSHIN   0x0001af    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePUSHin.inc
+                   POPOUT   0x0001c0    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePOPout.inc
+                   PUSHIN   0x0001bc    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePUSHin.inc
                   RECIEVE   0x000164    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
                     SETA1   0x0000d8    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
                     SETA2   0x000138    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
@@ -94,7 +94,7 @@ Linker Map File - Created Fri Nov 08 20:28:35 2024
                     INTER   0x000158    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
                   RECIEVE   0x000164    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
                     START   0x00016f    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlaveSetup.inc
-                   PUSHIN   0x0001af    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePUSHin.inc
-                   POPOUT   0x0001b3    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePOPout.inc
+                   PUSHIN   0x0001bc    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePUSHin.inc
+                   POPOUT   0x0001c0    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePOPout.inc
 
 
