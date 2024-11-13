@@ -44,6 +44,25 @@
 ;		F = select finger or pick, 0 = finger
 ;		S = which string to pluck,E = bit0,A = bit1,D = bit2,G = bit3
 ;*************************************************************************    
+; Other notes about program
+;	    
+;	As MIDI represents note solely based upon their value chromatically
+;	, such as E1, it does not give enough information to select where to 
+;	play the note on instruments like the bass guitar which have the same
+;	note on mulitple strings on different frets. The result is the master
+;	uses mathmatical calculations to select which control slave would be 
+;	best to use for a given note. 
+;
+;	About the auto selection of strings. the general rule is that 
+;	the current string is prioritized for notes that are within 5 notes
+;	up or down from the current position. When within the range of 5 to 10
+;	the sister string above or below is prioritized. In cases where an 
+;	octave note is sent the second string above or below is used as this
+;	generally how most bass players handle octave notes. in all other cases
+;	the note is prioritized sequentially based upon the E string until its
+;	limits are met at which each string is tested until it is found on a 
+;	valid strings.
+;    
     ; PIC16F1788 Configuration Bit Settings
 
 ; Assembly source line config statements
@@ -256,6 +275,17 @@ MAIN
     BTFSC STATUS,Z
     GOTO OCTAVE
     ; FINAL STATEMENT
+    ; EVALUATE IF NOTE IS VALID FOR E STRING
+    MOVFW LASTNOTE
+    SUBWF EMAX,0
+    BTFSS STATUS,C
+    GOTO MOVETOA
+    ; IF VALID SELECT E STRING OTHERWISE TEST A STRING
+    MOVFW ESLAVE
+    MOVWF LASTADD
+    GOTO I2CSEND
+MOVETOA
+    
     
     
 LOWERNOTE    
