@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=MidiMaster.asm ASlave.asm
+SOURCEFILES_QUOTED_IF_SPACED=MidiMaster.asm
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/MidiMaster.o ${OBJECTDIR}/ASlave.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/MidiMaster.o.d ${OBJECTDIR}/ASlave.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/MidiMaster.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/MidiMaster.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/MidiMaster.o ${OBJECTDIR}/ASlave.o
+OBJECTFILES=${OBJECTDIR}/MidiMaster.o
 
 # Source Files
-SOURCEFILES=MidiMaster.asm ASlave.asm
+SOURCEFILES=MidiMaster.asm
 
 
 
@@ -103,14 +103,6 @@ ${OBJECTDIR}/MidiMaster.o: MidiMaster.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${DEP_GEN} -d "${OBJECTDIR}/MidiMaster.o"
 	@${FIXDEPS} "${OBJECTDIR}/MidiMaster.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
-${OBJECTDIR}/ASlave.o: ASlave.asm  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/ASlave.o.d 
-	@${RM} ${OBJECTDIR}/ASlave.o 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/ASlave.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_PK3=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/ASlave.lst\" -e\"${OBJECTDIR}/ASlave.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/ASlave.o\" \"ASlave.asm\" 
-	@${DEP_GEN} -d "${OBJECTDIR}/ASlave.o"
-	@${FIXDEPS} "${OBJECTDIR}/ASlave.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
-	
 else
 ${OBJECTDIR}/MidiMaster.o: MidiMaster.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -119,14 +111,6 @@ ${OBJECTDIR}/MidiMaster.o: MidiMaster.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/MidiMaster.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/MidiMaster.lst\" -e\"${OBJECTDIR}/MidiMaster.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/MidiMaster.o\" \"MidiMaster.asm\" 
 	@${DEP_GEN} -d "${OBJECTDIR}/MidiMaster.o"
 	@${FIXDEPS} "${OBJECTDIR}/MidiMaster.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
-	
-${OBJECTDIR}/ASlave.o: ASlave.asm  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/ASlave.o.d 
-	@${RM} ${OBJECTDIR}/ASlave.o 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/ASlave.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/ASlave.lst\" -e\"${OBJECTDIR}/ASlave.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/ASlave.o\" \"ASlave.asm\" 
-	@${DEP_GEN} -d "${OBJECTDIR}/ASlave.o"
-	@${FIXDEPS} "${OBJECTDIR}/ASlave.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 endif
 
