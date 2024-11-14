@@ -386,6 +386,18 @@
     [
       "06818073-fb22-48ee-acc5-6dedd827034e",
       "Root"
+    ],
+    [
+      "0dc3b915-e001-48bd-b9bb-7010249087fd",
+      "Master"
+    ],
+    [
+      "55f5fc9c-362b-429f-ad6f-f98ffe4c4860",
+      "E String Slave"
+    ],
+    [
+      "673444b1-2638-4f61-b545-e7cdf999c0e0",
+      "String Strike Slave"
     ]
   ],
   "text_variables": {}

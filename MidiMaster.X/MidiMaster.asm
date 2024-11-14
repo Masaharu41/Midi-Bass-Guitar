@@ -5,8 +5,8 @@
 ;	    File Version: 1
 ;	    Author: Owen Fujii
 ;	    Company: Idaho State University
-;	    Description: The Program for the Master controller for the midi bass guitar
-;			
+;	    Description: The Program for the Master controller for the 
+;			    midi bass guitar
 ;**************************************************************************
 	
 ;*************************************************************************
@@ -17,8 +17,8 @@
 ;	    Started 
 ;
 ;*************************************************************************
-;  The Master will interpret the MIDI signal from UART and will then break up the info
-;   and then send this to the correseponding slave
+;  The Master will interpret the MIDI signal from UART and will 
+;   then break up the info and then send this to the correseponding slave
 ;    
 ;	MIDI: <Control>, <Pitch>, <Velocity>    
 ;	    Upper Nibble: Control Byte
@@ -31,7 +31,7 @@
 ;    
 ;	Note Slaves: <Pitch>
 ;	    MPPP PPPP 
-;		P = The pitch index from 0-127, min is E1 // 28, max is D#4 // 63
+;		P = The pitch index from 0-127, min is E1//28, max is D#4//63
 ;		M = Mute control boolean based on upper control, 0 = Mute
 ;		    Pitch of E string = E1 to C3
 ;		    Pitch of A string = A2 to F3
@@ -42,8 +42,27 @@
 ;	    xVVV VVVV,Fxxx  SSSS 
 ;		V = How Aggresive to attack string
 ;		F = select finger or pick, 0 = finger
-;		S = which string to pluck, E = bit0, A = bit1, D = bit2, G = bit3
+;		S = which string to pluck,E = bit0,A = bit1,D = bit2,G = bit3
 ;*************************************************************************    
+; Other notes about program
+;	    
+;	As MIDI represents note solely based upon their value chromatically
+;	, such as E1, it does not give enough information to select where to 
+;	play the note on instruments like the bass guitar which have the same
+;	note on mulitple strings on different frets. The result is the master
+;	uses mathmatical calculations to select which control slave would be 
+;	best to use for a given note. 
+;
+;	About the auto selection of strings. the general rule is that 
+;	the current string is prioritized for notes that are within 5 notes
+;	up or down from the current position. When within the range of 5 to 10
+;	the sister string above or below is prioritized. In cases where an 
+;	octave note is sent the second string above or below is used as this
+;	generally how most bass players handle octave notes. in all other cases
+;	the note is prioritized sequentially based upon the E string until its
+;	limits are met at which each string is tested until it is found on a 
+;	valid strings.
+;    
     ; PIC16F1788 Configuration Bit Settings
 
 ; Assembly source line config statements
@@ -89,16 +108,28 @@
 	    I2CBYTE2	    EQU H'032'
 	    FLAG	    EQU H'033'
 	; ADDITIONAL GPR REGISTERS
+	    ; STORAGE AND RECIEVE REGISTERS
 	    CTLBYTE	    EQU H'034'
 	    PBYTE	    EQU H'035'
 	    VBYTE	    EQU H'036'
 	    BUFFER	    EQU H'037'
 	    TEMP	    EQU H'038'
+	    ; NOTE STORAGE NUMBERS
 	    MIDIADD	    EQU H'039'
+	    LASTNOTE	    EQU H'040'
+	    LASTADD	    EQU H'041'
+	    LOWNOTE	    EQU	H'042'
+	    HIGHNOTE	    EQU H'043'
+	    ; STORAGE FOR LIMITS OF EACH STRING
+	    ; EMIN IS LOWEST NOTE
+	    EMAX	    EQU H'044'
+	    AMIN	    EQU H'045'
+	    AMAX	    EQU H'046'
+	    DMIN	    EQU H'047'
+	    DMAX	    EQU H'048'
+	    GMIN	    EQU H'049'
+	    ; GMAX IS HIGHEST NOTE
 	    
-	    
- 
-
     ORG H'000'					
     GOTO SETUP					;RESET CONDITION GOTO SETUP
     ORG H'004'
@@ -172,8 +203,29 @@ SETUP
     CLRF PBYTE
     CLRF VBYTE
     CLRF BUFFER
+    CLRF LASTNOTE
+    MOVLW H'002'
+    MOVWF LASTADD	    ; SET THE STARTING ADDRESS TO BE ESLAVE
+    ; SET MIN AND MAX NOTES
+    MOVLW H'01C'
+    MOVWF LOWNOTE	    ; E1 // 28 MIDI
+    MOVLW H'040'
+    MOVWF HIGHNOTE	    ; D#4 // 63 MIDI BUT IS ONE MORE FOR CORRECT MATH
+    ; SET MIN AND MAX ON A PER STRING BASIS
+    MOVLW H'030'	    
+    MOVWF EMAX		    ; C3 // 48 MIDI // MAX FOR E STRING
+    MOVLW H'021'
+    MOVWF AMIN		    ; A2 // 33 MIDI // MIN FOR A STRING
+    MOVLW H'035'
+    MOVWF AMAX		    ; F3 // 53 MIDI // MAX FOR E STRING
+    MOVLW H'026'
+    MOVWF DMIN		    ; D2 // 38 MIDI // MIN FOR D STRING
+    MOVLW H'03A'
+    MOVWF DMAX		    ; A#3// 58 MIDI // MAX FOR D STRING
+    MOVLW H'02B'
+    MOVWF GMIN		    ; G3 // 43 MIDI // MIN FOR G STRING
     ; SET MIDI DEVICE ADDRESS
-    MOVLW H'01'
+    MOVLW H'001'
     MOVWF MIDIADD	    ; SET MIDI DEVICE ADDRESS
     BSF INTCON,GIE	    ; ENABLE INTERRUPTS
     BSF INTCON,PEIE 
@@ -184,14 +236,148 @@ MAIN
     BCF PORTB,1
     BTFSS BUFFER,2
     GOTO MAIN
-    ; SEND TO PITCH SLAVE(S)
     BSF BUFFER,4	    ; SET CURRENT DATA 
+    ; IS THE PITCH WITHIN THE BOUNDS OF BASS GUITAR
+    MOVFW LOWNOTE
+    SUBWF PBYTE,0
+    BTFSS STATUS,C  ; IF X - 28 IS NEGATIVE
+    GOTO BAIL	    ; THEN OUT OF BOUNDS	
+    MOVFW HIGHNOTE
+    SUBWF PBYTE,0   ; IF X - 63 IS POSITIVE
+    BTFSC STATUS,C  ; THEN OUT OF BOUNDS
+    GOTO BAIL
+    ; EVALUATION OF WHAT STRINGS TO USE WHEN CURRENT NOTE IS 
+    ; GREATER THAN THE LAST
+    MOVFW LASTNOTE
+    BCF STATUS,Z
+    SUBWF PBYTE,0
+    BTFSC STATUS,Z
+    GOTO I2CSEND    ; IF THE NOTE IS SAME AS LAST SEND DATA
+    BTFSS STATUS,C  ; IF POSITIVE RESULT SKIP 
+    GOTO LOWERNOTE  ; OTHERWISE EVALUTE FOR LOWER NOTE
+    ; TEST STATEMENT 1 FOR NOTE x<5
+    MOVFW LASTNOTE
+    ADDLW H'003'
+    SUBWF PBYTE,0
+    BTFSC STATUS,C  ; IF UNDER 5 PLAY ON THE CURRENT STRING
+    GOTO I2CSEND 
+    ; TEST STATEMENT 2 FOR NOTE 5<x>10
+    MOVFW LASTNOTE
+    ADDLW H'008'
+    SUBWF PBYTE,0
+    BTFSC STATUS,C  ; IF UNDER PLAY NOTE ONE STRING UP
+    GOTO INCSTRING
+    ; TEST STATEMENT 3 FOR OCTAVE NOTES LAST + 12
+    MOVFW LASTNOTE
+    ADDLW H'00C'	    ; ADD 12 // OCTAVE
+    BCF STATUS,Z
+    SUBWF PBYTE,0
+    BTFSC STATUS,Z
+    GOTO OCTAVE
+    ; FINAL STATEMENT
+    ; EVALUATE IF NOTE IS VALID FOR E STRING
+FINDNOTE
+    MOVFW PBYTE
+    SUBWF EMAX,0
+    BTFSS STATUS,C  ; IF RESULT IT GREATER THAN MOVE TO A STRING
+    GOTO MOVETOA
+    ; IF VALID SELECT E STRING OTHERWISE TEST A STRING
+    MOVFW ESLAVE
+    MOVWF LASTADD
+    GOTO I2CSEND
+    ;
+MOVETOA
+    MOVFW PBYTE
+    SUBWF AMAX,0
+    BTFSS STATUS,C
+    GOTO MOVETOD
+    ; IF VALID SELECT A STRING OTHERWISE TEST D STRING
+    MOVFW ASLAVE
+    MOVWF LASTADD
+    GOTO I2CSEND
+MOVETOD
+    MOVFW PBYTE
+    SUBWF DMAX,0
+    BTFSS STATUS,C
+    GOTO MOVETOG
+    ; IF VALID SELECT D STRING OTHERWISE MOVE TO G STRING
+    ;
+    MOVFW DSLAVE
+    MOVWF LASTADD
+    GOTO I2CSEND
+MOVETOG
+    MOVFW GSLAVE
+    MOVWF LASTADD
+    GOTO I2CSEND
+    ; WHEN G STRING IS SELECTED THERE IS NO MORE NOTES ABOVE THIS STRING
+    
+INCSTRING
+    BTFSC LASTADD,4
+    GOTO I2CSEND    ; IF ON THE G STRING STAY ON STRING
+    BCF STATUS,C 
+    RLF LASTADD,1   ; INCREMENT SLAVE ADDRESS BY ONE UP
+    GOTO I2CSEND
+    
+OCTAVE
+    BTFSC LASTADD,4
+    GOTO I2CSEND    ; IF ON THE G STRING STAY ON STRING
+    BCF STATUS,C 
+    RLF LASTADD,1   ; INCREMENT SLAVE ADDRESS BY ONE UP
+    RLF LASTADD,1   ; INCREMENT SLAVE ADDRESS TO BE TWO MORE TOTAL
+    GOTO I2CSEND
+    
+    
+LOWERNOTE  
+    ; STATEMENT 1 TEST FOR NOTE LOWER THAN CURRENT
+    MOVLW H'05'
+    SUBWF LASTNOTE,0	; REDUCE LAST NOTE BY 5
+    SUBWF PBYTE,0
+    BTFSS STATUS,C
+    GOTO I2CSEND	; IF WITHIN FIVE USE SAME STRING
+    ; STATEMENT 2 CHECK FOR NOTE 10 LOWER THAN CURRENT
+    MOVLW H'0A'
+    SUBWF LASTNOTE,0
+    SUBWF PBYTE,0
+    BTFSS STATUS,C  
+    GOTO DECSTRING
+    ; STATEMENT 3 CHECK FOR OCTAVE NOTE DOWN
+    MOVLW H'0C'
+    SUBWF LASTNOTE,0
+    SUBWF PBYTE,0
+    BTFSS STATUS,C
+    GOTO OCTAVEDOWN
+    ; FINAL STATEMENT
+    GOTO FINDNOTE
+    
+    
+DECSTRING
+    BTFSC LASTADD,0
+    GOTO I2CSEND	; IF LAST ADDRESS WAS E STRING STAY ON STRING
+    BCF STATUS,C
+    RRF LASTADD,1	; SHIFT TO THE RIGHT ONE STRING
+    GOTO I2CSEND
+    
+OCTAVEDOWN
+    BTFSC LASTADD,0
+    GOTO I2CSEND	; IF LAST ADDRESS WAS E STRING STAY ON STRING
+    BCF STATUS,C
+    RRF LASTADD,1
+    RRF LASTADD,1
+    GOTO I2CSEND	 ; SHIFT STRING UP TWICE FOR OCTAVE
+    
+
+    
+    
+I2CSEND
+    ; SEND TO PITCH SLAVE(S)
     BSF PORTB,1
-    MOVF ESLAVE,0
+    MOVFW LASTADD
     MOVWF ADDRESS	    ; SET THE ADDRESS OF THE SLAVE
-    BSF PBYTE,7		    ; SET NOTE TO BE PLAYED
     MOVF PBYTE,0	    ; MOVE TO WORKING
+    MOVWF LASTNOTE	    ; 
     MOVWF I2CBYTE	    ; MOVE TO BYTE
+    BTFSC CTLBYTE,4	    ; CHECK IF THE BIT FOR A 9 HAS BEEN RECIEVED
+    BSF I2CBYTE,7	    ; SET NOTE TO BE PLAYED
     CLRF FLAG		    ; CLEAR FLAG FOR SINGLE TRANSMISSION
     CALL I2CWRITE	    ; CALL WRITE
     ; SEND TO PLUCK SLAVE
@@ -207,6 +393,12 @@ MAIN
     BCF PORTB,1
     GOTO MAIN
     
+BAIL
+    CLRF BUFFER
+    CLRF PBYTE
+    CLRF CTLBYTE
+    CLRF VBYTE
+    GOTO MAIN
     
     
 INTER
