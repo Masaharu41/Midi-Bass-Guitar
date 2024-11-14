@@ -4,40 +4,36 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>../../../../../Program Files (x86)/Microchip/MPLABX/v5.30/mpasmx/p16f1788.inc</itemPath>
+      <itemPath>../../../../../Program Files (x86)/Microchip/MPLABX/v5.30/mpasmx/p16f1789.inc</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
-      <itemPath>../../../../../Program Files (x86)/Microchip/MPLABX/v5.30/mpasmx/LKR/16f1788_g.lkr</itemPath>
+      <itemPath>../../../../../Program Files (x86)/Microchip/MPLABX/v5.30/mpasmx/LKR/16f1789_g.lkr</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>MidiMaster.asm</itemPath>
-      <itemPath>MidiMasterSetup.inc</itemPath>
-      <itemPath>MidiMasterPOPout.inc</itemPath>
-      <itemPath>MidiMasterEEREAD.inc</itemPath>
-      <itemPath>MidiMasterEEWRITE.inc</itemPath>
-      <itemPath>MidiMasterPUSHin.inc</itemPath>
-      <itemPath>MidiMasterI2CWRITE.inc</itemPath>
+      <itemPath>GSlaveSetup.inc</itemPath>
+      <itemPath>GSlave.asm</itemPath>
+      <itemPath>GSlavePOPout.inc</itemPath>
+      <itemPath>GSlavePUSHin.inc</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
-    <itemPath>ASlave.asm</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
-        <targetDevice>PIC16F1788</targetDevice>
+        <targetDevice>PIC16F1789</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>PICkit3PlatformTool</platformTool>
+        <platformTool></platformTool>
         <languageToolchain>MPASMWIN</languageToolchain>
         <languageToolchainVersion>5.86</languageToolchainVersion>
         <platform>3</platform>
@@ -83,9 +79,6 @@
         <property key="hex-output-format" value="INHX32"/>
         <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
       </MPASMWIN-LD>
-      <PICkit3PlatformTool>
-        <property key="firmware.download.all" value="false"/>
-      </PICkit3PlatformTool>
       <mpasmsuite>
         <property key="absolute-mode" value="false"/>
         <property key="eeprom-width" value="8"/>

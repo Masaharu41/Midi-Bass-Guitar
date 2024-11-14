@@ -30,12 +30,12 @@ ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 IMAGE_TYPE=debug
 OUTPUT_SUFFIX=cof
 DEBUGGABLE_SUFFIX=cof
-FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/MidiMaster.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/ASlave.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 else
 IMAGE_TYPE=production
 OUTPUT_SUFFIX=hex
 DEBUGGABLE_SUFFIX=cof
-FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/MidiMaster.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/ASlave.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 endif
 
 ifeq ($(COMPARE_BUILD), true)
@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=MidiMaster.asm ASlave.asm
+SOURCEFILES_QUOTED_IF_SPACED=ASlave.asm
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/MidiMaster.o ${OBJECTDIR}/ASlave.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/MidiMaster.o.d ${OBJECTDIR}/ASlave.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/ASlave.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/ASlave.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/MidiMaster.o ${OBJECTDIR}/ASlave.o
+OBJECTFILES=${OBJECTDIR}/ASlave.o
 
 # Source Files
-SOURCEFILES=MidiMaster.asm ASlave.asm
+SOURCEFILES=ASlave.asm
 
 
 
@@ -88,38 +88,22 @@ FIXDEPS=fixDeps
 ifneq ($(INFORMATION_MESSAGE), )
 	@echo $(INFORMATION_MESSAGE)
 endif
-	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/MidiMaster.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/ASlave.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 
-MP_PROCESSOR_OPTION=16f1788
+MP_PROCESSOR_OPTION=16f1789
 MP_LINKER_DEBUG_OPTION= 
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: assemble
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/MidiMaster.o: MidiMaster.asm  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/MidiMaster.o.d 
-	@${RM} ${OBJECTDIR}/MidiMaster.o 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/MidiMaster.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_PK3=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/MidiMaster.lst\" -e\"${OBJECTDIR}/MidiMaster.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/MidiMaster.o\" \"MidiMaster.asm\" 
-	@${DEP_GEN} -d "${OBJECTDIR}/MidiMaster.o"
-	@${FIXDEPS} "${OBJECTDIR}/MidiMaster.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
-	
 ${OBJECTDIR}/ASlave.o: ASlave.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/ASlave.o.d 
 	@${RM} ${OBJECTDIR}/ASlave.o 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/ASlave.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_PK3=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/ASlave.lst\" -e\"${OBJECTDIR}/ASlave.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/ASlave.o\" \"ASlave.asm\" 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/ASlave.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG  -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/ASlave.lst\" -e\"${OBJECTDIR}/ASlave.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/ASlave.o\" \"ASlave.asm\" 
 	@${DEP_GEN} -d "${OBJECTDIR}/ASlave.o"
 	@${FIXDEPS} "${OBJECTDIR}/ASlave.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 else
-${OBJECTDIR}/MidiMaster.o: MidiMaster.asm  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/MidiMaster.o.d 
-	@${RM} ${OBJECTDIR}/MidiMaster.o 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/MidiMaster.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/MidiMaster.lst\" -e\"${OBJECTDIR}/MidiMaster.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/MidiMaster.o\" \"MidiMaster.asm\" 
-	@${DEP_GEN} -d "${OBJECTDIR}/MidiMaster.o"
-	@${FIXDEPS} "${OBJECTDIR}/MidiMaster.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
-	
 ${OBJECTDIR}/ASlave.o: ASlave.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/ASlave.o.d 
@@ -133,13 +117,13 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: link
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-dist/${CND_CONF}/${IMAGE_TYPE}/MidiMaster.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    ../../../../../Program\ Files\ (x86)/Microchip/MPLABX/v5.30/mpasmx/LKR/16f1788_g.lkr
+dist/${CND_CONF}/${IMAGE_TYPE}/ASlave.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    ../../../../../Program\ Files\ (x86)/Microchip/MPLABX/v5.30/mpasmx/LKR/16f1789_g.lkr
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_LD} $(MP_EXTRA_LD_PRE) "..\..\..\..\..\Program Files (x86)\Microchip\MPLABX\v5.30\mpasmx\LKR\16f1788_g.lkr"  -p$(MP_PROCESSOR_OPTION)  -w -x -u_DEBUG -z__ICD2RAM=1 -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"   -z__MPLAB_BUILD=1  -z__MPLAB_DEBUG=1 -z__MPLAB_DEBUGGER_PK3=1 $(MP_LINKER_DEBUG_OPTION) -odist/${CND_CONF}/${IMAGE_TYPE}/MidiMaster.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
+	${MP_LD} $(MP_EXTRA_LD_PRE) "..\..\..\..\..\Program Files (x86)\Microchip\MPLABX\v5.30\mpasmx\LKR\16f1789_g.lkr"  -p$(MP_PROCESSOR_OPTION)  -w -x -u_DEBUG -z__ICD2RAM=1 -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"   -z__MPLAB_BUILD=1  -z__MPLAB_DEBUG=1 $(MP_LINKER_DEBUG_OPTION) -odist/${CND_CONF}/${IMAGE_TYPE}/ASlave.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 else
-dist/${CND_CONF}/${IMAGE_TYPE}/MidiMaster.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   ../../../../../Program\ Files\ (x86)/Microchip/MPLABX/v5.30/mpasmx/LKR/16f1788_g.lkr
+dist/${CND_CONF}/${IMAGE_TYPE}/ASlave.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   ../../../../../Program\ Files\ (x86)/Microchip/MPLABX/v5.30/mpasmx/LKR/16f1789_g.lkr
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_LD} $(MP_EXTRA_LD_PRE) "..\..\..\..\..\Program Files (x86)\Microchip\MPLABX\v5.30\mpasmx\LKR\16f1788_g.lkr"  -p$(MP_PROCESSOR_OPTION)  -w  -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"   -z__MPLAB_BUILD=1  -odist/${CND_CONF}/${IMAGE_TYPE}/MidiMaster.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
+	${MP_LD} $(MP_EXTRA_LD_PRE) "..\..\..\..\..\Program Files (x86)\Microchip\MPLABX\v5.30\mpasmx\LKR\16f1789_g.lkr"  -p$(MP_PROCESSOR_OPTION)  -w  -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"   -z__MPLAB_BUILD=1  -odist/${CND_CONF}/${IMAGE_TYPE}/ASlave.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 endif
 
 
