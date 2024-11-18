@@ -1,4 +1,4 @@
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE  1
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -57,7 +57,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00015 ;   1: Inc file to contain generic registry setups 
                       00016 ;
                       00017 ;       2: Removed GPR setup and added code reference 
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE  2
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -116,7 +116,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0017   0020           00062                 BANKSEL T2CON
 0018   019C           00063                 CLRF    T2CON                           ;DISABLE TIMER 2, 1:1 POST SCALE, PRESCALER 1
 0019   3000           00064                 MOVLW   H'000'                          ;SET PR2 FOR FULL COUNT 
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE  3
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -175,7 +175,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0039   0023           00105                 BANKSEL ANSELC
 003A   3000           00106                 MOVLW H'000'
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE  4
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -234,7 +234,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
                       00016 ;           Modified as listed
                       00017 ;           Started 09/25/2024 - Finished 09/25/2024
                       00018 ;           Modified 09/26/24
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE  5
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -277,177 +277,221 @@ Warning[207]: Found label after column 1. (TEMP)
   00000025            00048         TEMP        EQU H'025'
 Warning[207]: Found label after column 1. (ALTSTORE)
   00000026            00049         ALTSTORE    EQU H'026'
-                      00050 
-                      00051  
-                      00052 
-                      00053     ORG H'000'                                  
-0000   2???           00054     GOTO SETUP                                  ;RESET CONDITION GOTO SETUP
-                      00055     ORG H'004'
-0004   2???           00056     GOTO INTER
-                      00057     
+Warning[207]: Found label after column 1. (ALTCLEAR)
+  00000027            00050         ALTCLEAR    EQU H'027'
+                      00051 
+                      00052  
+                      00053 
+                      00054     ORG H'000'                                  
+0000   2???           00055     GOTO SETUP                                  ;RESET CONDITION GOTO SETUP
+                      00056     ORG H'004'
+0004   2???           00057     GOTO INTER
                       00058     
                       00059     
-0005                  00060 SETUP
-0005   0021           00061     BANKSEL OSCCON
-0006   3072           00062     MOVLW H'072'            ; SET 8MHZ INTERNAL OSSCILATOR
+                      00060     
+0005                  00061 SETUP
+0005   0021           00062     BANKSEL OSCCON
+0006   3072           00063     MOVLW H'072'            ; SET 8MHZ INTERNAL OSSCILATOR
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0007   0099           00063     MOVWF OSCCON
-0008   0021           00064     BANKSEL OSCSTAT
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE  6
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0007   0099           00064     MOVWF OSCCON
+0008   0021           00065     BANKSEL OSCSTAT
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0009   1A9A           00065     BTFSC OSCSTAT,OSTS      ; WAIT FOR OSSCILATOR TO BE READY
-000A   2???           00066     GOTO $-1
-000B   2???           00067     CALL START              ; CALL SETUP INCLUDE
-                      00068     ; I2C SLAVE SETUP
-000C   0024           00069     BANKSEL SSP1CON1
-000D   3036           00070     MOVLW H'036'            ; SET 7 BIT SLAVE I2C
+0009   1A9A           00066     BTFSC OSCSTAT,OSTS      ; WAIT FOR OSSCILATOR TO BE READY
+000A   2???           00067     GOTO $-1
+000B   2???           00068     CALL START              ; CALL SETUP INCLUDE
+                      00069     ; I2C SLAVE SETUP
+000C   0024           00070     BANKSEL SSP1CON1
+000D   3036           00071     MOVLW H'036'            ; SET 7 BIT SLAVE I2C
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-000E   0095           00071     MOVWF SSP1CON1
-000F   0024           00072     BANKSEL SSP1ADD
-0010   3020           00073     MOVLW H'020'            ; SET SLAVE ADDRESS A 0X10
+000E   0095           00072     MOVWF SSP1CON1
+000F   0024           00073     BANKSEL SSP1ADD
+0010   3020           00074     MOVLW H'020'            ; SET SLAVE ADDRESS A 0X10
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0011   0092           00074     MOVWF SSP1ADD
-0012   0024           00075     BANKSEL SSP1CON2
+0011   0092           00075     MOVWF SSP1ADD
+0012   0024           00076     BANKSEL SSP1CON2
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0013   1416           00076     BSF SSP1CON2,SEN        ; ENABLE CLOCK STRETCH
-0014   0024           00077     BANKSEL SSP1CON3
+0013   1416           00077     BSF SSP1CON2,SEN        ; ENABLE CLOCK STRETCH
+0014   0024           00078     BANKSEL SSP1CON3
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0015   0197           00078     CLRF SSP1CON3
+0015   0197           00079     CLRF SSP1CON3
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0016   1497           00079     BSF SSP1CON3,AHEN       ; ENABLE CLOCK STRETCH FOR ADDRESS AND DATA
+0016   1497           00080     BSF SSP1CON3,AHEN       ; ENABLE CLOCK STRETCH FOR ADDRESS AND DATA
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0017   1417           00080     BSF SSP1CON3,DHEN
-                      00081     ; SET PIN FUNCTIONS
-0018   0022           00082     BANKSEL APFCON1
+0017   1417           00081     BSF SSP1CON3,DHEN
+                      00082     ; SET PIN FUNCTIONS
+0018   0022           00083     BANKSEL APFCON1
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0019   019D           00083     CLRF APFCON1            ; SET PORTS
-001A   0022           00084     BANKSEL APFCON2
+0019   019D           00084     CLRF APFCON1            ; SET PORTS
+001A   0022           00085     BANKSEL APFCON2
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-001B   019C           00085     CLRF APFCON2            ; SET PORTS
-                      00086     ; ENABLE INTERRUPTS
-001C   0021           00087     BANKSEL PIE1
+001B   019C           00086     CLRF APFCON2            ; SET PORTS
+                      00087     ; ENABLE I2C INTERRUPTS
+001C   0021           00088     BANKSEL PIE1
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-001D   1591           00088     BSF PIE1,SSP1IE
-001E   0020           00089     BANKSEL INTCON
-001F   01A2           00090     CLRF BUFFER
-0020   178B           00091     BSF INTCON,GIE          ; ENABLE INTERRUPTS
-0021   170B           00092     BSF INTCON,PEIE
-0022   2???           00093     GOTO MAIN
-                      00094 
-0023                  00095 MAIN
-0023   0000           00096     NOP
-0024   0024           00097     BANKSEL SSP1STAT
+001D   1591           00089     BSF PIE1,SSP1IE
+                      00090     ; CONFIGURE GPRS
+001E   0020           00091     BANKSEL INTCON
+001F   01A2           00092     CLRF BUFFER
+0020   3055           00093     MOVLW H'055'
+0021   00A6           00094     MOVWF ALTSTORE          ; SET THE FIRST BITS FOR EACH ALTERNATING
+0022   01A7           00095     CLRF ALTCLEAR           ; PLUCKING SET
+                      00096     ; ENABLE INTERRUPTS
+0023   178B           00097     BSF INTCON,GIE          ; ENABLE INTERRUPTS
+0024   170B           00098     BSF INTCON,PEIE
+0025   2???           00099     GOTO MAIN
+                      00100 
+0026                  00101 MAIN
+0026   0000           00102     NOP
+0027   0024           00103     BANKSEL SSP1STAT
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0025   1894           00098     BTFSC SSP1STAT,1
-0026   2???           00099     CALL STOP
-0027   0020           00100     BANKSEL PORTB
-0028   1D22           00101     BTFSS BUFFER,2
-0029   2???           00102     GOTO MAIN
-002A   1BA4           00103     BTFSC SBYTE,7
-002B   2???           00104     GOTO PICK
-002C   19A4           00105     BTFSC SBYTE,3
-002D   2???           00106     GOTO PLUCKE
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE  7
+0028   1894           00104     BTFSC SSP1STAT,1
+0029   2???           00105     CALL STOP
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-002E   1924           00107     BTFSC SBYTE,2
-002F   2???           00108     GOTO PLUCKA
-0030   18A4           00109     BTFSC SBYTE,1
-0031   2???           00110     GOTO PLUCKD
-0032   1824           00111     BTFSC SBYTE,0
-0033   2???           00112     GOTO PLUCKG
-0034   2???           00113     GOTO MAIN
-                      00114     
-0035                  00115 PLUCKE
-0035   1826           00116     BTFSC ALTSTORE,0
-0036   148D           00117     BSF PORTB,1
-                      00118     
-0037                  00119 PLUCKA
+002A   0020           00106     BANKSEL PORTB
+002B   1D22           00107     BTFSS BUFFER,2
+002C   2???           00108     GOTO MAIN
+002D   1BA4           00109     BTFSC SBYTE,7
+002E   2???           00110     GOTO PICK
+002F   19A4           00111     BTFSC SBYTE,3
+0030   2???           00112     GOTO PLUCKE
+0031   1924           00113     BTFSC SBYTE,2
+0032   2???           00114     GOTO PLUCKA
+0033   18A4           00115     BTFSC SBYTE,1
+0034   2???           00116     GOTO PLUCKD
+0035   1824           00117     BTFSC SBYTE,0
+0036   2???           00118     GOTO PLUCKG
+0037   2???           00119     GOTO MAIN
                       00120     
-0037                  00121 PLUCKD
-                      00122     
-0037                  00123 PLUCKG
-                      00124 
-0037                  00125 PICK
-                      00126     
-0037                  00127 STOP
-0037   0024           00128     BANKSEL SSP1CON1
-Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0038   1295           00129     BCF SSP1CON1,SSPEN
-0039   0000           00130     NOP
-003A   0000           00131     NOP
-Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-003B   1695           00132     BSF SSP1CON1,SSPEN
-003C   0008           00133     RETURN
-                      00134     
-003D                  00135 INTER
-003D   0020           00136     BANKSEL INTCON
-003E   018B           00137     CLRF INTCON
-003F   2???           00138     CALL PUSHIN
-0040   110D           00139     BCF PORTB,2
-0041   0020           00140     BANKSEL PIR1
-0042   1991           00141     BTFSC PIR1,SSP1IF       ; CHECK MSSP INTERRUPT FLAG
-0043   2???           00142     CALL RECIEVE        
-0044   0020           00143     BANKSEL INTCON
-0045   178B           00144     BSF INTCON,GIE
-0046   170B           00145     BSF INTCON,PEIE
-0047   2???           00146     CALL POPOUT
-0048   0009           00147     RETFIE
-                      00148     
-0049                  00149 RECIEVE
-0049   0020           00150     BANKSEL PIR1
-004A   0191           00151     CLRF PIR1           ; CLEAR FLAG
-004B   110D           00152     BCF PORTB,2
-004C   0024           00153     BANKSEL SSP1BUF 
-Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-004D   0811           00154     MOVF SSP1BUF,0      ; READ RECIEVED DATA
-004E   0020           00155     BANKSEL PORTB
-004F   00A5           00156     MOVWF TEMP
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE  8
+0038                  00121 PLUCKE
+0038   1C26           00122     BTFSS ALTSTORE,0    ; USE PLUCK UNIT 0 IF SET
+0039   2???           00123     GOTO $+5
+003A   140D           00124     BSF PORTB,0
+003B   14A6           00125     BSF ALTSTORE,1      ; SET BIT TO USE UNIT 1 NEXT ITERATION
+003C   1026           00126     BCF ALTSTORE,0
+003D   1427           00127     BSF ALTCLEAR,0      ; SET THAT 
+003E   1CA6           00128     BTFSS ALTSTORE,1
+003F   2???           00129     GOTO $+5
+0040   148D           00130     BSF PORTB,1
+0041   1426           00131     BSF ALTSTORE,0
+0042   10A6           00132     BCF ALTSTORE,1
+0043   14A7           00133     BSF ALTCLEAR,1
+0044   2???           00134     CALL STARTTMR
+0045   2???           00135     GOTO MAIN
+                      00136     
+                      00137     
+                      00138     
+0046                  00139 PLUCKA
+                      00140     
+0046                  00141 PLUCKD
+                      00142     
+0046                  00143 PLUCKG
+                      00144 
+0046                  00145 PICK
+                      00146     
+0046                  00147 STARTTMR
+0046   0020           00148     BANKSEL TMR1H
+0047   309E           00149     MOVLW H'09E'
+0048   0097           00150     MOVWF TMR1H
+0049   0020           00151     BANKSEL TMR1L
+004A   3057           00152     MOVLW H'057'
+004B   0096           00153     MOVWF TMR1L     ; LOAD TMR REGISTERS TO PRODUCE A 25K COUNT
+004C   0020           00154     BANKSEL T1CON
+004D   3034           00155     MOVLW H'034'    
+004E   0098           00156     MOVWF T1CON
+004F   1418           00157     BSF T1CON,0     ; ENABLE TIMER 1
+0050   0021           00158     BANKSEL PIE1
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0050   18A2           00157     BTFSC BUFFER,1
-0051   2???           00158     GOTO STRINGSEL
-0052   1822           00159     BTFSC BUFFER,0      ; CHECK IF THIS IS DATA OR ADDRESS
-0053   2???           00160     GOTO VELOCITY
-0054   1422           00161     BSF BUFFER,0        ; SET ADDRESS RECIEVE
-0055   0024           00162     BANKSEL SSP1CON1    
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0056   1615           00163     BSF SSP1CON1,CKP    ; RELEASE CLOCK LINE
-0057   0008           00164     RETURN
-                      00165     
-0058                  00166 VELOCITY
-0058   0825           00167     MOVFW TEMP
-0059   00A3           00168     MOVWF VBYTE
-005A   14A2           00169     BSF BUFFER,1        ; SET VELOCITY BYTE RECIEVE FLAG
-005B   0024           00170     BANKSEL SSP1CON1    
+0051   1411           00159     BSF PIE1,TMR1IE
+0052   0008           00160     RETURN
+                      00161     
+                      00162     
+0053                  00163 STOP
+0053   0024           00164     BANKSEL SSP1CON1
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-005C   1615           00171     BSF SSP1CON1,CKP    ; RELEASE CLOCK LINE
-005D   0008           00172     RETURN
-                      00173     
-005E                  00174 STRINGSEL
-005E   0825           00175     MOVFW TEMP
-005F   00A4           00176     MOVWF SBYTE
-0060   1522           00177     BSF BUFFER,2        ; SET STRING RECIEVE FLAG
-0061   0024           00178     BANKSEL SSP1CON1    
+0054   1295           00165     BCF SSP1CON1,SSPEN
+0055   0000           00166     NOP
+0056   0000           00167     NOP
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0062   1615           00179     BSF SSP1CON1,CKP    ; RELEASE CLOCK LINE
-0063   0008           00180     RETURN
-                      00181 
+0057   1695           00168     BSF SSP1CON1,SSPEN
+0058   0008           00169     RETURN
+                      00170     
+0059                  00171 INTER
+0059   0020           00172     BANKSEL INTCON
+005A   018B           00173     CLRF INTCON
+005B   2???           00174     CALL PUSHIN
+005C   110D           00175     BCF PORTB,2
+005D   0020           00176     BANKSEL PIR1
+005E   1991           00177     BTFSC PIR1,SSP1IF       ; CHECK MSSP INTERRUPT FLAG
+005F   2???           00178     CALL RECIEVE        
+0060   0020           00179     BANKSEL INTCON
+0061   178B           00180     BSF INTCON,GIE
+0062   170B           00181     BSF INTCON,PEIE
+0063   2???           00182     CALL POPOUT
+0064   0009           00183     RETFIE
+                      00184     
+0065                  00185 RECIEVE
+0065   0020           00186     BANKSEL PIR1
+0066   0191           00187     CLRF PIR1           ; CLEAR FLAG
+0067   110D           00188     BCF PORTB,2
+0068   0024           00189     BANKSEL SSP1BUF 
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0069   0811           00190     MOVF SSP1BUF,0      ; READ RECIEVED DATA
+006A   0020           00191     BANKSEL PORTB
+006B   00A5           00192     MOVWF TEMP
+006C   18A2           00193     BTFSC BUFFER,1
+006D   2???           00194     GOTO STRINGSEL
+006E   1822           00195     BTFSC BUFFER,0      ; CHECK IF THIS IS DATA OR ADDRESS
+006F   2???           00196     GOTO VELOCITY
+0070   1422           00197     BSF BUFFER,0        ; SET ADDRESS RECIEVE
+0071   0024           00198     BANKSEL SSP1CON1    
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0072   1615           00199     BSF SSP1CON1,CKP    ; RELEASE CLOCK LINE
+0073   0008           00200     RETURN
+                      00201     
+0074                  00202 VELOCITY
+0074   0825           00203     MOVFW TEMP
+0075   00A3           00204     MOVWF VBYTE
+0076   14A2           00205     BSF BUFFER,1        ; SET VELOCITY BYTE RECIEVE FLAG
+0077   0024           00206     BANKSEL SSP1CON1    
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE  9
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0078   1615           00207     BSF SSP1CON1,CKP    ; RELEASE CLOCK LINE
+0079   0008           00208     RETURN
+                      00209     
+007A                  00210 STRINGSEL
+007A   0825           00211     MOVFW TEMP
+007B   00A4           00212     MOVWF SBYTE
+007C   1522           00213     BSF BUFFER,2        ; SET STRING RECIEVE FLAG
+007D   0024           00214     BANKSEL SSP1CON1    
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+007E   1615           00215     BSF SSP1CON1,CKP    ; RELEASE CLOCK LINE
+007F   0008           00216     RETURN
+                      00217 
 Warning[205]: Found directive in column 1. (END)
-29A4 1FFF             00182 END
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE  9
+29A4 1FFF             00218 END
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 10
 
 
 SYMBOL TABLE
@@ -489,6 +533,7 @@ ADRESH                            0000009C
 ADRESL                            0000009B
 ADRMD                             00000007
 AHEN                              00000001
+ALTCLEAR                          00000027
 ALTSTORE                          00000026
 ANSA0                             00000000
 ANSA1                             00000001
@@ -505,13 +550,13 @@ ANSB4                             00000004
 ANSB5                             00000005
 ANSB6                             00000006
 ANSC0                             00000000
-ANSC1                             00000001
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 10
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 11
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+ANSC1                             00000001
 ANSC2                             00000002
 ANSC3                             00000003
 ANSC4                             00000004
@@ -564,13 +609,13 @@ BUF6                              00000006
 BUF7                              00000007
 BUFFER                            00000022
 C                                 00000000
-C1HYS                             00000001
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 11
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 12
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+C1HYS                             00000001
 C1IE                              00000005
 C1IF                              00000005
 C1INTN                            00000006
@@ -623,13 +668,13 @@ C3PCH1                            00000004
 C3PCH2                            00000005
 C3POL                             00000004
 C3SP                              00000002
-C3SYNC                            00000000
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 12
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 13
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+C3SYNC                            00000000
 C3ZLF                             00000003
 C4HYS                             00000001
 C4IE                              00000002
@@ -682,13 +727,13 @@ CCPR2L                            00000298
 CCPR3                             00000311
 CCPR3H                            00000312
 CCPR3L                            00000311
-CDAFVR0                           00000002
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 13
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 14
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+CDAFVR0                           00000002
 CDAFVR1                           00000003
 CFGS                              00000006
 CHS0                              00000002
@@ -741,13 +786,13 @@ DAC1R6                            00000006
 DAC1R7                            00000007
 DAC2CON0                          00000591
 DAC2CON1                          00000592
-DAC2EN                            00000007
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 14
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 15
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+DAC2EN                            00000007
 DAC2OE1                           00000005
 DAC2OE2                           00000004
 DAC2REF                           00000592
@@ -800,13 +845,13 @@ EEIE                              00000004
 EEIF                              00000004
 EEPGD                             00000007
 EN                                00000007
-F                                 00000001
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 15
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 16
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+F                                 00000001
 FERR                              00000002
 FREE                              00000004
 FSR0                              00000004
@@ -859,13 +904,13 @@ INLVLC5                           00000005
 INLVLC6                           00000006
 INLVLC7                           00000007
 INLVLD                            0000038F
-INLVLD0                           00000000
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 16
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 17
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+INLVLD0                           00000000
 INLVLD1                           00000001
 INLVLD2                           00000002
 INLVLD3                           00000003
@@ -881,7 +926,7 @@ INLVLE3                           00000003
 INTCON                            0000000B
 INTE                              00000004
 INTEDG                            00000006
-INTER                             0000003D
+INTER                             00000059
 INTF                              00000001
 IOCAF                             00000393
 IOCAF0                            00000000
@@ -918,13 +963,13 @@ IOCBF3                            00000003
 IOCBF4                            00000004
 IOCBF5                            00000005
 IOCBF6                            00000006
-IOCBF7                            00000007
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 17
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 18
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+IOCBF7                            00000007
 IOCBN                             00000395
 IOCBN0                            00000000
 IOCBN1                            00000001
@@ -977,13 +1022,13 @@ IOCEN3                            00000003
 IOCEP                             0000039D
 IOCEP3                            00000003
 IOCIE                             00000003
-IOCIF                             00000000
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 18
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 19
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+IOCIF                             00000000
 IRCF0                             00000003
 IRCF1                             00000004
 IRCF2                             00000005
@@ -1030,19 +1075,19 @@ LATE1                             00000001
 LATE2                             00000002
 LFIOFR                            00000001
 LWLO                              00000005
-MAIN                              00000023
+MAIN                              00000026
 MC1OUT                            00000000
 MC2OUT                            00000001
 MC3OUT                            00000002
 MC4OUT                            00000003
 MFIOFR                            00000002
-MSK0                              00000000
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 19
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 20
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+MSK0                              00000000
 MSK1                              00000001
 MSK2                              00000002
 MSK3                              00000003
@@ -1095,13 +1140,13 @@ ODCOND4                           00000004
 ODCOND5                           00000005
 ODCOND6                           00000006
 ODCOND7                           00000007
-ODCONE                            00000290
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 20
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 21
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+ODCONE                            00000290
 ODCONE0                           00000000
 ODCONE1                           00000001
 ODCONE2                           00000002
@@ -1154,13 +1199,13 @@ P1CSRC1                           00000001
 P1DBFE                            00000005
 P1DBRE                            00000004
 P1DCPOL                           00000005
-P1DCSC1                           00000001
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 21
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 22
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+P1DCSC1                           00000001
 P1DCSC2                           00000002
 P1DCSC3                           00000003
 P1DCSC4                           00000004
@@ -1213,13 +1258,13 @@ P1PRSC3                           00000003
 P1PRSC4                           00000004
 P1PRSIN                           00000007
 P1PRST                            00000000
-P1REBM0                           00000000
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 22
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 23
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+P1REBM0                           00000000
 P1REBM1                           00000001
 P1REBSC1                          00000001
 P1REBSC2                          00000002
@@ -1272,13 +1317,13 @@ P2FEBM0                           00000004
 P2FEBM1                           00000005
 P2FEBSC1                          00000001
 P2FEBSC2                          00000002
-P2FEBSC3                          00000003
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 23
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 24
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+P2FEBSC3                          00000003
 P2FEBSC4                          00000004
 P2FEBSIN                          00000007
 P2HSMEN                           00000000
@@ -1331,13 +1376,13 @@ P2TDCIF                           00000001
 P2TOVIE                           00000007
 P2TOVIF                           00000003
 P2TPHIE                           00000006
-P2TPHIF                           00000002
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 24
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 25
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+P2TPHIF                           00000002
 P2TPRIE                           00000004
 P2TPRIF                           00000000
 P3ARSEN                           00000005
@@ -1390,13 +1435,13 @@ P3MSRC1                           00000001
 P3MSRC2                           00000002
 P3MSRC3                           00000003
 P3OEA                             00000000
-P3OEB                             00000001
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 25
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 26
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+P3OEB                             00000001
 P3OEC                             00000002
 P3OED                             00000003
 P3OEE                             00000004
@@ -1449,13 +1494,13 @@ P3TPRIF                           00000000
 P4ARSEN                           00000005
 P4ASDEN                           00000006
 P4ASDLA                           00000000
-P4ASDLB                           00000001
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 26
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 27
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+P4ASDLB                           00000001
 P4ASDOV                           00000000
 P4ASDSC1                          00000001
 P4ASDSC2                          00000002
@@ -1508,13 +1553,13 @@ P4PHST                            00000000
 P4POFST                           00000007
 P4POLA                            00000000
 P4POLB                            00000001
-P4PRPOL                           00000006
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 27
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 28
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+P4PRPOL                           00000006
 P4PRSC1                           00000001
 P4PRSC2                           00000002
 P4PRSC3                           00000003
@@ -1552,7 +1597,7 @@ PCLATH_SHAD                       00000FE7
 PCON                              00000096
 PEIE                              00000006
 PEN                               00000002
-PICK                              00000037
+PICK                              00000046
 PIE1                              00000091
 PIE2                              00000092
 PIE3                              00000093
@@ -1562,18 +1607,18 @@ PIR2                              00000012
 PIR3                              00000013
 PIR4                              00000014
 PLLR                              00000006
-PLUCKA                            00000037
-PLUCKD                            00000037
-PLUCKE                            00000035
-PLUCKG                            00000037
+PLUCKA                            00000046
+PLUCKD                            00000046
+PLUCKE                            00000038
+PLUCKG                            00000046
 PMSC3TIE                          00000006
-POPOUT                            00000000
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 28
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 29
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+POPOUT                            00000000
 PORTA                             0000000C
 PORTB                             0000000D
 PORTC                             0000000E
@@ -1626,13 +1671,13 @@ PSMC1DBR4                         00000004
 PSMC1DBR5                         00000005
 PSMC1DBR6                         00000006
 PSMC1DBR7                         00000007
-PSMC1DC                           00000EA3
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 29
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 30
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+PSMC1DC                           00000EA3
 PSMC1DC0                          00000000
 PSMC1DC1                          00000001
 PSMC1DC10                         00000002
@@ -1685,13 +1730,13 @@ PSMC1PHL                          00000EA1
 PSMC1PHS                          00000E9A
 PSMC1POL                          00000E96
 PSMC1PR                           00000EA5
-PSMC1PR0                          00000000
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 30
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 31
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+PSMC1PR0                          00000000
 PSMC1PR1                          00000001
 PSMC1PR10                         00000002
 PSMC1PR11                         00000003
@@ -1744,13 +1789,13 @@ PSMC2BLKF                         00000ECC
 PSMC2BLKF0                        00000000
 PSMC2BLKF1                        00000001
 PSMC2BLKF2                        00000002
-PSMC2BLKF3                        00000003
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 31
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 32
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+PSMC2BLKF3                        00000003
 PSMC2BLKF4                        00000004
 PSMC2BLKF5                        00000005
 PSMC2BLKF6                        00000006
@@ -1803,13 +1848,13 @@ PSMC2DC7                          00000007
 PSMC2DC8                          00000000
 PSMC2DC9                          00000001
 PSMC2DCH                          00000EC4
-PSMC2DCL                          00000EC3
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 32
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 33
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+PSMC2DCL                          00000EC3
 PSMC2DCS                          00000EBB
 PSMC2EN                           00000007
 PSMC2FEBS                         00000EB9
@@ -1862,13 +1907,13 @@ PSMC2PR8                          00000000
 PSMC2PR9                          00000001
 PSMC2PRH                          00000EC6
 PSMC2PRL                          00000EC5
-PSMC2PRS                          00000EBC
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 33
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 34
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+PSMC2PRS                          00000EBC
 PSMC2REBS                         00000EB8
 PSMC2SIE                          00000001
 PSMC2SIF                          00000001
@@ -1921,13 +1966,13 @@ PSMC3BLNK                         00000ED7
 PSMC3CLK                          00000ED4
 PSMC3CON                          00000ED1
 PSMC3DBF                          00000EEA
-PSMC3DBF0                         00000000
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 34
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 35
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+PSMC3DBF0                         00000000
 PSMC3DBF1                         00000001
 PSMC3DBF2                         00000002
 PSMC3DBF3                         00000003
@@ -1980,13 +2025,13 @@ PSMC3PH0                          00000000
 PSMC3PH1                          00000001
 PSMC3PH10                         00000002
 PSMC3PH11                         00000003
-PSMC3PH12                         00000004
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 35
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 36
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+PSMC3PH12                         00000004
 PSMC3PH13                         00000005
 PSMC3PH14                         00000006
 PSMC3PH15                         00000007
@@ -2039,13 +2084,13 @@ PSMC3TMR12                        00000004
 PSMC3TMR13                        00000005
 PSMC3TMR14                        00000006
 PSMC3TMR15                        00000007
-PSMC3TMR2                         00000002
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 36
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 37
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+PSMC3TMR2                         00000002
 PSMC3TMR3                         00000003
 PSMC3TMR4                         00000004
 PSMC3TMR5                         00000005
@@ -2098,13 +2143,13 @@ PSMC4DBR5                         00000005
 PSMC4DBR6                         00000006
 PSMC4DBR7                         00000007
 PSMC4DC                           00000F23
-PSMC4DC0                          00000000
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 37
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 38
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+PSMC4DC0                          00000000
 PSMC4DC1                          00000001
 PSMC4DC10                         00000002
 PSMC4DC11                         00000003
@@ -2157,13 +2202,13 @@ PSMC4PHS                          00000F1A
 PSMC4POL                          00000F16
 PSMC4PR                           00000F25
 PSMC4PR0                          00000000
-PSMC4PR1                          00000001
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 38
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 39
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+PSMC4PR1                          00000001
 PSMC4PR10                         00000002
 PSMC4PR11                         00000003
 PSMC4PR12                         00000004
@@ -2216,13 +2261,13 @@ RA3                               00000003
 RA4                               00000004
 RA5                               00000005
 RA6                               00000006
-RA7                               00000007
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 39
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 40
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+RA7                               00000007
 RB0                               00000000
 RB1                               00000001
 RB2                               00000002
@@ -2262,7 +2307,7 @@ RE0                               00000000
 RE1                               00000001
 RE2                               00000002
 RE3                               00000003
-RECIEVE                           00000049
+RECIEVE                           00000065
 RSEN                              00000001
 RX9                               00000006
 RX9D                              00000000
@@ -2275,13 +2320,13 @@ SBYTE                             00000024
 SCIE                              00000005
 SCKP                              00000004
 SCKSEL                            00000004
-SCS0                              00000000
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 40
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 41
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+SCS0                              00000000
 SCS1                              00000001
 SDAHT                             00000003
 SDISEL                            00000003
@@ -2334,13 +2379,13 @@ SP                                00000006
 SP1BRG                            0000019B
 SP1BRGH                           0000019C
 SP1BRGL                           0000019B
-SPBRG                             0000019B
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 41
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 42
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+SPBRG                             0000019B
 SPBRG1                            0000019B
 SPBRGH                            0000019C
 SPBRGH1                           0000019C
@@ -2393,23 +2438,24 @@ SSPM0                             00000000
 SSPM1                             00000001
 SSPM2                             00000002
 SSPM3                             00000003
-SSPMSK                            00000213
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 42
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 43
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+SSPMSK                            00000213
 SSPOV                             00000006
 SSPSTAT                           00000214
 START                             00000000
+STARTTMR                          00000046
 STATUS                            00000003
 STATUS_SHAD                       00000FE4
 STKOVF                            00000007
 STKPTR                            00000FED
 STKUNF                            00000006
-STOP                              00000037
-STRINGSEL                         0000005E
+STOP                              00000053
+STRINGSEL                         0000007A
 SWDTEN                            00000000
 SYNC                              00000004
 T0CS                              00000005
@@ -2451,14 +2497,14 @@ TMR1GIF                           00000007
 TMR1H                             00000017
 TMR1IE                            00000000
 TMR1IF                            00000000
-TMR1L                             00000016
-TMR1ON                            00000000
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 43
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 44
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+TMR1L                             00000016
+TMR1ON                            00000000
 TMR2                              0000001A
 TMR2IE                            00000001
 TMR2IF                            00000001
@@ -2510,14 +2556,14 @@ TRISE0                            00000000
 TRISE1                            00000001
 TRISE2                            00000002
 TRISE3                            00000003
-TRMT                              00000001
-TSEN                              00000005
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 44
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 45
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+TRMT                              00000001
+TSEN                              00000005
 TSRNG                             00000004
 TUN0                              00000000
 TUN1                              00000001
@@ -2539,7 +2585,7 @@ TXSTA                             0000019E
 TXSTA1                            0000019E
 UA                                00000001
 VBYTE                             00000023
-VELOCITY                          00000058
+VELOCITY                          00000074
 VREGCON                           00000197
 VREGPM                            00000001
 W                                 00000000
@@ -2569,14 +2615,14 @@ WPUB5                             00000005
 WPUB6                             00000006
 WPUB7                             00000007
 WPUC                              0000020E
-WPUC0                             00000000
-WPUC1                             00000001
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 45
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 46
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+WPUC0                             00000000
+WPUC1                             00000001
 WPUC2                             00000002
 WPUC3                             00000003
 WPUC4                             00000004
@@ -2606,6 +2652,8 @@ WUE                               00000001
 Z                                 00000002
 Z_SHAD                            00000002
 _.org_1_000A                      0000000A
+_.org_1_0039                      00000039
+_.org_1_003F                      0000003F
 _BOREN_NSLEEP                     00003DFF
 _BOREN_OFF                        000039FF
 _BOREN_ON                         00003FFF
@@ -2626,16 +2674,16 @@ _FCMEN_ON                         00003FFF
 _FOSC_ECH                         00003FFF
 _FOSC_ECL                         00003FFD
 _FOSC_ECM                         00003FFE
-_FOSC_EXTRC                       00003FFB
-_FOSC_HS                          00003FFA
-_FOSC_INTOSC                      00003FFC
-_FOSC_LP                          00003FF8
-MPASM 5.86                   PLUCK SLAVE.ASM   11-15-2024  14:08:24         PAGE 46
+MPASM 5.86                   PLUCK SLAVE.ASM   11-18-2024  11:27:37         PAGE 47
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+_FOSC_EXTRC                       00003FFB
+_FOSC_HS                          00003FFA
+_FOSC_INTOSC                      00003FFC
+_FOSC_LP                          00003FF8
 _FOSC_XT                          00003FF9
 _IDLOC0                           00008000
 _IDLOC1                           00008001
@@ -2668,7 +2716,7 @@ _WRT_OFF                          00003FFF
 __16F1789                         00000001
 
 Errors   :     0
-Warnings :     6 reported,     0 suppressed
-Messages :    36 reported,     0 suppressed
+Warnings :     7 reported,     0 suppressed
+Messages :    37 reported,     0 suppressed
 
 
