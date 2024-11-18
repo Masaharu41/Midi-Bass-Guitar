@@ -108,4 +108,14 @@ START
 		BANKSEL TRISC
 		MOVLW	H'0FF'				;SET PORT C AS INPUT
 		MOVWF	TRISC
+		
+		
+;*** PORT D SETUP *****************************************************
+		BANKSEL PORTD
+		CLRF PORTD
+		BANKSEL TRISD
+		MOVLW H'0FF'
+		MOVWF TRISD
+		BANKSEL ANSELD
+		CLRF ANSELD
 		RETURN
