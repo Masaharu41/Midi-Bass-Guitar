@@ -39,9 +39,10 @@
 ;		    Pitch of G string = G2 to D#4
 ;
 ;	Pluck Slaves: <Velocity>, <String>
-;	    xVVV VVVV,Fxxx  SSSS 
+;	    xVVV VVVV,FxNx  SSSS 
 ;		V = How Aggresive to attack string
 ;		F = select finger or pick, 0 = finger
+;		N = disable note
 ;		S = which string to pluck,E = bit0,A = bit1,D = bit2,G = bit3
 ;*************************************************************************    
 ; Other notes about program
@@ -383,8 +384,14 @@ I2CSEND
     MOVF PLUCKSLAVE,0
     MOVWF ADDRESS	    ; MOVE PLUCK SLAVE ADDRESS TO TRANSMIT
     MOVF VBYTE,0	    
-    MOVWF I2CBYTE
-    MOVLW H'01'		    ; SET FOR FINGER STYLE AND E STRING
+    MOVWF I2CBYTE   
+    MOVFW LASTADD	    ; MOVE ADDRESS TO TEMP REGISTER
+    MOVWF TEMP
+    BCF STATUS,C
+    RRF TEMP,1		    ; ROTATE RIGHT TO GET RIGHT STRING 
+    BTFSC CTLBYTE,4	    ; TELL SLAVE WHETHER NOTE ON // OFF WAS ISSUED
+    BSF TEMP,4		    
+    MOVFW TEMP		    ; SET FOR FINGER STYLE AND SLAVE TO BE USED
     MOVWF I2CBYTE2
     BSF FLAG,0		    ; SET FLAG FOR TWO BYTE
     CALL I2CWRITE
