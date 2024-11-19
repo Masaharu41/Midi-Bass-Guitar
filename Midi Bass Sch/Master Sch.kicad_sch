@@ -2636,7 +2636,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3768209a-48d2-41e6-8918-b95d75f940da")
-		(property "Reference" "D?"
+		(property "Reference" "D2"
 			(at 99.06 105.7274 90)
 			(effects
 				(font
@@ -2690,7 +2690,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "D?")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -2772,7 +2772,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "511ec2e5-7cd3-40fb-b1e3-d0678415f5be")
-		(property "Reference" "D?"
+		(property "Reference" "D1"
 			(at 96.52 40.64 90)
 			(effects
 				(font
@@ -2824,7 +2824,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "D?")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -2840,7 +2840,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b7b0ddb-b2a6-433e-92b5-ff26b80e4da0")
-		(property "Reference" "R?"
+		(property "Reference" "R5"
 			(at 205.74 63.4999 90)
 			(effects
 				(font
@@ -2894,7 +2894,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "R?")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -2910,7 +2910,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "710bef61-1da4-408c-b493-86a3ce8528f7")
-		(property "Reference" "C?"
+		(property "Reference" "C1"
 			(at 86.36 50.1649 0)
 			(effects
 				(font
@@ -2964,7 +2964,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "C?")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -2981,7 +2981,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7fdb496b-70b1-445d-9326-06bae3db1b77")
-		(property "Reference" "U?"
+		(property "Reference" "U1"
 			(at 149.5141 38.1 0)
 			(effects
 				(font
@@ -3114,7 +3114,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "U?")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -3196,7 +3196,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8864f92c-3c7c-44ef-81b9-24ff275e99c4")
-		(property "Reference" "R?"
+		(property "Reference" "R3"
 			(at 97.79 96.5199 90)
 			(effects
 				(font
@@ -3250,7 +3250,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "R?")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -3266,7 +3266,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98718555-a9e1-43d7-87b6-da30020c140e")
-		(property "Reference" "R?"
+		(property "Reference" "R2"
 			(at 86.36 39.3699 90)
 			(effects
 				(font
@@ -3320,7 +3320,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "R?")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -3536,7 +3536,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d05db3df-af37-490c-bb9b-466dbcd8f399")
-		(property "Reference" "J?"
+		(property "Reference" "J1"
 			(at 69.8501 123.19 0)
 			(effects
 				(font
@@ -3597,7 +3597,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "J?")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -3679,7 +3679,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fde2e0dd-643b-4300-a077-a23076e70c48")
-		(property "Reference" "R?"
+		(property "Reference" "R4"
 			(at 190.5 64.7699 90)
 			(effects
 				(font
@@ -3733,7 +3733,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "R?")
+					(reference "R4")
 					(unit 1)
 				)
 			)
