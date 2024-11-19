@@ -44,7 +44,7 @@
 		)
 	)
 	(sheet
-		(at 119.38 43.815)
+		(at 100.965 43.815)
 		(size 36.195 22.225)
 		(fields_autoplaced yes)
 		(stroke
@@ -56,7 +56,7 @@
 		)
 		(uuid "55f5fc9c-362b-429f-ad6f-f98ffe4c4860")
 		(property "Sheetname" "E String Slave"
-			(at 119.38 43.1034 0)
+			(at 100.965 43.1034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65,7 +65,7 @@
 			)
 		)
 		(property "Sheetfile" "Eslave Sch.kicad_sch"
-			(at 119.38 66.6246 0)
+			(at 100.965 66.6246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
