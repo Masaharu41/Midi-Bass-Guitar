@@ -5,8 +5,9 @@
 ;	    File Version: 1
 ;	    Author: Owen Fujii
 ;	    Company: Idaho State University
-;	    Description: A Sub FOR I2c transmit of one byte and address
-;
+;	    Description: A Sub routine for I2C master transmit that can
+;			    be configured for either single byte or dual
+;			    byte transmissions
 ;*************************************************************************
 	
 ;*************************************************************************
@@ -15,6 +16,10 @@
 ;   
 ;	    Modified as listed
 ;	    Started 10/28/2024-10/31/2024
+;
+;	    Modified 11/19/2024
+;		fixed idle call and stop condtion sequence to allow for 
+;		proper line release when a slave has not responded
 ;	    
 ;
 ;*************************************************************************
@@ -57,9 +62,9 @@ I2CWRITE
 	BANKSEL SSP1STAT
 	BTFSC SSP1STAT,BF
 	GOTO $-1
-	CALL I2CIDLE
+	CALL I2CIDLE	    ; WAIT FOR IDLE STATE
 	BANKSEL SSP1CON2
-	BTFSC SSP1CON2,ACKSTAT
+	BTFSC SSP1CON2,ACKSTAT	; CHECK IF ACK WAS RECIEVED FROM SLAVE
 	GOTO NACK
 	; FINISH BYTE1
 	BANKSEL PORTB
@@ -71,18 +76,20 @@ I2CWRITE
 	BANKSEL SSP1STAT
 	BTFSC SSP1STAT,BF
 	GOTO $-1
+	CALL I2CIDLE
 	BANKSEL SSP1CON2
 	BTFSC SSP1CON2,ACKSTAT
 	GOTO NACK
 	; FINISH BYTE2
 FINISHED
+	CALL I2CIDLE
 	BANKSEL SSP1CON2
 	BSF SSP1CON2,ACKDT
-	BSF SSP1CON2,ACKEN
-	BTFSC SSP1CON2,ACKEN
+	BSF SSP1CON2,ACKEN	; SET /ACK AND SEND TO SLAVE
+	BTFSC SSP1CON2,ACKEN	; REQUIRED FOR SLAVE TO RELEASE LINE
 	GOTO $-1
-	BSF SSP1CON2,PEN
-	BTFSC SSP1CON2,PEN
+	BSF SSP1CON2,PEN	; INITIATE STOP CONDITION
+	BTFSC SSP1CON2,PEN	; WAIT FOR CONDITION TO FINISH
 	GOTO $-1
 	BANKSEL INTCON
 	BSF INTCON,GIE		; REENABLE INTERRUPTS
