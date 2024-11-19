@@ -39,7 +39,7 @@
 ;		    Pitch of G string = G2 to D#4
 ;
 ;	Pluck Slaves: <Velocity>, <String>
-;	    xVVV VVVV,FxNx  SSSS 
+;	    xVVV VVVV,FxxN  SSSS 
 ;		V = How Aggresive to attack string
 ;		F = select finger or pick, 0 = finger
 ;		N = disable note
