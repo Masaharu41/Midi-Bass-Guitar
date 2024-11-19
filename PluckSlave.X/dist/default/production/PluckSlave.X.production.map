@@ -1,15 +1,15 @@
 MPLINK 5.09, LINKER
-Linker Map File - Created Tue Nov 19 11:18:48 2024
+Linker Map File - Created Tue Nov 19 11:45:24 2024
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                    .org_0       code   0x000000    program   0x000002
                    .cinit    romdata   0x000001    program   0x000004
-                   .org_1       code   0x000004    program   0x0001b2
-               START_CODE       code   0x0000dd    program   0x00009a
-              PUSHIN_CODE       code   0x00012a    program   0x00000a
-              POPOUT_CODE       code   0x00012f    program   0x00000a
+                   .org_1       code   0x000004    program   0x0001ba
+               START_CODE       code   0x0000e1    program   0x00009a
+              PUSHIN_CODE       code   0x00012e    program   0x00000a
+              POPOUT_CODE       code   0x000133    program   0x00000a
 .config_8007_BUILD/DEFAULT/PRODUCTION/PLUCK S       code   0x008007    program   0x000002
 .config_8008_BUILD/DEFAULT/PRODUCTION/PLUCK S       code   0x008008    program   0x000002
 
@@ -19,41 +19,45 @@ Linker Map File - Created Tue Nov 19 11:18:48 2024
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000002      
-                            0x000004    0x000133      
+                            0x000004    0x000137      
                             0x008007    0x008008      
-            309 out of 16647 program addresses used, program memory utilization is 1%
+            313 out of 16647 program addresses used, program memory utilization is 1%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                ADDRETURN   0x0000bc    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                    INTER   0x000096    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                ADDRETURN   0x0000c0    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                     ALTA   0x000054    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                     ALTD   0x000064    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                     ALTE   0x000044    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                     ALTG   0x000074    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                    INTER   0x00009a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
                      MAIN   0x000029    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                     PICK   0x000078    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                   PLUCKA   0x00004b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                   PLUCKD   0x00005a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                     PICK   0x00007c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                   PLUCKA   0x00004c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                   PLUCKD   0x00005c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
                    PLUCKE   0x00003c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                   PLUCKG   0x000069    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                   POPOUT   0x00012f    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\PluckPOPout.inc
-                   PUSHIN   0x00012a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\PluckPUSHin.inc
-                  RECIEVE   0x0000a8    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                   PLUCKG   0x00006c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                   POPOUT   0x000133    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\PluckPOPout.inc
+                   PUSHIN   0x00012e    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\PluckPUSHin.inc
+                  RECIEVE   0x0000ac    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
                     SETUP   0x000005    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                    START   0x0000dd    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\PluckSetup.inc
-                 STARTTMR   0x000079    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                     STOP   0x000090    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                STRINGSEL   0x0000bf    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                   SWITCH   0x0000c6    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                    SKIPA   0x00005a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                    SKIPD   0x00006a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                    SKIPE   0x00004a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                    SKIPG   0x00007a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                    START   0x0000e1    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\PluckSetup.inc
+                 STARTTMR   0x00007d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                     STOP   0x000094    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                STRINGSEL   0x0000c3    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                   SWITCH   0x0000ca    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
              _.org_1_000A   0x00000a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_003E   0x00003e    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_0044   0x000044    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_004D   0x00004d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_0053   0x000053    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_005C   0x00005c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_0062   0x000062    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_006B   0x00006b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_0071   0x000071    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+             _.org_1_0045   0x000045    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+             _.org_1_0055   0x000055    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+             _.org_1_0065   0x000065    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+             _.org_1_0075   0x000075    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
 
 
 
@@ -64,27 +68,31 @@ Linker Map File - Created Tue Nov 19 11:18:48 2024
              _.org_1_000A   0x00000a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
                      MAIN   0x000029    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
                    PLUCKE   0x00003c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_003E   0x00003e    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_0044   0x000044    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                   PLUCKA   0x00004b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_004D   0x00004d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_0053   0x000053    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                   PLUCKD   0x00005a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_005C   0x00005c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_0062   0x000062    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                   PLUCKG   0x000069    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_006B   0x00006b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-             _.org_1_0071   0x000071    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                     PICK   0x000078    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                 STARTTMR   0x000079    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                     STOP   0x000090    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                    INTER   0x000096    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                  RECIEVE   0x0000a8    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                ADDRETURN   0x0000bc    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                STRINGSEL   0x0000bf    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                   SWITCH   0x0000c6    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
-                    START   0x0000dd    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\PluckSetup.inc
-                   PUSHIN   0x00012a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\PluckPUSHin.inc
-                   POPOUT   0x00012f    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\PluckPOPout.inc
+                     ALTE   0x000044    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+             _.org_1_0045   0x000045    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                    SKIPE   0x00004a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                   PLUCKA   0x00004c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                     ALTA   0x000054    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+             _.org_1_0055   0x000055    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                    SKIPA   0x00005a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                   PLUCKD   0x00005c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                     ALTD   0x000064    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+             _.org_1_0065   0x000065    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                    SKIPD   0x00006a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                   PLUCKG   0x00006c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                     ALTG   0x000074    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+             _.org_1_0075   0x000075    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                    SKIPG   0x00007a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                     PICK   0x00007c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                 STARTTMR   0x00007d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                     STOP   0x000094    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                    INTER   0x00009a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                  RECIEVE   0x0000ac    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                ADDRETURN   0x0000c0    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                STRINGSEL   0x0000c3    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                   SWITCH   0x0000ca    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\Pluck Slave.asm
+                    START   0x0000e1    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\PluckSetup.inc
+                   PUSHIN   0x00012e    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\PluckPUSHin.inc
+                   POPOUT   0x000133    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\PluckSlave.X\PluckPOPout.inc
 
 
