@@ -402,6 +402,18 @@
     [
       "a9c725c7-a2b4-4653-bf22-cca353cf3c61",
       "Plucking Pack"
+    ],
+    [
+      "c3b9cd48-3fcf-4fda-9d60-ef0911073906",
+      "A String Slave"
+    ],
+    [
+      "4e89443f-252f-4d60-96aa-3cd5b0237902",
+      "D String Slave"
+    ],
+    [
+      "a79027be-e76c-43a0-a80a-a6c6a159c340",
+      "G String Slave"
     ]
   ],
   "text_variables": {}
