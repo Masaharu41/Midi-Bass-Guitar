@@ -5,6 +5,108 @@
 	(uuid "13d8f38f-0f95-4862-a761-d18b4c8b6dc9")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Custom Power:+5v"
 			(power)
 			(pin_numbers hide)
@@ -177,23 +279,22 @@
 				)
 			)
 		)
-		(symbol "Custom Symbols:Resistor_Mod"
+		(symbol "Owen's Symbols:Capacitor"
 			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
+			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "R"
-				(at 0 4.318 0)
+			(property "Reference" "C"
+				(at 2.54 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "ValueΩ"
-				(at 0 2.54 0)
+			(property "Value" "?"
+				(at 2.54 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -201,7 +302,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at -1.27 2.54 0)
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -210,7 +311,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at -1.27 2.54 0)
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -227,25 +328,34 @@
 					(hide yes)
 				)
 			)
-			(symbol "Resistor_Mod_0_1"
+			(symbol "Capacitor_1_1"
 				(polyline
 					(pts
-						(xy -2.54 0) (xy -2.032 1.016) (xy -1.016 -0.762) (xy 0 1.016) (xy 1.016 -0.762) (xy 1.778 1.016)
-						(xy 2.54 0)
+						(xy -1.27 -3.81) (xy 1.27 -3.81)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "Resistor_Mod_1_1"
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at -3.81 0 0)
-					(length 1.27)
+					(at 0 0 270)
+					(length 2.54)
 					(name "1"
 						(effects
 							(font
@@ -262,8 +372,8 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
+					(at 0 -6.35 90)
+					(length 2.54)
 					(name "2"
 						(effects
 							(font
@@ -281,40 +391,29 @@
 				)
 			)
 		)
-		(symbol "Device:Q_NPN_BCE"
-			(pin_names
-				(offset 0) hide)
+		(symbol "Owen's Symbols:Diode"
+			(pin_numbers hide)
+			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+			(property "Reference" "D"
+				(at 3.81 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "Q_NPN_BCE"
-				(at 5.08 -1.27 0)
+			(property "Value" "Vz"
+				(at 3.81 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -323,7 +422,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "NPN transistor, base/collector/emitter"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -332,7 +431,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "transistor NPN"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -341,10 +440,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Q_NPN_BCE_0_1"
+			(symbol "Diode_0_1"
 				(polyline
 					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
+						(xy -1.397 -4.953) (xy 1.397 -4.953) (xy 1.397 -4.953)
 					)
 					(stroke
 						(width 0)
@@ -354,33 +453,11 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "Diode_1_1"
 				(polyline
 					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
+						(xy -1.397 -2.54) (xy 1.397 -2.54) (xy 0 -5.08) (xy -1.397 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -390,23 +467,10 @@
 						(type outline)
 					)
 				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Q_NPN_BCE_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 5.715)
-					(name "B"
+				(pin passive line
+					(at 0 0 270)
+					(length 2.54)
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -422,9 +486,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "C"
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -432,24 +496,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1973,12 +2019,122 @@
 				)
 			)
 		)
+		(symbol "Owen's Symbols:Resistor_Mod"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 4.318 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ValueΩ"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at -1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Resistor_Mod_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.032 1.016) (xy -1.016 -0.762) (xy 0 1.016) (xy 1.016 -0.762) (xy 1.778 1.016)
+						(xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Resistor_Mod_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 138.43 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c825ebf-19b8-4ee5-b84d-2a3d024e59f8")
+	)
+	(junction
+		(at 81.28 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6084a058-4f5f-4d4a-a2da-4c4e576f9a47")
 	)
 	(junction
 		(at 143.51 156.21)
@@ -1998,13 +2154,33 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 46.99) (xy 213.36 46.99)
+			(xy 97.79 132.08) (xy 104.14 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "79d953ee-acd2-4100-980e-c36f3d1bfa8a")
+		(uuid "28e694af-fbfc-478d-91c8-0c2b0536ce8c")
+	)
+	(wire
+		(pts
+			(xy 81.28 132.08) (xy 81.28 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "307c5e11-36a2-4dc4-86be-93cd90df314c")
+	)
+	(wire
+		(pts
+			(xy 90.17 132.08) (xy 81.28 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e2e5076-a498-40d6-b053-768b43dcfd1a")
 	)
 	(wire
 		(pts
@@ -2038,6 +2214,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 132.08) (xy 81.28 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97897130-d8d9-441d-a473-ef51b1ad284b")
+	)
+	(wire
+		(pts
 			(xy 152.4 156.21) (xy 152.4 154.94)
 		)
 		(stroke
@@ -2045,16 +2231,6 @@
 			(type default)
 		)
 		(uuid "9e0a7412-4dd5-4a19-af1e-67a06ffa6152")
-	)
-	(wire
-		(pts
-			(xy 189.23 46.99) (xy 203.2 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa4bcd6b-fb10-49f6-910a-0bfa3cb23a07")
 	)
 	(wire
 		(pts
@@ -2106,6 +2282,16 @@
 		)
 		(uuid "d5431482-19bd-42ae-b395-e8def7b6a02d")
 	)
+	(wire
+		(pts
+			(xy 92.71 69.85) (xy 104.14 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f116638a-cd34-453e-b42c-03efc740e16a")
+	)
 	(global_label "I2Cdat"
 		(shape input)
 		(at 96.52 111.76 180)
@@ -2151,25 +2337,25 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Symbols:Resistor_Mod")
-		(at 207.01 46.99 0)
+		(lib_id "Connector:TestPoint")
+		(at 92.71 69.85 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0560fe6d-9b94-4f48-abf1-d053054df74a")
-		(property "Reference" "R1"
-			(at 207.01 40.64 0)
+		(uuid "08dc6a08-a54f-41f3-a754-35feea1db0df")
+		(property "Reference" "TP5"
+			(at 89.408 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "ValueΩ"
-			(at 207.01 43.18 0)
+		(property "Value" "CLKOUT1"
+			(at 89.408 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2177,7 +2363,74 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 44.45 0)
+			(at 92.71 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 92.71 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "589ec749-51ea-481b-971e-84f8ea5c2310")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Power:GND")
+		(at 81.28 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2032fe68-918b-4e61-affd-e8483f4d6301")
+		(property "Reference" "#PWR018"
+			(at 81.28 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2186,7 +2439,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 44.45 0)
+			(at 81.28 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2195,7 +2448,74 @@
 			)
 		)
 		(property "Description" ""
-			(at 207.01 46.99 0)
+			(at 81.28 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "5303e3e9-dc86-49ca-b2fd-f2f4a5c133f1")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Owen's Symbols:Resistor_Mod")
+		(at 81.28 125.73 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31f86775-fc8b-4090-accf-60eb5a57be83")
+		(property "Reference" "R7"
+			(at 83.82 124.4599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 83.82 126.9999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2204,15 +2524,85 @@
 			)
 		)
 		(pin "2"
-			(uuid "4341d79e-9504-44a9-9ac1-45dbdedb4863")
+			(uuid "c775d573-d12b-47af-bbaa-92712d9b846a")
 		)
 		(pin "1"
-			(uuid "a528532c-961c-4501-88e2-97684ab4a54a")
+			(uuid "09aed4d5-b9ec-4e46-84e8-0a115cd6cbab")
 		)
 		(instances
-			(project ""
+			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "R1")
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Owen's Symbols:Capacitor")
+		(at 81.28 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e6c7f0b-d763-4f1a-80f8-cabadb4f6f48")
+		(property "Reference" "C2"
+			(at 83.82 135.2549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 83.82 137.7949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "414a15c3-5e1f-4532-9a18-4583fb4d657a")
+		)
+		(pin "1"
+			(uuid "98ec813e-923a-4aa1-a5b1-c59edfd1b24f")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -2286,35 +2676,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_NPN_BCE")
-		(at 218.44 46.99 0)
+		(lib_id "Owen's Symbols:Diode")
+		(at 90.17 132.08 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a482c8f6-72d5-4ea3-94a8-438e61237ddf")
-		(property "Reference" "Q1"
-			(at 223.52 45.7199 0)
+		(uuid "ba337b49-3035-485c-985f-4bd665c3ae0b")
+		(property "Reference" "D3"
+			(at 93.98 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Q_NPN_BCE"
-			(at 223.52 48.2599 0)
+		(property "Value" "4148"
+			(at 93.98 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 44.45 0)
+			(at 90.17 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2322,8 +2710,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 218.44 46.99 0)
+		(property "Datasheet" ""
+			(at 90.17 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2331,8 +2719,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "NPN transistor, base/collector/emitter"
-			(at 218.44 46.99 0)
+		(property "Description" ""
+			(at 90.17 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2341,18 +2729,81 @@
 			)
 		)
 		(pin "1"
-			(uuid "e2cea2b3-1b44-4365-9549-0931c3c3e613")
+			(uuid "3b5bbff8-297b-42f4-aa8b-c3012f175a63")
 		)
 		(pin "2"
-			(uuid "2897d126-d91a-4a5e-b450-7fc5e754916c")
-		)
-		(pin "3"
-			(uuid "ead147cf-bab3-4699-9c41-4f586c3957a4")
+			(uuid "61c0374d-95d1-46ef-8f5d-32347dff8e0f")
 		)
 		(instances
-			(project ""
+			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "Q1")
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Power:+5v")
+		(at 81.28 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5a110a9-0841-4933-b761-71a4601f00bf")
+		(property "Reference" "#PWR017"
+			(at 86.0044 116.9416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5v"
+			(at 81.28 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "7f0dd1bf-7438-4173-abec-08472e06aa77")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -2369,7 +2820,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef798407-6ea6-4e43-9f05-072b1d311875")
-		(property "Reference" "U?"
+		(property "Reference" "U2"
 			(at 154.5941 152.4 0)
 			(effects
 				(font
@@ -2537,7 +2988,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "U?")
+					(reference "U2")
 					(unit 1)
 				)
 			)
