@@ -1,4 +1,4 @@
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE  1
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -57,7 +57,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00051 ;       , such as E1, it does not give enough information to select where to 
                       00052 ;       play the note on instruments like the bass guitar which have the same
                       00053 ;       note on mulitple strings on different frets. The result is the master
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE  2
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -116,7 +116,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00022         
                       00023         
                       00024 START_CODE CODE
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE  3
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -175,7 +175,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
                       00069 
 001C   0021           00070                 BANKSEL ADCON1
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE  4
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -225,7 +225,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
 003A   018D           00102                 CLRF SLRCONB                            ; DISABLE SLEW RATE LIMITS
 003B   0027           00103                 BANKSEL IOCBP
-003C   30FF           00104                 MOVLW H'0FF'
+003C   300F           00104                 MOVLW H'00F'                            ; IOC FOR LOWER NIBBLE
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
 003D   0094           00105                 MOVWF IOCBP                              ; ENABLE POSITIVE EDGE TRIGGERED IOC
 003E   0027           00106                 BANKSEL IOCBN
@@ -234,7 +234,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0040   0027           00108                 BANKSEL IOCBF
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
 0041   0196           00109                 CLRF IOCBF                                ; CLEAR FLAG REGISTER
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE  5
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -293,7 +293,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
                       00021     
                       00022 EEWRITE_CODE CODE
                       00023  
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE  6
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -352,7 +352,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
                       00022 EEREAD_CODE CODE
                       00023  
 0000                  00024 EEREAD
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE  7
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -411,7 +411,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
                       00010 ;*************************************************************************
                       00011         
                       00012 ;*************************************************************************
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE  8
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -470,7 +470,7 @@ Warning[207]: Found label after column 1. (FLAG)
   00000033            00030         FLAG     EQU H'033'
                       00031 
                       00032 I2CWRITE_CODE CODE
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE  9
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE  9
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -529,7 +529,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0025   0024           00074         BANKSEL SSP1BUF
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
 0026   0091           00075         MOVWF SSP1BUF
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 10
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 10
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -588,7 +588,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0048   0008           00114         RETURN
                       00115         
 0049                  00116 I2CIDLE
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 11
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 11
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -647,7 +647,7 @@ Warning[207]: Found label after column 1. (ADDRESS)
 Warning[207]: Found label after column 1. (I2CBYTE)
   00000031            00108             I2CBYTE         EQU H'031'
 Warning[207]: Found label after column 1. (I2CBYTE2)
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 12
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 12
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -706,7 +706,7 @@ Warning[207]: Found label after column 1. (GMIN)
 0005   0021           00142     BANKSEL OSCSTAT
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
 0006   1B1A           00143     BTFSC OSCSTAT,PLLR      ; WAIT FOR PLL TO BE UP AND RUNNING
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 13
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 13
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -765,7 +765,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0027   0024           00179     BANKSEL SSP1CON1
 0028   3028           00180     MOVLW H'028'            ; SET 7 BIT MASTER WITH ADJUSTABLE CLOCK
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 14
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 14
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -824,7 +824,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
                       00228     ; SET MIDI DEVICE ADDRESS
 0053   080D           00229     MOVFW PORTB             ; READ EXTERNAL SWITCH
 0054   00B9           00230     MOVWF MIDIADD           ; SET MIDI DEVICE ADDRESS
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 15
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 15
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -883,7 +883,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 007C   0835           00281     MOVFW PBYTE
 007D   0244           00282     SUBWF EMAX,0
 007E   1C03           00283     BTFSS STATUS,C  ; IF RESULT IT GREATER THAN MOVE TO A STRING
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 16
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 16
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -925,182 +925,219 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0095   2???           00317     GOTO I2CSEND    ; IF ON THE G STRING STAY ON STRING
 0096   1003           00318     BCF STATUS,C    ; CLEAR CARRY BIT
 0097   0DC1           00319     RLF LASTADD,1   ; INCREMENT SLAVE ADDRESS BY ONE UP
-0098   2???           00320     GOTO I2CSEND
-                      00321     
-0099                  00322 OCTAVE
-0099   1A41           00323     BTFSC LASTADD,4
-009A   2???           00324     GOTO I2CSEND    ; IF ON THE G STRING STAY ON STRING
-009B   1003           00325     BCF STATUS,C 
-009C   0DC1           00326     RLF LASTADD,1   ; INCREMENT SLAVE ADDRESS BY ONE UP
-009D   1A41           00327     BTFSC LASTADD,4
-009E   2???           00328     GOTO I2CSEND    ; IF INCREMENTED TO G STRING STOP AND SEND NOTE
-009F   0DC1           00329     RLF LASTADD,1   ; INCREMENT SLAVE ADDRESS TO BE TWO MORE TOTAL
-00A0   2???           00330     GOTO I2CSEND
-                      00331     
-                      00332     
-00A1                  00333 LOWERNOTE  
-                      00334     ; STATEMENT 1 TEST FOR NOTE LOWER THAN CURRENT
-00A1   3005           00335     MOVLW H'05'
-00A2   0240           00336     SUBWF LASTNOTE,0    ; REDUCE LAST NOTE BY 5
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 17
+0098   1841           00320     BTFSC LASTADD,0
+0099   2???           00321     GOTO VALIDE
+009A   18C1           00322     BTFSC LASTADD,1
+009B   2???           00323     GOTO VALIDA
+009C   1941           00324     BTFSC LASTADD,2
+009D   2???           00325     GOTO VALIDD     ; DO NOT NEED TO EVAL PAST D STRING
+009E   2???           00326     GOTO I2CSEND    ; SHOULD NOT BE HIT 
+                      00327     
+009F                  00328 OCTAVE
+009F   19C1           00329     BTFSC LASTADD,3
+00A0   2???           00330     GOTO I2CSEND    ; IF ON THE G STRING STAY ON STRING
+00A1   1003           00331     BCF STATUS,C 
+00A2   0DC1           00332     RLF LASTADD,1   ; INCREMENT SLAVE ADDRESS BY ONE UP
+00A3   19C1           00333     BTFSC LASTADD,3
+00A4   2???           00334     GOTO I2CSEND    ; IF INCREMENTED TO G STRING STOP AND SEND NOTE
+00A5   0DC1           00335     RLF LASTADD,1   ; INCREMENT SLAVE ADDRESS TO BE TWO MORE TOTAL
+00A6   18C1           00336     BTFSC LASTADD,1
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 17
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-00A3   0235           00337     SUBWF PBYTE,0
-00A4   1803           00338     BTFSC STATUS,C
-00A5   2???           00339     GOTO I2CSEND        ; IF WITHIN FIVE USE SAME STRING
-                      00340     ; STATEMENT 2 CHECK FOR NOTE 10 LOWER THAN CURRENT
-00A6   300A           00341     MOVLW H'0A'
-00A7   0240           00342     SUBWF LASTNOTE,0
-00A8   0235           00343     SUBWF PBYTE,0
-00A9   1803           00344     BTFSC STATUS,C  
-00AA   2???           00345     GOTO DECSTRING
-                      00346     ; STATEMENT 3 CHECK FOR OCTAVE NOTE DOWN
-00AB   300C           00347     MOVLW H'0C'
-00AC   0240           00348     SUBWF LASTNOTE,0
-00AD   0235           00349     SUBWF PBYTE,0
-00AE   1903           00350     BTFSC STATUS,Z
-00AF   2???           00351     GOTO OCTAVEDOWN
-                      00352     ; FINAL STATEMENT
-00B0   2???           00353     GOTO FINDNOTE
-                      00354     
-                      00355     
-00B1                  00356 DECSTRING
-00B1   1841           00357     BTFSC LASTADD,0
-00B2   2???           00358     GOTO I2CSEND        ; IF LAST ADDRESS WAS E STRING STAY ON STRING
-00B3   1003           00359     BCF STATUS,C
-00B4   0CC1           00360     RRF LASTADD,1       ; SHIFT TO THE RIGHT ONE STRING
-00B5   2???           00361     GOTO I2CSEND
-                      00362     
-00B6                  00363 OCTAVEDOWN
-00B6   1841           00364     BTFSC LASTADD,0
-00B7   2???           00365     GOTO I2CSEND        ; IF LAST ADDRESS WAS E STRING STAY ON STRING
-00B8   1003           00366     BCF STATUS,C
-00B9   0CC1           00367     RRF LASTADD,1
-00BA   1841           00368     BTFSC LASTADD,0
-00BB   2???           00369     GOTO I2CSEND        ; IF ROTATED TO E STRING END EARLY AND SEND NOTE
-00BC   0CC1           00370     RRF LASTADD,1
-00BD   2???           00371     GOTO I2CSEND         ; SHIFT STRING UP TWICE FOR OCTAVE IN POSSIBLE
-                      00372     
-                      00373 
-00BE                  00374 I2CSEND
-                      00375     ; SEND TO PITCH SLAVE(S)
-00BE   0841           00376     MOVFW LASTADD
-00BF   00B0           00377     MOVWF ADDRESS           ; SET THE ADDRESS OF THE SLAVE
-00C0   0835           00378     MOVF PBYTE,0            ; MOVE TO WORKING
-00C1   00C0           00379     MOVWF LASTNOTE          ; STORE CURRENT NOTE
-00C2   00B1           00380     MOVWF I2CBYTE           ; MOVE TO BYTE
-00C3   1A34           00381     BTFSC CTLBYTE,4         ; CHECK IF THE BIT FOR A 9 HAS BEEN RECIEVED
-00C4   17B1           00382     BSF I2CBYTE,7           ; SET NOTE TO BE PLAYED
-00C5   01B3           00383     CLRF FLAG               ; CLEAR FLAG FOR SINGLE TRANSMISSION
-00C6   2???           00384     CALL I2CWRITE           ; CALL WRITE
-                      00385     ; SEND TO PLUCK SLAVE
-00C7   0826           00386     MOVF PLUCKSLAVE,0
-00C8   00B0           00387     MOVWF ADDRESS           ; MOVE PLUCK SLAVE ADDRESS TO TRANSMIT
-00C9   0836           00388     MOVF VBYTE,0            
-00CA   00B1           00389     MOVWF I2CBYTE   
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 18
+00A7   2???           00337     GOTO VALIDA
+00A8   1941           00338     BTFSC LASTADD,2
+00A9   2???           00339     GOTO VALIDD     ; DO NOT NEED TO EVAL PAST D STRING
+00AA   2???           00340     GOTO I2CSEND
+                      00341     
+00AB                  00342 VALIDE
+                      00343     ; LOWER LIMIT IS ALREADY CAUGHT // ONLY EVAL MAX
+00AB   0835           00344     MOVFW PBYTE
+00AC   0244           00345     SUBWF EMAX,0
+00AD   1803           00346     BTFSC STATUS,C  ; IF RESULT IT GREATER THAN MOVE TO A STRING
+00AE   0DC1           00347     RLF LASTADD,1   
+00AF   2???           00348     GOTO I2CSEND
+                      00349     
+00B0                  00350 VALIDA
+00B0   0835           00351     MOVFW PBYTE
+00B1   0246           00352     SUBWF AMAX,0
+00B2   1803           00353     BTFSC STATUS,C  ; IF OUT OF BOUNDS OF A STRING MOVE TO D STRING
+00B3   0DC1           00354     RLF LASTADD,1
+00B4   2???           00355     GOTO I2CSEND
+                      00356     
+00B5                  00357 VALIDD
+00B5   0835           00358     MOVFW PBYTE
+00B6   0248           00359     SUBWF DMAX,0
+00B7   1803           00360     BTFSC STATUS,C  ; IF OUT OF BOUNDS OF D STRING MOVE TO G STRING
+00B8   0DC1           00361     RLF LASTADD,1
+00B9   2???           00362     GOTO I2CSEND
+                      00363     
+00BA                  00364 LOWERNOTE  
+                      00365     ; STATEMENT 1 TEST FOR NOTE LOWER THAN CURRENT
+00BA   3005           00366     MOVLW H'05'
+00BB   0240           00367     SUBWF LASTNOTE,0    ; REDUCE LAST NOTE BY 5
+00BC   0235           00368     SUBWF PBYTE,0
+00BD   1803           00369     BTFSC STATUS,C
+00BE   2???           00370     GOTO I2CSEND        ; IF WITHIN FIVE USE SAME STRING
+                      00371     ; STATEMENT 2 CHECK FOR NOTE 10 LOWER THAN CURRENT
+00BF   300A           00372     MOVLW H'0A'
+00C0   0240           00373     SUBWF LASTNOTE,0
+00C1   0235           00374     SUBWF PBYTE,0
+00C2   1803           00375     BTFSC STATUS,C  
+00C3   2???           00376     GOTO DECSTRING
+                      00377     ; STATEMENT 3 CHECK FOR OCTAVE NOTE DOWN
+00C4   300C           00378     MOVLW H'0C'
+00C5   0240           00379     SUBWF LASTNOTE,0
+00C6   0235           00380     SUBWF PBYTE,0
+00C7   1903           00381     BTFSC STATUS,Z
+00C8   2???           00382     GOTO OCTAVEDOWN
+                      00383     ; FINAL STATEMENT
+00C9   2???           00384     GOTO FINDNOTE
+                      00385     
+                      00386     
+00CA                  00387 DECSTRING
+00CA   1841           00388     BTFSC LASTADD,0
+00CB   2???           00389     GOTO I2CSEND        ; IF LAST ADDRESS WAS E STRING STAY ON STRING
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 18
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-00CB   0841           00390     MOVFW LASTADD           ; MOVE ADDRESS TO TEMP REGISTER
-00CC   00B8           00391     MOVWF TEMP
-00CD   1003           00392     BCF STATUS,C
-00CE   0CB8           00393     RRF TEMP,1              ; ROTATE RIGHT TO GET RIGHT STRING 
-00CF   1A34           00394     BTFSC CTLBYTE,4         ; TELL SLAVE WHETHER NOTE ON // OFF WAS ISSUED
-00D0   1638           00395     BSF TEMP,4              
-00D1   0838           00396     MOVFW TEMP              ; SET FOR FINGER STYLE AND SLAVE TO BE USED
-00D2   00B2           00397     MOVWF I2CBYTE2
-00D3   1433           00398     BSF FLAG,0              ; SET FLAG FOR TWO BYTE
-00D4   2???           00399     CALL I2CWRITE
-00D5   01B7           00400     CLRF BUFFER
-00D6   2???           00401     GOTO MAIN
-                      00402     
-00D7                  00403 BAIL
-00D7   01B7           00404     CLRF BUFFER             ; CLEAR ALL SAVED STATUS
-00D8   01B5           00405     CLRF PBYTE              ; CALLED WHEN OUT OF BOUNDS
-00D9   01B4           00406     CLRF CTLBYTE            ; NOTES ARE CALLED
-00DA   01B6           00407     CLRF VBYTE
-00DB   2???           00408     GOTO MAIN
-                      00409     
-                      00410     
-00DC                  00411 INTER
-00DC   0020           00412     BANKSEL INTCON 
-00DD   138B           00413     BCF INTCON,GIE
-00DE   130B           00414     BCF INTCON,PEIE
-00DF   118B           00415     BCF INTCON,IOCIE
-00E0   2???           00416     CALL PUSHIN
-00E1   1A91           00417     BTFSC PIR1,RCIF         ; CHECK EUART RECIEVE FLAG
-00E2   2???           00418     CALL RECIEVE    
-00E3   180B           00419     BTFSC INTCON,IOCIF
-00E4   2???           00420     CALL ADDRESSUP
-00E5   0020           00421     BANKSEL INTCON
-                      00422   ;  CLRF PORTB
-00E6   0191           00423     CLRF PIR1
-00E7   178B           00424     BSF INTCON,GIE          ; REENABLE INTERRUPTS
-00E8   170B           00425     BSF INTCON,PEIE
-00E9   158B           00426     BSF INTCON,IOCIE
-00EA   2???           00427     CALL POPOUT
-00EB   0009           00428     RETFIE
-                      00429     
-00EC                  00430 RECIEVE
-00EC   0023           00431     BANKSEL RCREG
+00CC   1003           00390     BCF STATUS,C
+00CD   0CC1           00391     RRF LASTADD,1       ; SHIFT TO THE RIGHT ONE STRING
+00CE   2???           00392     GOTO I2CSEND
+                      00393     
+00CF                  00394 OCTAVEDOWN
+00CF   1841           00395     BTFSC LASTADD,0
+00D0   2???           00396     GOTO I2CSEND        ; IF LAST ADDRESS WAS E STRING STAY ON STRING
+00D1   1003           00397     BCF STATUS,C
+00D2   0CC1           00398     RRF LASTADD,1
+00D3   1841           00399     BTFSC LASTADD,0
+00D4   2???           00400     GOTO I2CSEND        ; IF ROTATED TO E STRING END EARLY AND SEND NOTE
+00D5   0CC1           00401     RRF LASTADD,1
+00D6   2???           00402     GOTO I2CSEND         ; SHIFT STRING UP TWICE FOR OCTAVE IN POSSIBLE
+                      00403     
+                      00404 
+00D7                  00405 I2CSEND
+                      00406     ; SEND TO PITCH SLAVE(S)
+00D7   0841           00407     MOVFW LASTADD
+00D8   00B0           00408     MOVWF ADDRESS           ; SET THE ADDRESS OF THE SLAVE
+00D9   0835           00409     MOVF PBYTE,0            ; MOVE TO WORKING
+00DA   00C0           00410     MOVWF LASTNOTE          ; STORE CURRENT NOTE
+00DB   00B1           00411     MOVWF I2CBYTE           ; MOVE TO BYTE
+00DC   1A34           00412     BTFSC CTLBYTE,4         ; CHECK IF THE BIT FOR A 9 HAS BEEN RECIEVED
+00DD   17B1           00413     BSF I2CBYTE,7           ; SET NOTE TO BE PLAYED
+00DE   01B3           00414     CLRF FLAG               ; CLEAR FLAG FOR SINGLE TRANSMISSION
+00DF   2???           00415     CALL I2CWRITE           ; CALL WRITE
+                      00416     ; SEND TO PLUCK SLAVE
+00E0   0826           00417     MOVF PLUCKSLAVE,0
+00E1   00B0           00418     MOVWF ADDRESS           ; MOVE PLUCK SLAVE ADDRESS TO TRANSMIT
+00E2   0836           00419     MOVF VBYTE,0            
+00E3   00B1           00420     MOVWF I2CBYTE   
+00E4   0841           00421     MOVFW LASTADD           ; MOVE ADDRESS TO TEMP REGISTER
+00E5   00B8           00422     MOVWF TEMP
+00E6   1003           00423     BCF STATUS,C
+00E7   0CB8           00424     RRF TEMP,1              ; ROTATE RIGHT TO GET RIGHT STRING 
+00E8   1A34           00425     BTFSC CTLBYTE,4         ; TELL SLAVE WHETHER NOTE ON // OFF WAS ISSUED
+00E9   1638           00426     BSF TEMP,4              
+00EA   0838           00427     MOVFW TEMP              ; SET FOR FINGER STYLE AND SLAVE TO BE USED
+00EB   00B2           00428     MOVWF I2CBYTE2
+00EC   1433           00429     BSF FLAG,0              ; SET FLAG FOR TWO BYTE
+00ED   2???           00430     CALL I2CWRITE
+00EE   01B7           00431     CLRF BUFFER
+00EF   2???           00432     GOTO MAIN
+                      00433     
+00F0                  00434 BAIL
+00F0   01B7           00435     CLRF BUFFER             ; CLEAR ALL SAVED STATUS
+00F1   01B5           00436     CLRF PBYTE              ; CALLED WHEN OUT OF BOUNDS
+00F2   01B4           00437     CLRF CTLBYTE            ; NOTES ARE CALLED
+00F3   01B6           00438     CLRF VBYTE
+00F4   2???           00439     GOTO MAIN
+                      00440     
+                      00441     
+00F5                  00442 INTER
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 19
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+00F5   0020           00443     BANKSEL INTCON 
+00F6   138B           00444     BCF INTCON,GIE
+00F7   130B           00445     BCF INTCON,PEIE
+00F8   118B           00446     BCF INTCON,IOCIE
+00F9   2???           00447     CALL PUSHIN
+00FA   1A91           00448     BTFSC PIR1,RCIF         ; CHECK EUART RECIEVE FLAG
+00FB   2???           00449     CALL RECIEVE    
+00FC   180B           00450     BTFSC INTCON,IOCIF
+00FD   2???           00451     CALL ADDRESSUP
+00FE   0020           00452     BANKSEL INTCON
+                      00453   ;  CLRF PORTB
+00FF   0191           00454     CLRF PIR1
+0100   178B           00455     BSF INTCON,GIE          ; REENABLE INTERRUPTS
+0101   170B           00456     BSF INTCON,PEIE
+0102   158B           00457     BSF INTCON,IOCIE
+0103   2???           00458     CALL POPOUT
+0104   0009           00459     RETFIE
+                      00460     
+0105                  00461 RECIEVE
+0105   0023           00462     BANKSEL RCREG
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-00ED   0819           00432     MOVF RCREG,0
-00EE   0020           00433     BANKSEL PORTB
-00EF   148D           00434     BSF PORTB,1
-00F0   00B8           00435     MOVWF TEMP
-00F1   1A37           00436     BTFSC BUFFER,4          
-00F2   0008           00437     RETURN
-00F3   18B7           00438     BTFSC BUFFER,1
-00F4   2???           00439     GOTO BYTE2
-00F5   1837           00440     BTFSC BUFFER,0
-00F6   2???           00441     GOTO BYTE1
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 19
+0106   0819           00463     MOVF RCREG,0
+0107   0020           00464     BANKSEL PORTB
+0108   148D           00465     BSF PORTB,1
+0109   00B8           00466     MOVWF TEMP
+010A   1A37           00467     BTFSC BUFFER,4          
+010B   0008           00468     RETURN
+010C   18B7           00469     BTFSC BUFFER,1
+010D   2???           00470     GOTO BYTE2
+010E   1837           00471     BTFSC BUFFER,0
+010F   2???           00472     GOTO BYTE1
+0110   00B4           00473     MOVWF CTLBYTE           ; VERIFY MIDI ADDRESS
+0111   1234           00474     BCF CTLBYTE,4           ; IGNORE COMMAND NIBBLE
+0112   12B4           00475     BCF CTLBYTE,5
+0113   1334           00476     BCF CTLBYTE,6
+0114   13B4           00477     BCF CTLBYTE,7
+0115   0834           00478     MOVF CTLBYTE,0
+0116   1103           00479     BCF STATUS,Z
+0117   0239           00480     SUBWF MIDIADD,0         ; VERIFY ADDRESS
+0118   1D03           00481     BTFSS STATUS,Z
+0119   0008           00482     RETURN                  ; RETURN IF NOT VALID ADDRESS
+011A   0838           00483     MOVF TEMP,0
+011B   00B4           00484     MOVWF CTLBYTE           ; STORE CONTROL BYTE
+011C   1437           00485     BSF BUFFER,0
+011D   0008           00486     RETURN
+                      00487     
+011E                  00488 BYTE1
+011E   0838           00489     MOVF TEMP,0
+011F   00B5           00490     MOVWF PBYTE             ; STORE PITCH BYTE
+0120   14B7           00491     BSF BUFFER,1
+0121   0008           00492     RETURN
+                      00493     
+0122                  00494 BYTE2
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 20
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-00F7   00B4           00442     MOVWF CTLBYTE           ; VERIFY MIDI ADDRESS
-00F8   1234           00443     BCF CTLBYTE,4           ; IGNORE COMMAND NIBBLE
-00F9   12B4           00444     BCF CTLBYTE,5
-00FA   1334           00445     BCF CTLBYTE,6
-00FB   13B4           00446     BCF CTLBYTE,7
-00FC   0834           00447     MOVF CTLBYTE,0
-00FD   1103           00448     BCF STATUS,Z
-00FE   0239           00449     SUBWF MIDIADD,0         ; VERIFY ADDRESS
-00FF   1D03           00450     BTFSS STATUS,Z
-0100   0008           00451     RETURN                  ; RETURN IF NOT VALID ADDRESS
-0101   0838           00452     MOVF TEMP,0
-0102   00B4           00453     MOVWF CTLBYTE           ; STORE CONTROL BYTE
-0103   1437           00454     BSF BUFFER,0
-0104   0008           00455     RETURN
-                      00456     
-0105                  00457 BYTE1
-0105   0838           00458     MOVF TEMP,0
-0106   00B5           00459     MOVWF PBYTE             ; STORE PITCH BYTE
-0107   14B7           00460     BSF BUFFER,1
-0108   0008           00461     RETURN
-                      00462     
-0109                  00463 BYTE2
-0109   0838           00464     MOVF TEMP,0
-010A   00B6           00465     MOVWF VBYTE             ; STORE VELOCITY BYTE
-010B   1537           00466     BSF BUFFER,2
-010C   0008           00467     RETURN
-                      00468     
-010D                  00469 ADDRESSUP
-010D   080D           00470     MOVFW PORTB
-010E   00B9           00471     MOVWF MIDIADD
-010F   0008           00472     RETURN
-                      00473  
+0122   0838           00495     MOVF TEMP,0
+0123   00B6           00496     MOVWF VBYTE             ; STORE VELOCITY BYTE
+0124   1537           00497     BSF BUFFER,2
+0125   0008           00498     RETURN
+                      00499     
+0126                  00500 ADDRESSUP
+0126   080D           00501     MOVFW PORTB
+0127   00B9           00502     MOVWF MIDIADD           ; UPDATE MIDI ADDRESS WHEN PORTB CHANGES
+0128   0008           00503     RETURN
+                      00504  
 Warning[205]: Found directive in column 1. (END)
-29A4 1FFF             00474 END
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 20
+29A4 1FFF             00505 END
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 21
 
 
 SYMBOL TABLE
@@ -1129,7 +1166,7 @@ ADD7                              00000007
 ADDDRESS                          00000030
 ADDEN                             00000003
 ADDRESS                           00000030
-ADDRESSUP                         0000010D
+ADDRESSUP                         00000126
 ADFM                              00000007
 ADFVR0                            00000000
 ADFVR1                            00000001
@@ -1159,7 +1196,7 @@ ANSB1                             00000001
 ANSB2                             00000002
 ANSB3                             00000003
 ANSB4                             00000004
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 21
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 22
 
 
 SYMBOL TABLE
@@ -1183,7 +1220,7 @@ APFCON0                           0000011D
 APFCON1                           0000011D
 APFCON2                           0000011C
 ASLAVE                            00000023
-BAIL                              000000D7
+BAIL                              000000F0
 BAUD1CON                          0000019F
 BAUDCON                           0000019F
 BAUDCON1                          0000019F
@@ -1214,11 +1251,11 @@ BUF5                              00000005
 BUF6                              00000006
 BUF7                              00000007
 BUFFER                            00000037
-BYTE1                             00000105
-BYTE2                             00000109
+BYTE1                             0000011E
+BYTE2                             00000122
 C                                 00000000
 C1HYS                             00000001
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 22
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 23
 
 
 SYMBOL TABLE
@@ -1277,7 +1314,7 @@ C3PCH2                            00000005
 C3POL                             00000004
 C3SP                              00000002
 C3SYNC                            00000000
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 23
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 24
 
 
 SYMBOL TABLE
@@ -1336,7 +1373,7 @@ CCPR3                             00000311
 CCPR3H                            00000312
 CCPR3L                            00000311
 CDAFVR0                           00000002
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 24
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 25
 
 
 SYMBOL TABLE
@@ -1395,7 +1432,7 @@ DAC1R5                            00000005
 DAC1R6                            00000006
 DAC1R7                            00000007
 DAC2CON0                          00000591
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 25
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 26
 
 
 SYMBOL TABLE
@@ -1440,7 +1477,7 @@ DC2B1                             00000005
 DC3B0                             00000004
 DC3B1                             00000005
 DC_SHAD                           00000001
-DECSTRING                         000000B1
+DECSTRING                         000000CA
 DHEN                              00000000
 DMAX                              00000048
 DMIN                              00000047
@@ -1454,7 +1491,7 @@ EECON1                            00000195
 EECON2                            00000196
 EEDAT                             00000193
 EEDATH                            00000194
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 26
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 27
 
 
 SYMBOL TABLE
@@ -1501,7 +1538,7 @@ HIGHNOTE                          00000043
 I2CBYTE                           00000031
 I2CBYTE2                          00000032
 I2CIDLE                           00000049
-I2CSEND                           000000BE
+I2CSEND                           000000D7
 I2CWRITE                          00000000
 INCSTRING                         00000094
 INDF0                             00000000
@@ -1513,7 +1550,7 @@ INLVLA2                           00000002
 INLVLA3                           00000003
 INLVLA4                           00000004
 INLVLA5                           00000005
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 27
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 28
 
 
 SYMBOL TABLE
@@ -1544,7 +1581,7 @@ INLVLE3                           00000003
 INTCON                            0000000B
 INTE                              00000004
 INTEDG                            00000006
-INTER                             000000DC
+INTER                             000000F5
 INTF                              00000001
 IOCAF                             00000393
 IOCAF0                            00000000
@@ -1572,7 +1609,7 @@ IOCAP3                            00000003
 IOCAP4                            00000004
 IOCAP5                            00000005
 IOCAP6                            00000006
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 28
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 29
 
 
 SYMBOL TABLE
@@ -1631,7 +1668,7 @@ IOCCP2                            00000002
 IOCCP3                            00000003
 IOCCP4                            00000004
 IOCCP5                            00000005
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 29
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 30
 
 
 SYMBOL TABLE
@@ -1681,7 +1718,7 @@ LATC5                             00000005
 LATC6                             00000006
 LATC7                             00000007
 LFIOFR                            00000001
-LOWERNOTE                         000000A1
+LOWERNOTE                         000000BA
 LOWNOTE                           00000042
 LWLO                              00000005
 MAIN                              00000059
@@ -1690,7 +1727,7 @@ MC2OUT                            00000001
 MC3OUT                            00000002
 MC4OUT                            00000003
 MFIOFR                            00000002
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 30
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 31
 
 
 SYMBOL TABLE
@@ -1718,8 +1755,8 @@ NOT_RWDT                          00000004
 NOT_T1SYNC                        00000002
 NOT_TO                            00000004
 NOT_WPUEN                         00000007
-OCTAVE                            00000099
-OCTAVEDOWN                        000000B6
+OCTAVE                            0000009F
+OCTAVEDOWN                        000000CF
 ODCONA                            0000028C
 ODCONA0                           00000000
 ODCONA1                           00000001
@@ -1749,7 +1786,7 @@ ODCONC6                           00000006
 ODCONC7                           00000007
 OERR                              00000001
 OPA1CON                           00000511
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 31
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 32
 
 
 SYMBOL TABLE
@@ -1808,7 +1845,7 @@ P1FEBSC1                          00000001
 P1FEBSC2                          00000002
 P1FEBSC3                          00000003
 P1FEBSC4                          00000004
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 32
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 33
 
 
 SYMBOL TABLE
@@ -1867,7 +1904,7 @@ P1STRA                            00000000
 P1STRB                            00000001
 P1STRC                            00000002
 P1STRD                            00000003
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 33
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 34
 
 
 SYMBOL TABLE
@@ -1926,7 +1963,7 @@ P2MDLPOL                          00000006
 P2MODE0                           00000000
 P2MODE1                           00000001
 P2MODE2                           00000002
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 34
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 35
 
 
 SYMBOL TABLE
@@ -1985,7 +2022,7 @@ P3ASDSC1                          00000001
 P3ASDSC2                          00000002
 P3ASDSC3                          00000003
 P3ASDSC4                          00000004
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 35
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 36
 
 
 SYMBOL TABLE
@@ -2044,7 +2081,7 @@ P3PRSC2                           00000002
 P3PRSC3                           00000003
 P3PRSC4                           00000004
 P3PRSIN                           00000007
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 36
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 37
 
 
 SYMBOL TABLE
@@ -2103,7 +2140,7 @@ P4FEBSC2                          00000002
 P4FEBSC3                          00000003
 P4FEBSC4                          00000004
 P4FEBSIN                          00000007
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 37
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 38
 
 
 SYMBOL TABLE
@@ -2162,7 +2199,7 @@ P4TPHIE                           00000006
 P4TPHIF                           00000002
 P4TPRIE                           00000004
 P4TPRIF                           00000000
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 38
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 39
 
 
 SYMBOL TABLE
@@ -2221,7 +2258,7 @@ PSMC1BLKR4                        00000004
 PSMC1BLKR5                        00000005
 PSMC1BLKR6                        00000006
 PSMC1BLKR7                        00000007
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 39
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 40
 
 
 SYMBOL TABLE
@@ -2280,7 +2317,7 @@ PSMC1LD                           00000006
 PSMC1MDL                          00000E92
 PSMC1OEN                          00000E95
 PSMC1PH                           00000EA1
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 40
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 41
 
 
 SYMBOL TABLE
@@ -2339,7 +2376,7 @@ PSMC1TMR0                         00000000
 PSMC1TMR1                         00000001
 PSMC1TMR10                        00000002
 PSMC1TMR11                        00000003
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 41
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 42
 
 
 SYMBOL TABLE
@@ -2398,7 +2435,7 @@ PSMC2DBR1                         00000001
 PSMC2DBR2                         00000002
 PSMC2DBR3                         00000003
 PSMC2DBR4                         00000004
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 42
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 43
 
 
 SYMBOL TABLE
@@ -2457,7 +2494,7 @@ PSMC2PH8                          00000000
 PSMC2PH9                          00000001
 PSMC2PHH                          00000EC2
 PSMC2PHL                          00000EC1
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 43
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 44
 
 
 SYMBOL TABLE
@@ -2516,7 +2553,7 @@ PSMC3ASDC                         00000EDD
 PSMC3ASDL                         00000EDE
 PSMC3ASDS                         00000EDF
 PSMC3BLKF                         00000EEC
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 44
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 45
 
 
 SYMBOL TABLE
@@ -2575,7 +2612,7 @@ PSMC3DC4                          00000004
 PSMC3DC5                          00000005
 PSMC3DC6                          00000006
 PSMC3DC7                          00000007
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 45
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 46
 
 
 SYMBOL TABLE
@@ -2634,7 +2671,7 @@ PSMC3PR5                          00000005
 PSMC3PR6                          00000006
 PSMC3PR7                          00000007
 PSMC3PR8                          00000000
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 46
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 47
 
 
 SYMBOL TABLE
@@ -2693,7 +2730,7 @@ PSMC4BLKR5                        00000005
 PSMC4BLKR6                        00000006
 PSMC4BLKR7                        00000007
 PSMC4BLNK                         00000F17
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 47
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 48
 
 
 SYMBOL TABLE
@@ -2752,7 +2789,7 @@ PSMC4MDL                          00000F12
 PSMC4OEN                          00000F15
 PSMC4PH                           00000F21
 PSMC4PH0                          00000000
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 48
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 49
 
 
 SYMBOL TABLE
@@ -2811,7 +2848,7 @@ PSMC4TMR1                         00000001
 PSMC4TMR10                        00000002
 PSMC4TMR11                        00000003
 PSMC4TMR12                        00000004
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 49
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 50
 
 
 SYMBOL TABLE
@@ -2867,10 +2904,10 @@ RCSTA                             0000019D
 RCSTA1                            0000019D
 RD                                00000000
 RE3                               00000003
-RECIEVE                           000000EC
+RECIEVE                           00000105
 RSEN                              00000001
 RX9                               00000006
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 50
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 51
 
 
 SYMBOL TABLE
@@ -2929,7 +2966,7 @@ SPBRG                             0000019B
 SPBRG1                            0000019B
 SPBRGH                            0000019C
 SPBRGH1                           0000019C
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 51
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 52
 
 
 SYMBOL TABLE
@@ -2988,7 +3025,7 @@ SSPMSK                            00000213
 SSPOV                             00000006
 SSPSTAT                           00000214
 START                             00000000
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 52
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 53
 
 
 SYMBOL TABLE
@@ -3047,7 +3084,7 @@ TMR2IE                            00000001
 TMR2IF                            00000001
 TMR2ON                            00000002
 TOSH                              00000FEF
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 53
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 54
 
 
 SYMBOL TABLE
@@ -3106,7 +3143,7 @@ TXIF                              00000004
 TXREG                             0000019A
 TXREG1                            0000019A
 TXSEL                             00000002
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 54
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 55
 
 
 SYMBOL TABLE
@@ -3115,6 +3152,9 @@ SYMBOL TABLE
 TXSTA                             0000019E
 TXSTA1                            0000019E
 UA                                00000001
+VALIDA                            000000B0
+VALIDD                            000000B5
+VALIDE                            000000AB
 VBYTE                             00000036
 VREGCON                           00000197
 VREGPM                            00000001
@@ -3162,15 +3202,15 @@ WREN                              00000002
 WRERR                             00000003
 WUE                               00000001
 Z                                 00000002
-Z_SHAD                            00000002
-_.org_1_0007                      00000007
-_.org_1_000F                      0000000F
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 55
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 56
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+Z_SHAD                            00000002
+_.org_1_0007                      00000007
+_.org_1_000F                      0000000F
 _BOREN_NSLEEP                     00003DFF
 _BOREN_OFF                        000039FF
 _BOREN_ON                         00003FFF
@@ -3221,15 +3261,15 @@ _PLLEN_OFF                        00003EFF
 _PLLEN_ON                         00003FFF
 _PWRTE_OFF                        00003FFF
 _PWRTE_ON                         00003FDF
-_STVREN_OFF                       00003DFF
-_STVREN_ON                        00003FFF
-_VCAPEN_OFF                       00003FFF
-MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  10:40:27         PAGE 56
+MPASM 5.86                    MIDIMASTER.ASM   11-20-2024  11:06:37         PAGE 57
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+_STVREN_OFF                       00003DFF
+_STVREN_ON                        00003FFF
+_VCAPEN_OFF                       00003FFF
 _VCAPEN_ON                        00003FDF
 _WDTE_NSLEEP                      00003FF7
 _WDTE_OFF                         00003FE7
