@@ -60,20 +60,20 @@ Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 78 :
 Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 79 : Found label after column 1. (CURRENTPTL)
 Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 80 : Found label after column 1. (NEXTPTH)
 Warning[207] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 81 : Found label after column 1. (NEXTPTL)
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 95 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 97 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 103 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 106 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 108 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 109 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 111 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 112 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 113 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 116 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 118 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 168 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 315 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 318 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 456 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 464 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Warning[205] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 469 : Found directive in column 1. (END)
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 143 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 145 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 151 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 154 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 156 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 157 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 159 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 160 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 161 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 164 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 166 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 174 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 197 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 200 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 281 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 289 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[205] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\ESLAVE.X\ESLAVE.ASM 294 : Found directive in column 1. (END)
