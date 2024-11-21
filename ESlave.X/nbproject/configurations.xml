@@ -18,6 +18,7 @@
       <itemPath>ESlaveSetup.inc</itemPath>
       <itemPath>ESlavePOPout.inc</itemPath>
       <itemPath>ESlavePUSHin.inc</itemPath>
+      <itemPath>StepperDrive.inc</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -27,6 +28,7 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>../../../../../Program Files (x86)/Microchip/MPLABX/v5.30/mpasmx</Elem>
+    <Elem>.</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
