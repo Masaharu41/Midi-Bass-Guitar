@@ -1,4 +1,4 @@
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE  1
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -57,7 +57,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00015 ;   1: Inc file to contain generic registry setups 
                       00016 ;
                       00017 ;       2: Removed GPR setup and added code reference 
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE  2
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -116,7 +116,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0017   0020           00062                 BANKSEL T2CON
 0018   019C           00063                 CLRF    T2CON                           ;DISABLE TIMER 2, 1:1 POST SCALE, PRESCALER 1
 0019   3000           00064                 MOVLW   H'000'                          ;SET PR2 FOR FULL COUNT 
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE  3
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -175,7 +175,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0039   0023           00105                 BANKSEL ANSELC
 003A   3000           00106                 MOVLW H'000'
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE  4
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -234,7 +234,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0000                  00023 POPOUT
 0000   0821           00024             MOVF H'21',0
 0001   0083           00025             MOVWF STATUS
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE  5
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -293,7 +293,7 @@ Warning[207]: Found label after column 1. (DISABLE)
   00000042            00044         DISABLE     EQU H'042'
                       00045 ; SET STORAGE REGISTERS FOR EACH NOTE AND ITS MIDI VALUES
 Warning[207]: Found label after column 1. (E1MIDI)
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE  6
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -352,7 +352,7 @@ Warning[207]: Found label after column 1. (C3MIDI)
                       00076     
 0005                  00077 SETUP
 0005   0021           00078     BANKSEL OSCCON
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE  7
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -411,7 +411,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 002A   00A9           00118     MOVWF AS1MIDI
 002B   3023           00119     MOVLW H'023'    ; MIDI 35 // B1
 002C   00B0           00120     MOVWF B1MIDI
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE  8
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -470,7 +470,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0059   2???           00169     GOTO SETE1
                       00170     ; CHECK IF PITCH IS F1
 005A   0824           00171     MOVF F1MIDI,0
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE  9
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE  9
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -529,7 +529,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0083   0834           00222     MOVF DS2MIDI,0
 0084   2???           00223     CALL EQUALS
 0085   1903           00224     BTFSC STATUS,Z
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 10
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 10
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -588,7 +588,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00275     
 00AE                  00276 EQUALS
 00AE   1103           00277     BCF STATUS,Z
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 11
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 11
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -608,274 +608,116 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 00B6   0008           00287     RETURN
                       00288     
 00B7                  00289 SETE1
-00B7   0020           00290     BANKSEL PORTA
-00B8   01A2           00291     CLRF PITCH
-00B9   01C1           00292     CLRF BUFFER
-00BA   01C2           00293     CLRF DISABLE
-00BB   2???           00294     GOTO MAIN
-                      00295     
-00BC                  00296 SETF1
-00BC   0020           00297     BANKSEL PORTA
-00BD   140C           00298     BSF PORTA,0
-00BE   1C42           00299     BTFSS DISABLE,0
-00BF   100C           00300     BCF PORTA,0
-00C0   01A2           00301     CLRF PITCH
-00C1   01C1           00302     CLRF BUFFER
-00C2   01C2           00303     CLRF DISABLE
-00C3   2???           00304     GOTO MAIN
-                      00305    
-00C4                  00306 SETFS1
-00C4   0020           00307     BANKSEL PORTA
-00C5   148C           00308     BSF PORTA,1
-00C6   1C42           00309     BTFSS DISABLE,0
-00C7   108C           00310     BCF PORTA,1
-00C8   01A2           00311     CLRF PITCH
-00C9   01C1           00312     CLRF BUFFER
-00CA   01C2           00313     CLRF DISABLE
-00CB   2???           00314     GOTO MAIN    
+                      00290   
+00B7                  00291 SETF1
+                      00292  
+                      00293    
+00B7                  00294 SETFS1
+                      00295  
+                      00296     
+00B7                  00297 SETG1
+                      00298    
+                      00299       
+00B7                  00300 SETGS1
+                      00301  
+                      00302     
+00B7                  00303 SETA1
+                      00304 
+                      00305     
+00B7                  00306 SETAS1
+                      00307    
+                      00308   
+                      00309    
+00B7                  00310 SETB1
+                      00311  
+                      00312     
+00B7                  00313 SETC2
+                      00314   
                       00315     
-00CC                  00316 SETG1
-00CC   0020           00317     BANKSEL PORTA
-00CD   150C           00318     BSF PORTA,2
-00CE   1C42           00319     BTFSS DISABLE,0
-00CF   110C           00320     BCF PORTA,2
-00D0   01A2           00321     CLRF PITCH
-00D1   01C1           00322     CLRF BUFFER
-00D2   01C2           00323     CLRF DISABLE
-00D3   2???           00324     GOTO MAIN    
-                      00325       
-00D4                  00326 SETGS1
-00D4   0020           00327     BANKSEL PORTA
-00D5   158C           00328     BSF PORTA,3
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 12
+00B7                  00316 SETCS2
+                      00317   
+                      00318     
+00B7                  00319 SETD2
+                      00320  
+                      00321  
+                      00322     
+00B7                  00323 SETDS2
+                      00324    
+                      00325     
+00B7                  00326 SETE2
+                      00327    
+                      00328     
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 12
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-00D6   1C42           00329     BTFSS DISABLE,0
-00D7   118C           00330     BCF PORTA,3
-00D8   01A2           00331     CLRF PITCH
-00D9   01C1           00332     CLRF BUFFER
-00DA   01C2           00333     CLRF DISABLE
-00DB   2???           00334     GOTO MAIN    
-                      00335     
-00DC                  00336 SETA1
-00DC   0020           00337     BANKSEL PORTA
-00DD   160C           00338     BSF PORTA,4
-00DE   1C42           00339     BTFSS DISABLE,0
-00DF   120C           00340     BCF PORTA,4
-00E0   01A2           00341     CLRF PITCH
-00E1   01C1           00342     CLRF BUFFER
-00E2   01C2           00343     CLRF DISABLE
-00E3   2???           00344     GOTO MAIN   
-                      00345     
-00E4                  00346 SETAS1
-00E4   0020           00347     BANKSEL PORTA
-00E5   168C           00348     BSF PORTA,5
-00E6   1C42           00349     BTFSS DISABLE,0
-00E7   128C           00350     BCF PORTA,5
-00E8   01A2           00351     CLRF PITCH
-00E9   01C1           00352     CLRF BUFFER
-00EA   01C2           00353     CLRF DISABLE
-00EB   2???           00354     GOTO MAIN    
-                      00355    
-00EC                  00356 SETB1
-00EC   0020           00357     BANKSEL PORTA
-00ED   170C           00358     BSF PORTA,6
-00EE   1C42           00359     BTFSS DISABLE,0
-00EF   130C           00360     BCF PORTA,6
-00F0   01A2           00361     CLRF PITCH
-00F1   01C1           00362     CLRF BUFFER
-00F2   01C2           00363     CLRF DISABLE
-00F3   2???           00364     GOTO MAIN  
-                      00365     
-00F4                  00366 SETC2
-00F4   0020           00367     BANKSEL PORTA
-00F5   178C           00368     BSF PORTA,7
-00F6   1C42           00369     BTFSS DISABLE,0
-00F7   138C           00370     BCF PORTA,7
-00F8   01A2           00371     CLRF PITCH
-00F9   01C1           00372     CLRF BUFFER
-00FA   01C2           00373     CLRF DISABLE
-00FB   2???           00374     GOTO MAIN   
-                      00375     
-00FC                  00376 SETCS2
-00FC   0020           00377     BANKSEL PORTB
-00FD   140D           00378     BSF PORTB,0
-00FE   1C42           00379     BTFSS DISABLE,0
-00FF   100D           00380     BCF PORTB,0
-0100   01A2           00381     CLRF PITCH
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 13
-
-
-LOC  OBJECT CODE     LINE SOURCE TEXT
-  VALUE
-
-0101   01C1           00382     CLRF BUFFER
-0102   01C2           00383     CLRF DISABLE
-0103   2???           00384     GOTO MAIN    
-                      00385     
-0104                  00386 SETD2
-0104   0020           00387     BANKSEL PORTB
-0105   148D           00388     BSF PORTB,1
-0106   1C42           00389     BTFSS DISABLE,0
-0107   108D           00390     BCF PORTB,1
-0108   01A2           00391     CLRF PITCH
-0109   01C1           00392     CLRF BUFFER
-010A   01C2           00393     CLRF DISABLE
-010B   2???           00394     GOTO MAIN  
-                      00395     
-010C                  00396 SETDS2
-010C   0020           00397     BANKSEL PORTB
-010D   150D           00398     BSF PORTB,2
-010E   1C42           00399     BTFSS DISABLE,0
-010F   110D           00400     BCF PORTB,2
-0110   01A2           00401     CLRF PITCH
-0111   01C1           00402     CLRF BUFFER
-0112   01C2           00403     CLRF DISABLE
-0113   2???           00404     GOTO MAIN       
-                      00405     
-0114                  00406 SETE2
-0114   0020           00407     BANKSEL PORTB
-0115   158D           00408     BSF PORTB,3
-0116   1C42           00409     BTFSS DISABLE,0
-0117   118D           00410     BCF PORTB,3
-0118   01A2           00411     CLRF PITCH
-0119   01C1           00412     CLRF BUFFER
-011A   01C2           00413     CLRF DISABLE
-011B   2???           00414     GOTO MAIN   
-                      00415     
-011C                  00416 SETF2
-011C   0020           00417     BANKSEL PORTB
-011D   160D           00418     BSF PORTB,4
-011E   1C42           00419     BTFSS DISABLE,0
-011F   120D           00420     BCF PORTB,4
-0120   01A2           00421     CLRF PITCH
-0121   01C1           00422     CLRF BUFFER
-0122   01C2           00423     CLRF DISABLE
-0123   2???           00424     GOTO MAIN  
-                      00425     
-0124                  00426 SETFS2
-0124   0020           00427     BANKSEL PORTB
-0125   168D           00428     BSF PORTB,5
-0126   1C42           00429     BTFSS DISABLE,0
-0127   128D           00430     BCF PORTB,5
-0128   01A2           00431     CLRF PITCH
-0129   01C1           00432     CLRF BUFFER
-012A   01C2           00433     CLRF DISABLE
-012B   2???           00434     GOTO MAIN  
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 14
-
-
-LOC  OBJECT CODE     LINE SOURCE TEXT
-  VALUE
-
-                      00435     
-012C                  00436 SETG2
-012C   0020           00437     BANKSEL PORTB
-012D   170D           00438     BSF PORTB,6
-012E   1C42           00439     BTFSS DISABLE,0
-012F   130D           00440     BCF PORTB,6
-0130   01A2           00441     CLRF PITCH
-0131   01C1           00442     CLRF BUFFER
-0132   01C2           00443     CLRF DISABLE
-0133   2???           00444     GOTO MAIN       
-                      00445     
-0134                  00446 SETGS2
-0134   0020           00447     BANKSEL PORTB
-0135   178D           00448     BSF PORTB,7
-0136   1C42           00449     BTFSS DISABLE,0
-0137   138D           00450     BCF PORTB,7
-0138   01A2           00451     CLRF PITCH
-0139   01C1           00452     CLRF BUFFER
-013A   01C2           00453     CLRF DISABLE
-013B   2???           00454     GOTO MAIN       
-                      00455     
-013C                  00456 SETA2
-013C   0020           00457     BANKSEL PORTD
-013D   140F           00458     BSF PORTD,0
-013E   1C42           00459     BTFSS DISABLE,0
-013F   100F           00460     BCF PORTD,0
-0140   01A2           00461     CLRF PITCH
-0141   01C1           00462     CLRF BUFFER
-0142   01C2           00463     CLRF DISABLE
-0143   2???           00464     GOTO MAIN
-                      00465     
-0144                  00466 SETAS2
-0144   0020           00467     BANKSEL PORTD
-0145   148F           00468     BSF PORTD,1
-0146   1C42           00469     BTFSS DISABLE,0
-0147   108F           00470     BCF PORTD,1
-0148   01A2           00471     CLRF PITCH
-0149   01C1           00472     CLRF BUFFER
-014A   01C2           00473     CLRF DISABLE
-014B   2???           00474     GOTO MAIN  
-                      00475     
-014C                  00476 SETB2
-014C   0020           00477     BANKSEL PORTD
-014D   150F           00478     BSF PORTD,2
-014E   1C42           00479     BTFSS DISABLE,0
-014F   110F           00480     BCF PORTD,2
-0150   01A2           00481     CLRF PITCH
-0151   01C1           00482     CLRF BUFFER
-0152   01C2           00483     CLRF DISABLE
-0153   2???           00484     GOTO MAIN  
-                      00485      
-                      00486     
-0154                  00487 SETC3
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 15
-
-
-LOC  OBJECT CODE     LINE SOURCE TEXT
-  VALUE
-
-0154   0020           00488     BANKSEL PORTD
-0155   158F           00489     BSF PORTD,3
-0156   1C42           00490     BTFSS DISABLE,0
-0157   118F           00491     BCF PORTD,3
-0158   01A2           00492     CLRF PITCH
-0159   01C1           00493     CLRF BUFFER
-015A   01C2           00494     CLRF DISABLE
-015B   2???           00495     GOTO MAIN       
-                      00496     
-015C                  00497 INTER
-015C   0020           00498     BANKSEL INTCON
-015D   018B           00499     CLRF INTCON             ; CLEAR INTERRUPTS
-015E   2???           00500     CALL PUSHIN             ; SAFE STATUS
-015F   110D           00501     BCF PORTB,2
-0160   0020           00502     BANKSEL PIR1
-0161   1991           00503     BTFSC PIR1,SSP1IF       ; CHECK MSSP INTERRUPT FLAG
-0162   2???           00504     CALL RECIEVE        
-0163   0020           00505     BANKSEL INTCON
-0164   178B           00506     BSF INTCON,GIE          ; RE-ENABLE INTERRUPTS
-0165   170B           00507     BSF INTCON,PEIE
-0166   2???           00508     CALL POPOUT             ; RETURN STATUS'S
-0167   0009           00509     RETFIE
-                      00510     
-0168                  00511 RECIEVE
-0168   0020           00512     BANKSEL PIR1
-0169   0191           00513     CLRF PIR1           ; CLEAR FLAG
-016A   110D           00514     BCF PORTB,2
-016B   0024           00515     BANKSEL SSP1BUF 
+00B7                  00329 SETF2
+                      00330    
+                      00331     
+00B7                  00332 SETFS2
+                      00333    
+00B7                  00334 SETG2
+                      00335  
+                      00336     
+00B7                  00337 SETGS2
+                      00338    
+                      00339     
+00B7                  00340 SETA2
+                      00341   
+                      00342     
+00B7                  00343 SETAS2
+                      00344    
+00B7                  00345 SETB2
+                      00346   
+                      00347     
+00B7                  00348 SETC3
+                      00349    
+                      00350     
+00B7                  00351 INTER
+00B7   0020           00352     BANKSEL INTCON
+00B8   018B           00353     CLRF INTCON             ; CLEAR INTERRUPTS
+00B9   2???           00354     CALL PUSHIN             ; SAFE STATUS
+00BA   110D           00355     BCF PORTB,2
+00BB   0020           00356     BANKSEL PIR1
+00BC   1991           00357     BTFSC PIR1,SSP1IF       ; CHECK MSSP INTERRUPT FLAG
+00BD   2???           00358     CALL RECIEVE        
+00BE   0020           00359     BANKSEL INTCON
+00BF   178B           00360     BSF INTCON,GIE          ; RE-ENABLE INTERRUPTS
+00C0   170B           00361     BSF INTCON,PEIE
+00C1   2???           00362     CALL POPOUT             ; RETURN STATUS'S
+00C2   0009           00363     RETFIE
+                      00364     
+00C3                  00365 RECIEVE
+00C3   0020           00366     BANKSEL PIR1
+00C4   0191           00367     CLRF PIR1           ; CLEAR FLAG
+00C5   110D           00368     BCF PORTB,2
+00C6   0024           00369     BANKSEL SSP1BUF 
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-016C   0811           00516     MOVF SSP1BUF,0      ; READ RECIEVED DATA
-016D   0020           00517     BANKSEL PORTB
-016E   1C41           00518     BTFSS BUFFER,0
-016F   2???           00519     GOTO $+2            ; DO NOT WRITE IF THIS IS ADDRESS
-0170   00A2           00520     MOVWF PITCH         ; MOVE INTO GPR
-0171   14C1           00521     BSF BUFFER,1
-0172   1441           00522     BSF BUFFER,0
-0173   0024           00523     BANKSEL SSP1CON1    
+00C7   0811           00370     MOVF SSP1BUF,0      ; READ RECIEVED DATA
+00C8   0020           00371     BANKSEL PORTB
+00C9   1C41           00372     BTFSS BUFFER,0
+00CA   2???           00373     GOTO $+2            ; DO NOT WRITE IF THIS IS ADDRESS
+00CB   00A2           00374     MOVWF PITCH         ; MOVE INTO GPR
+00CC   14C1           00375     BSF BUFFER,1
+00CD   1441           00376     BSF BUFFER,0
+00CE   0024           00377     BANKSEL SSP1CON1    
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0174   1615           00524     BSF SSP1CON1,CKP    ; RELEASE CLOCK LINE
-0175   0008           00525     RETURN
-                      00526     
-                      00527     
-                      00528 
+00CF   1615           00378     BSF SSP1CON1,CKP    ; RELEASE CLOCK LINE
+00D0   0008           00379     RETURN
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 13
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00380     
+                      00381     
+                      00382 
 Warning[205]: Found directive in column 1. (END)
-29A4 1FFF             00529 END
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 16
+29A4 1FFF             00383 END
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 14
 
 
 SYMBOL TABLE
@@ -934,7 +776,7 @@ ANSB4                             00000004
 ANSB5                             00000005
 ANSB6                             00000006
 ANSC0                             00000000
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 17
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 15
 
 
 SYMBOL TABLE
@@ -993,7 +835,7 @@ BUF2                              00000002
 BUF3                              00000003
 BUF4                              00000004
 BUF5                              00000005
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 18
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 16
 
 
 SYMBOL TABLE
@@ -1052,7 +894,7 @@ C3NCH1                            00000001
 C3NCH2                            00000002
 C3OE                              00000005
 C3ON                              00000007
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 19
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 17
 
 
 SYMBOL TABLE
@@ -1111,7 +953,7 @@ CCP3SEL                           00000000
 CCPR1                             00000291
 CCPR1H                            00000292
 CCPR1L                            00000291
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 20
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 18
 
 
 SYMBOL TABLE
@@ -1170,7 +1012,7 @@ DAC1PSS0                          00000002
 DAC1PSS1                          00000003
 DAC1R0                            00000000
 DAC1R1                            00000001
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 21
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 19
 
 
 SYMBOL TABLE
@@ -1229,7 +1071,7 @@ DS2MIDI                           00000034
 D_NOT_A                           00000005
 E1MIDI                            00000023
 E2MIDI                            00000035
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 22
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 20
 
 
 SYMBOL TABLE
@@ -1288,7 +1130,7 @@ INLVLA2                           00000002
 INLVLA3                           00000003
 INLVLA4                           00000004
 INLVLA5                           00000005
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 23
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 21
 
 
 SYMBOL TABLE
@@ -1331,7 +1173,7 @@ INLVLE3                           00000003
 INTCON                            0000000B
 INTE                              00000004
 INTEDG                            00000006
-INTER                             0000015C
+INTER                             000000B7
 INTF                              00000001
 IOCAF                             00000393
 IOCAF0                            00000000
@@ -1347,7 +1189,7 @@ IOCAN0                            00000000
 IOCAN1                            00000001
 IOCAN2                            00000002
 IOCAN3                            00000003
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 24
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 22
 
 
 SYMBOL TABLE
@@ -1406,7 +1248,7 @@ IOCCN                             00000398
 IOCCN0                            00000000
 IOCCN1                            00000001
 IOCCN2                            00000002
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 25
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 23
 
 
 SYMBOL TABLE
@@ -1465,7 +1307,7 @@ LATC4                             00000004
 LATC5                             00000005
 LATC6                             00000006
 LATC7                             00000007
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 26
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 24
 
 
 SYMBOL TABLE
@@ -1524,7 +1366,7 @@ ODCONB1                           00000001
 ODCONB2                           00000002
 ODCONB3                           00000003
 ODCONB4                           00000004
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 27
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 25
 
 
 SYMBOL TABLE
@@ -1583,7 +1425,7 @@ OSFIF                             00000007
 OSTS                              00000005
 P                                 00000004
 P1ARSEN                           00000005
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 28
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 26
 
 
 SYMBOL TABLE
@@ -1642,7 +1484,7 @@ P1OEB                             00000001
 P1OEC                             00000002
 P1OED                             00000003
 P1OEE                             00000004
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 29
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 27
 
 
 SYMBOL TABLE
@@ -1701,7 +1543,7 @@ P2ASDLB                           00000001
 P2ASDOV                           00000000
 P2ASDSC1                          00000001
 P2ASDSC2                          00000002
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 30
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 28
 
 
 SYMBOL TABLE
@@ -1760,7 +1602,7 @@ P2PRPOL                           00000006
 P2PRSC1                           00000001
 P2PRSC2                           00000002
 P2PRSC3                           00000003
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 31
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 29
 
 
 SYMBOL TABLE
@@ -1819,7 +1661,7 @@ P3DCSC4                           00000004
 P3DCSIN                           00000007
 P3DCST                            00000000
 P3FEBM0                           00000004
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 32
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 30
 
 
 SYMBOL TABLE
@@ -1878,7 +1720,7 @@ P3REBSC2                          00000002
 P3REBSC3                          00000003
 P3REBSC4                          00000004
 P3REBSIN                          00000007
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 33
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 31
 
 
 SYMBOL TABLE
@@ -1937,7 +1779,7 @@ P4HSMEN                           00000000
 P4INPOL                           00000006
 P4LSMEN                           00000001
 P4MDLBIT                          00000005
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 34
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 32
 
 
 SYMBOL TABLE
@@ -1996,7 +1838,7 @@ PCH0                              00000000
 PCH1                              00000001
 PCH2                              00000002
 PCIE                              00000006
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 35
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 33
 
 
 SYMBOL TABLE
@@ -2055,7 +1897,7 @@ PSMC1BLNK                         00000E97
 PSMC1CLK                          00000E94
 PSMC1CON                          00000E91
 PSMC1DBF                          00000EAA
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 36
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 34
 
 
 SYMBOL TABLE
@@ -2114,7 +1956,7 @@ PSMC1PH0                          00000000
 PSMC1PH1                          00000001
 PSMC1PH10                         00000002
 PSMC1PH11                         00000003
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 37
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 35
 
 
 SYMBOL TABLE
@@ -2173,7 +2015,7 @@ PSMC1TMR12                        00000004
 PSMC1TMR13                        00000005
 PSMC1TMR14                        00000006
 PSMC1TMR15                        00000007
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 38
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 36
 
 
 SYMBOL TABLE
@@ -2232,7 +2074,7 @@ PSMC2DBR5                         00000005
 PSMC2DBR6                         00000006
 PSMC2DBR7                         00000007
 PSMC2DC                           00000EC3
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 39
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 37
 
 
 SYMBOL TABLE
@@ -2291,7 +2133,7 @@ PSMC2PHS                          00000EBA
 PSMC2POL                          00000EB6
 PSMC2PR                           00000EC5
 PSMC2PR0                          00000000
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 40
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 38
 
 
 SYMBOL TABLE
@@ -2350,7 +2192,7 @@ PSMC3BLKF0                        00000000
 PSMC3BLKF1                        00000001
 PSMC3BLKF2                        00000002
 PSMC3BLKF3                        00000003
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 41
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 39
 
 
 SYMBOL TABLE
@@ -2409,7 +2251,7 @@ PSMC3DC8                          00000000
 PSMC3DC9                          00000001
 PSMC3DCH                          00000EE4
 PSMC3DCL                          00000EE3
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 42
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 40
 
 
 SYMBOL TABLE
@@ -2468,7 +2310,7 @@ PSMC3PR9                          00000001
 PSMC3PRH                          00000EE6
 PSMC3PRL                          00000EE5
 PSMC3PRS                          00000EDC
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 43
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 41
 
 
 SYMBOL TABLE
@@ -2527,7 +2369,7 @@ PSMC4CLK                          00000F14
 PSMC4CON                          00000F11
 PSMC4DBF                          00000F2A
 PSMC4DBF0                         00000000
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 44
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 42
 
 
 SYMBOL TABLE
@@ -2586,7 +2428,7 @@ PSMC4PH1                          00000001
 PSMC4PH10                         00000002
 PSMC4PH11                         00000003
 PSMC4PH12                         00000004
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 45
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 43
 
 
 SYMBOL TABLE
@@ -2645,7 +2487,7 @@ PSMC4TMR13                        00000005
 PSMC4TMR14                        00000006
 PSMC4TMR15                        00000007
 PSMC4TMR2                         00000002
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 46
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 44
 
 
 SYMBOL TABLE
@@ -2704,7 +2546,7 @@ RD4                               00000004
 RD5                               00000005
 RD6                               00000006
 RD7                               00000007
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 47
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 45
 
 
 SYMBOL TABLE
@@ -2714,7 +2556,7 @@ RE0                               00000000
 RE1                               00000001
 RE2                               00000002
 RE3                               00000003
-RECIEVE                           00000168
+RECIEVE                           000000C3
 RSEN                              00000001
 RX9                               00000006
 RX9D                              00000000
@@ -2733,27 +2575,27 @@ SDISEL                            00000003
 SDOSEL                            00000005
 SEN                               00000000
 SENDB                             00000003
-SETA1                             000000DC
-SETA2                             0000013C
-SETAS1                            000000E4
-SETAS2                            00000144
-SETB1                             000000EC
-SETB2                             0000014C
-SETC2                             000000F4
-SETC3                             00000154
-SETCS2                            000000FC
-SETD2                             00000104
-SETDS2                            0000010C
+SETA1                             000000B7
+SETA2                             000000B7
+SETAS1                            000000B7
+SETAS2                            000000B7
+SETB1                             000000B7
+SETB2                             000000B7
+SETC2                             000000B7
+SETC3                             000000B7
+SETCS2                            000000B7
+SETD2                             000000B7
+SETDS2                            000000B7
 SETE1                             000000B7
-SETE2                             00000114
-SETF1                             000000BC
-SETF2                             0000011C
-SETFS1                            000000C4
-SETFS2                            00000124
-SETG1                             000000CC
-SETG2                             0000012C
-SETGS1                            000000D4
-SETGS2                            00000134
+SETE2                             000000B7
+SETF1                             000000B7
+SETF2                             000000B7
+SETFS1                            000000B7
+SETFS2                            000000B7
+SETG1                             000000B7
+SETG2                             000000B7
+SETGS1                            000000B7
+SETGS2                            000000B7
 SETUP                             00000005
 SLRCONA                           0000030C
 SLRCONA0                          00000000
@@ -2763,7 +2605,7 @@ SLRCONA3                          00000003
 SLRCONA4                          00000004
 SLRCONA5                          00000005
 SLRCONA6                          00000006
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 48
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 46
 
 
 SYMBOL TABLE
@@ -2822,7 +2664,7 @@ SSP1ADD3                          00000003
 SSP1ADD4                          00000004
 SSP1ADD5                          00000005
 SSP1ADD6                          00000006
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 49
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 47
 
 
 SYMBOL TABLE
@@ -2881,7 +2723,7 @@ T0CS                              00000005
 T0IE                              00000005
 T0IF                              00000002
 T0SE                              00000004
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 50
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 48
 
 
 SYMBOL TABLE
@@ -2940,7 +2782,7 @@ TRISA2                            00000002
 TRISA3                            00000003
 TRISA4                            00000004
 TRISA5                            00000005
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 51
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 49
 
 
 SYMBOL TABLE
@@ -2999,7 +2841,7 @@ TXIF                              00000004
 TXREG                             0000019A
 TXREG1                            0000019A
 TXSEL                             00000002
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 52
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 50
 
 
 SYMBOL TABLE
@@ -3058,7 +2900,7 @@ WPUE                              00000210
 WPUE0                             00000000
 WPUE1                             00000001
 WPUE2                             00000002
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 53
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 51
 
 
 SYMBOL TABLE
@@ -3074,7 +2916,7 @@ WUE                               00000001
 Z                                 00000002
 Z_SHAD                            00000002
 _.org_1_000A                      0000000A
-_.org_1_016F                      0000016F
+_.org_1_00CA                      000000CA
 _BOREN_NSLEEP                     00003DFF
 _BOREN_OFF                        000039FF
 _BOREN_ON                         00003FFF
@@ -3117,7 +2959,7 @@ _PLLEN_ON                         00003FFF
 _PWRTE_OFF                        00003FFF
 _PWRTE_ON                         00003FDF
 _STVREN_OFF                       00003DFF
-MPASM 5.86                        ESLAVE.ASM   11-19-2024  9:50:52         PAGE 54
+MPASM 5.86                        ESLAVE.ASM   11-21-2024  10:07:20         PAGE 52
 
 
 SYMBOL TABLE
