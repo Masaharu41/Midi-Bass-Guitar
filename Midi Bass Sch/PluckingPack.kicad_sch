@@ -767,7 +767,7 @@
 	)
 	(text "E Plucking Unit"
 		(exclude_from_sim no)
-		(at 162.687 20.193 0)
+		(at 161.036 21.082 0)
 		(effects
 			(font
 				(size 5.08 5.08)

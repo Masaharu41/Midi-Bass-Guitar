@@ -2414,7 +2414,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f4b2c09-65df-47a9-a341-030aa30d40f4")
-		(property "Reference" "U?"
+		(property "Reference" "U5"
 			(at 144.4341 152.4 0)
 			(effects
 				(font
@@ -2582,7 +2582,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/c3b9cd48-3fcf-4fda-9d60-ef0911073906"
-					(reference "U?")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -2664,7 +2664,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "682374bc-c9c9-4c0b-ad92-21117d567922")
-		(property "Reference" "D?"
+		(property "Reference" "D7"
 			(at 83.82 125.73 90)
 			(effects
 				(font
@@ -2716,7 +2716,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/c3b9cd48-3fcf-4fda-9d60-ef0911073906"
-					(reference "D?")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -2798,7 +2798,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3ca460d-5127-4f18-a793-1ad826ecb89b")
-		(property "Reference" "R?"
+		(property "Reference" "R17"
 			(at 73.66 124.4599 90)
 			(effects
 				(font
@@ -2852,7 +2852,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/c3b9cd48-3fcf-4fda-9d60-ef0911073906"
-					(reference "R?")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -2935,7 +2935,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d864de4d-cc67-40e3-ac11-f3a063156388")
-		(property "Reference" "C?"
+		(property "Reference" "C4"
 			(at 73.66 135.2549 0)
 			(effects
 				(font
@@ -2989,7 +2989,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/c3b9cd48-3fcf-4fda-9d60-ef0911073906"
-					(reference "C?")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -3005,7 +3005,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fcd6d86b-c213-4184-8550-95a215542ddd")
-		(property "Reference" "TP?"
+		(property "Reference" "TP7"
 			(at 79.248 64.77 90)
 			(effects
 				(font
@@ -3054,7 +3054,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/c3b9cd48-3fcf-4fda-9d60-ef0911073906"
-					(reference "TP?")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
