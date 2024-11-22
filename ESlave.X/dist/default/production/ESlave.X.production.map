@@ -1,16 +1,16 @@
 MPLINK 5.09, LINKER
-Linker Map File - Created Fri Nov 22 09:46:44 2024
+Linker Map File - Created Fri Nov 22 10:59:44 2024
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                    .org_0       code   0x000000    program   0x000002
                    .cinit    romdata   0x000001    program   0x000004
-                   .org_1       code   0x000004    program   0x000168
-               START_CODE       code   0x0000b8    program   0x00009a
-               DRIVE_CODE       code   0x000105    program   0x00008e
-              PUSHIN_CODE       code   0x00014c    program   0x000008
-              POPOUT_CODE       code   0x000150    program   0x000008
+                   .org_1       code   0x000004    program   0x000174
+               START_CODE       code   0x0000be    program   0x00009a
+               DRIVE_CODE       code   0x00010b    program   0x000052
+              PUSHIN_CODE       code   0x000134    program   0x000008
+              POPOUT_CODE       code   0x000138    program   0x000008
 .config_8007_BUILD/DEFAULT/PRODUCTION/ESLAVE.       code   0x008007    program   0x000002
 .config_8008_BUILD/DEFAULT/PRODUCTION/ESLAVE.       code   0x008008    program   0x000002
 
@@ -20,53 +20,53 @@ Linker Map File - Created Fri Nov 22 09:46:44 2024
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000002      
-                            0x000004    0x000153      
+                            0x000004    0x00013b      
                             0x008007    0x008008      
-            341 out of 16647 program addresses used, program memory utilization is 2%
+            317 out of 16647 program addresses used, program memory utilization is 1%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                 CALCSTEP   0x000072    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                    DELAY   0x000140    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                    DRIVE   0x000105    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                EVALBYTE1   0x00012d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                EVALBYTE2   0x000123    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                EVALBYTE3   0x000116    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                  EVALLOW   0x000079    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                     FIRE   0x00009a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-              HIGHESTLOOP   0x00010a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                 HIGHLOOP   0x00011a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                 CALCSTEP   0x000077    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                    DELAY   0x000128    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                    DRIVE   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                EVALBYTE1   0x000115    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                EVALBYTE2   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                EVALBYTE3   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                  EVALLOW   0x00007e    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                     FIRE   0x00009f    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+              HIGHESTLOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                 HIGHLOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
                 HIGHTABLE   0x000005    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                    INTER   0x00009e    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                    LOOP0   0x000128    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-               LOWERLOOP1   0x000131    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-               LOWESTLOOP   0x00010d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                  LOWLOOP   0x00011c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                    INTER   0x0000a4    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                    LOOP0   0x000110    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+               LOWERLOOP1   0x000119    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+               LOWESTLOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                  LOWLOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
                  LOWTABLE   0x00001a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                     MAIN   0x000056    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-               MIDDLELOOP   0x00010c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                     MAIN   0x000059    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+               MIDDLELOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
                MIDESTLOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                  MIDLOOP   0x00011b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                   POPOUT   0x000150    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePOPout.inc
-                   PUSHIN   0x00014c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePUSHin.inc
-                  RECIEVE   0x0000aa    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                  RELEASE   0x000067    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                  MIDLOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                   POPOUT   0x000138    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePOPout.inc
+                   PUSHIN   0x000134    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePUSHin.inc
+                  RECIEVE   0x0000b0    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                  RELEASE   0x00006c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
                     SETUP   0x00002f    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                    START   0x0000b8    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlaveSetup.inc
-                     STEP   0x000135    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                 STEPBACK   0x000096    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                STEPBACKH   0x000088    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-              STEPFORWARD   0x000092    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-             STEPFORWARDH   0x000080    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                     STOP   0x00006c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-               UPPERLOOP0   0x000127    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                    START   0x0000be    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlaveSetup.inc
+                     STEP   0x00011d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                 STEPBACK   0x00009b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                STEPBACKH   0x00008d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+              STEPFORWARD   0x000097    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+             STEPFORWARDH   0x000085    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                     STOP   0x000071    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+               UPPERLOOP0   0x00010f    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
              _.org_1_0034   0x000034    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-             _.org_1_00B1   0x0000b1    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-         _DRIVE_CODE_0033   0x000138    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-         _DRIVE_CODE_0038   0x00013d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+             _.org_1_00B7   0x0000b7    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+         _DRIVE_CODE_0015   0x000120    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+         _DRIVE_CODE_001A   0x000125    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
 
 
 
@@ -77,39 +77,39 @@ Linker Map File - Created Fri Nov 22 09:46:44 2024
                  LOWTABLE   0x00001a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
                     SETUP   0x00002f    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
              _.org_1_0034   0x000034    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                     MAIN   0x000056    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                  RELEASE   0x000067    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                     STOP   0x00006c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                 CALCSTEP   0x000072    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                  EVALLOW   0x000079    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-             STEPFORWARDH   0x000080    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                STEPBACKH   0x000088    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-              STEPFORWARD   0x000092    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                 STEPBACK   0x000096    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                     FIRE   0x00009a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                    INTER   0x00009e    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                  RECIEVE   0x0000aa    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-             _.org_1_00B1   0x0000b1    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
-                    START   0x0000b8    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlaveSetup.inc
-                    DRIVE   0x000105    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-              HIGHESTLOOP   0x00010a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                     MAIN   0x000059    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                  RELEASE   0x00006c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                     STOP   0x000071    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                 CALCSTEP   0x000077    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                  EVALLOW   0x00007e    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+             STEPFORWARDH   0x000085    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                STEPBACKH   0x00008d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+              STEPFORWARD   0x000097    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                 STEPBACK   0x00009b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                     FIRE   0x00009f    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                    INTER   0x0000a4    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                  RECIEVE   0x0000b0    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+             _.org_1_00B7   0x0000b7    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlave.asm
+                    START   0x0000be    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlaveSetup.inc
+                  MIDLOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                    DRIVE   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                EVALBYTE2   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                EVALBYTE3   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+              HIGHESTLOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                 HIGHLOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+               LOWESTLOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                  LOWLOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+               MIDDLELOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
                MIDESTLOOP   0x00010b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-               MIDDLELOOP   0x00010c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-               LOWESTLOOP   0x00010d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                EVALBYTE3   0x000116    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                 HIGHLOOP   0x00011a    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                  MIDLOOP   0x00011b    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                  LOWLOOP   0x00011c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                EVALBYTE2   0x000123    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-               UPPERLOOP0   0x000127    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                    LOOP0   0x000128    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                EVALBYTE1   0x00012d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-               LOWERLOOP1   0x000131    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                     STEP   0x000135    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-         _DRIVE_CODE_0033   0x000138    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-         _DRIVE_CODE_0038   0x00013d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                    DELAY   0x000140    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
-                   PUSHIN   0x00014c    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePUSHin.inc
-                   POPOUT   0x000150    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePOPout.inc
+               UPPERLOOP0   0x00010f    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                    LOOP0   0x000110    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                EVALBYTE1   0x000115    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+               LOWERLOOP1   0x000119    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                     STEP   0x00011d    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+         _DRIVE_CODE_0015   0x000120    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+         _DRIVE_CODE_001A   0x000125    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                    DELAY   0x000128    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\StepperDrive.inc
+                   PUSHIN   0x000134    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePUSHin.inc
+                   POPOUT   0x000138    program     static C:\Users\jackel\Documents\Midi-Bass-Guitar\ESlave.X\ESlavePOPout.inc
 
 
