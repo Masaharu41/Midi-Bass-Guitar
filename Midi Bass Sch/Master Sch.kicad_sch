@@ -2096,7 +2096,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -33.02 3.81 0)
+					(at 33.02 15.24 180)
 					(length 3.81)
 					(name "CLKOUT/OSC2/RA6"
 						(effects
@@ -3512,6 +3512,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 44.45) (xy 180.34 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f785b057-ce55-4c96-a5b0-ecd8f5b800a2")
+	)
+	(wire
+		(pts
 			(xy 147.32 128.27) (xy 151.13 128.27)
 		)
 		(stroke
@@ -4666,7 +4676,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 114.3 63.5 90)
+		(at 180.34 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4675,23 +4685,25 @@
 		(fields_autoplaced yes)
 		(uuid "4193390e-b169-4967-aa0e-2d74e79329b0")
 		(property "Reference" "TP2"
-			(at 110.998 58.42 90)
+			(at 182.88 39.8779 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "CLKOUT0"
-			(at 110.998 60.96 90)
+		(property "Value" "Master CLKOUT"
+			(at 182.88 42.4179 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 58.42 0)
+			(at 185.42 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4700,7 +4712,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 114.3 58.42 0)
+			(at 185.42 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4709,7 +4721,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 114.3 63.5 0)
+			(at 180.34 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
