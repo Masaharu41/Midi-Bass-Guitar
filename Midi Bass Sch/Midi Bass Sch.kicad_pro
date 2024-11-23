@@ -371,7 +371,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "/home/Gnomes/Kicad Libs/Templates/Kicad-Templates/ISU_Title_Block_Size_A.kicad_wks",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -414,6 +414,10 @@
     [
       "a79027be-e76c-43a0-a80a-a6c6a159c340",
       "G String Slave"
+    ],
+    [
+      "53a25049-8626-4b4b-b3ea-55f1e76cc726",
+      "E Slave Solenoid Array"
     ]
   ],
   "text_variables": {}
