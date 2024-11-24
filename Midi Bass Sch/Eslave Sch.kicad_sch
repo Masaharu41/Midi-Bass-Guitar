@@ -2478,10 +2478,6 @@
 		(uuid "0bc55737-b00b-479d-b3da-3b116fc8fdec")
 	)
 	(no_connect
-		(at 166.37 138.43)
-		(uuid "0fd92f36-99dc-4bb7-bfbd-246cb0fa5f9b")
-	)
-	(no_connect
 		(at 81.28 58.42)
 		(uuid "158613a8-331c-4bbb-8f6b-8fc91907df94")
 	)
