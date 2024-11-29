@@ -438,6 +438,10 @@
     [
       "f64ec287-f479-4738-9a15-840081b33afa",
       "D Solenoid Array"
+    ],
+    [
+      "6647718b-e0eb-4ffe-84db-a4a2cb4ee4c0",
+      "G Solenoid Array"
     ]
   ],
   "text_variables": {}
