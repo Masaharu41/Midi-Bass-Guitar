@@ -335,11 +335,23 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -418,6 +430,10 @@
     [
       "53a25049-8626-4b4b-b3ea-55f1e76cc726",
       "E Slave Solenoid Array"
+    ],
+    [
+      "3bc0de5f-042d-4ceb-9e72-7362549ec4e5",
+      "A Slave Solenoid Array"
     ]
   ],
   "text_variables": {}

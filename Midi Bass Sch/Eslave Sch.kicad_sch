@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "13d8f38f-0f95-4862-a761-d18b4c8b6dc9")
-	(paper "A4")
+	(paper "A")
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
@@ -2506,6 +2506,10 @@
 		(uuid "c3be2b71-d02b-4994-a337-db999cc2ec64")
 	)
 	(no_connect
+		(at 166.37 138.43)
+		(uuid "d3e02156-aec3-4875-9327-6e86f762bfd0")
+	)
+	(no_connect
 		(at 81.28 73.66)
 		(uuid "dcd76d30-41c3-45fb-83fe-8f828ffbb55d")
 	)
@@ -2528,6 +2532,16 @@
 			(type default)
 		)
 		(uuid "02c26310-ef9c-4b82-ba40-b1e5902c09ac")
+	)
+	(wire
+		(pts
+			(xy 78.74 114.3) (xy 81.28 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08e92659-a38e-4013-aa0c-63f67c1e8e00")
 	)
 	(wire
 		(pts
@@ -2891,6 +2905,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 109.22) (xy 81.28 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e62d3826-70cb-4e08-a1a2-a52a5bfed148")
+	)
+	(wire
+		(pts
 			(xy 166.37 30.48) (xy 166.37 35.56)
 		)
 		(stroke
@@ -3085,7 +3109,7 @@
 	)
 	(global_label "I2Cdat"
 		(shape input)
-		(at 81.28 114.3 180)
+		(at 78.74 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3095,7 +3119,7 @@
 		)
 		(uuid "4e95ee3a-51c1-4f88-be44-3ee92ce6006a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.1868 114.3 0)
+			(at 69.6468 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3283,7 +3307,7 @@
 	)
 	(global_label "I2Cclk"
 		(shape input)
-		(at 81.28 109.22 180)
+		(at 78.74 114.3 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3293,7 +3317,7 @@
 		)
 		(uuid "c9ec5813-e0e3-4ff7-b1c5-06a91b12aa0f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.4286 109.22 0)
+			(at 69.8886 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3423,7 +3447,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0729bf81-b8c2-47ca-b9e2-8093bb10abd8")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR025"
 			(at 114.3 157.48 0)
 			(effects
 				(font
@@ -3474,7 +3498,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "#PWR09")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -3499,7 +3523,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "CLKOUT1"
+		(property "Value" "E CLKOUT"
 			(at 168.91 28.4479 0)
 			(effects
 				(font
@@ -3557,7 +3581,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2032fe68-918b-4e61-affd-e8483f4d6301")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR024"
 			(at 59.69 138.43 0)
 			(effects
 				(font
@@ -3608,7 +3632,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "#PWR018")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -3624,7 +3648,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e98e8d9-314d-4965-8357-14e17a7fc18f")
-		(property "Reference" "D5"
+		(property "Reference" "D10"
 			(at 205.74 120.9674 90)
 			(effects
 				(font
@@ -3633,7 +3657,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Active"
+		(property "Value" "E Active"
 			(at 205.74 123.5074 90)
 			(effects
 				(font
@@ -3678,7 +3702,7 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "D5")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -3694,7 +3718,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31f86775-fc8b-4090-accf-60eb5a57be83")
-		(property "Reference" "R7"
+		(property "Reference" "R16"
 			(at 62.23 124.4599 90)
 			(effects
 				(font
@@ -3748,7 +3772,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "R7")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -3834,7 +3858,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3f5e53b6-7114-4a2a-a9bd-318d597fe4b3")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR028"
 			(at 201.93 123.19 0)
 			(effects
 				(font
@@ -3885,7 +3909,7 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "#PWR045")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -3901,7 +3925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76a5d11a-a3f2-4e7e-9a4a-f66093b82157")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR022"
 			(at 38.1 139.7 0)
 			(effects
 				(font
@@ -3952,7 +3976,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "#PWR051")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -3968,7 +3992,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81e52d90-c480-4181-b558-c5ce20994c78")
-		(property "Reference" "R20"
+		(property "Reference" "R15"
 			(at 40.64 135.8899 90)
 			(effects
 				(font
@@ -4022,7 +4046,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "R20")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -4038,7 +4062,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a70aea94-cc6d-4adb-8d57-dbaa64e51a99")
-		(property "Reference" "SW1"
+		(property "Reference" "SW3"
 			(at 49.53 123.19 0)
 			(effects
 				(font
@@ -4090,7 +4114,7 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "SW1")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -4106,7 +4130,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9d2cc37-5484-4936-81af-af472868bb52")
-		(property "Reference" "R16"
+		(property "Reference" "R17"
 			(at 190.5 111.7599 90)
 			(effects
 				(font
@@ -4160,7 +4184,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "R16")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -4175,10 +4199,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b37d3464-b7df-46cc-9951-403e7c180805")
 		(property "Reference" "U2"
-			(at 131.7341 152.4 0)
+			(at 126.238 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4361,7 +4384,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4a5e05a-e897-4f31-8096-6c42402fa0de")
-		(property "Reference" "R15"
+		(property "Reference" "R18"
 			(at 204.47 109.2199 90)
 			(effects
 				(font
@@ -4415,7 +4438,7 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "R15")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -4431,7 +4454,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba337b49-3035-485c-985f-4bd665c3ae0b")
-		(property "Reference" "D3"
+		(property "Reference" "D8"
 			(at 72.39 125.73 90)
 			(effects
 				(font
@@ -4483,7 +4506,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "D3")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -4499,7 +4522,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c205c30a-ec11-4295-a205-e8081efb7e9e")
-		(property "Reference" "D6"
+		(property "Reference" "D9"
 			(at 191.77 123.5074 90)
 			(effects
 				(font
@@ -4508,7 +4531,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Status"
+		(property "Value" "E Status"
 			(at 191.77 126.0474 90)
 			(effects
 				(font
@@ -4553,7 +4576,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "D6")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -4569,7 +4592,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dee4ec21-7f72-4edd-9a37-db45cf8ad9b9")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR027"
 			(at 187.96 125.73 0)
 			(effects
 				(font
@@ -4620,7 +4643,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "#PWR046")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -4636,7 +4659,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5a110a9-0841-4933-b761-71a4601f00bf")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR023"
 			(at 64.4144 116.9416 0)
 			(effects
 				(font
@@ -4686,7 +4709,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "#PWR017")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -4702,7 +4725,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f991fe4f-79be-4db4-a10f-7ba5382975e8")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR026"
 			(at 121.5644 20.4216 0)
 			(effects
 				(font
@@ -4752,14 +4775,14 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(reference "#PWR010")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(sheet
-		(at 137.795 177.165)
+		(at 118.11 175.26)
 		(size 15.875 7.62)
 		(fields_autoplaced yes)
 		(stroke
@@ -4771,7 +4794,7 @@
 		)
 		(uuid "53a25049-8626-4b4b-b3ea-55f1e76cc726")
 		(property "Sheetname" "E Slave Solenoid Array"
-			(at 137.795 176.4534 0)
+			(at 118.11 174.5484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4780,7 +4803,7 @@
 			)
 		)
 		(property "Sheetfile" "EsolenoidA.kicad_sch"
-			(at 137.795 185.3696 0)
+			(at 118.11 183.4646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
