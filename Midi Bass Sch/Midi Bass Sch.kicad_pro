@@ -434,6 +434,10 @@
     [
       "3bc0de5f-042d-4ceb-9e72-7362549ec4e5",
       "A Slave Solenoid Array"
+    ],
+    [
+      "f64ec287-f479-4738-9a15-840081b33afa",
+      "D Solenoid Array"
     ]
   ],
   "text_variables": {}
