@@ -3731,7 +3731,7 @@
 		)
 		(uuid "fb520450-071b-4932-a2c8-7f51160ec053")
 	)
-	(global_label "RB6"
+	(global_label "RB6M"
 		(shape output)
 		(at 58.42 67.31 0)
 		(fields_autoplaced yes)
@@ -3743,7 +3743,7 @@
 		)
 		(uuid "055cae5e-bd78-424d-99bd-4d1fd09983d2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 65.1547 67.31 0)
+			(at 66.6061 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3753,7 +3753,7 @@
 			)
 		)
 	)
-	(global_label "RB7"
+	(global_label "RB7M"
 		(shape input)
 		(at 69.85 90.17 180)
 		(fields_autoplaced yes)
@@ -3765,7 +3765,7 @@
 		)
 		(uuid "0a8585f4-d766-4a99-b72b-502af0b8301a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 63.1153 90.17 0)
+			(at 61.6639 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3929,7 +3929,7 @@
 			)
 		)
 	)
-	(global_label "RB7"
+	(global_label "RB7M"
 		(shape output)
 		(at 58.42 63.5 0)
 		(fields_autoplaced yes)
@@ -3941,7 +3941,7 @@
 		)
 		(uuid "e06f6485-5e99-4e39-bcd7-10695af38600")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 65.1547 63.5 0)
+			(at 66.6061 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4017,7 +4017,7 @@
 			)
 		)
 	)
-	(global_label "RB6"
+	(global_label "RB6M"
 		(shape input)
 		(at 69.85 87.63 180)
 		(fields_autoplaced yes)
@@ -4029,7 +4029,7 @@
 		)
 		(uuid "edd2af11-f65a-4c55-8784-d9029093b28a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 63.1153 87.63 0)
+			(at 61.6639 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
