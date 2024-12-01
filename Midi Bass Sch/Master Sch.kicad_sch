@@ -892,23 +892,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D5"
-				(at 6.35 -3.81 90)
+			(property "Reference" "D"
+				(at 3.81 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "4148"
-				(at 3.81 -3.81 90)
+			(property "Value" "Vz"
+				(at 3.81 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -963,7 +963,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 0 270)
+					(at 0 -7.62 90)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -981,7 +981,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -7.62 90)
+					(at 0 0 270)
 					(length 2.54)
 					(name "2"
 						(effects

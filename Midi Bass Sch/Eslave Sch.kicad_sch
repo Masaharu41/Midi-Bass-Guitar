@@ -637,7 +637,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 0 270)
+					(at 0 -7.62 90)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -655,7 +655,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -7.62 90)
+					(at 0 0 270)
 					(length 2.54)
 					(name "2"
 						(effects

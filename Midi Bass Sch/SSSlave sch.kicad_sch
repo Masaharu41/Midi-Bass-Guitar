@@ -637,7 +637,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 0 270)
+					(at 0 -7.62 90)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -655,7 +655,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -7.62 90)
+					(at 0 0 270)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -3470,7 +3470,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "031430f7-ea7a-422e-8918-9c9ce7bf7496")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR034"
 			(at 53.34 140.97 0)
 			(effects
 				(font
@@ -3521,7 +3521,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0"
-					(reference "#PWR032")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -3537,7 +3537,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19c1e97e-2e4c-49d7-af52-7a9f4df0e21a")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR038"
 			(at 187.96 104.14 0)
 			(effects
 				(font
@@ -3588,7 +3588,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0"
-					(reference "#PWR036")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -3671,7 +3671,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53eb058b-11f9-4136-af30-fa06c2a4ce31")
-		(property "Reference" "J?"
+		(property "Reference" "J4"
 			(at 34.29 58.42 0)
 			(effects
 				(font
@@ -3735,7 +3735,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0"
-					(reference "J?")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -3751,7 +3751,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "604c6a59-0998-4d90-b275-c996cecf32b8")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR033"
 			(at 58.0644 119.4816 0)
 			(effects
 				(font
@@ -3801,7 +3801,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0"
-					(reference "#PWR031")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -3817,7 +3817,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61164df7-7c42-4569-b9b5-53885e1b969e")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR036"
 			(at 113.03 157.48 0)
 			(effects
 				(font
@@ -3868,7 +3868,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0"
-					(reference "#PWR034")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -3954,7 +3954,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69b3d667-444d-4ddd-937c-703a8f9d44a5")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR035"
 			(at 115.2144 22.9616 0)
 			(effects
 				(font
@@ -4004,7 +4004,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0"
-					(reference "#PWR033")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -4159,7 +4159,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9995b9da-fc6a-4da6-95a8-b08e9bf56276")
-		(property "Reference" "#PWR0329"
+		(property "Reference" "#PWR032"
 			(at 45.72 71.12 0)
 			(effects
 				(font
@@ -4210,7 +4210,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0"
-					(reference "#PWR0329")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -4480,7 +4480,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0587cc4-1a29-4084-8883-1b366dd11c0b")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR037"
 			(at 173.99 106.68 0)
 			(effects
 				(font
@@ -4531,7 +4531,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0"
-					(reference "#PWR035")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -4615,7 +4615,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "efdff0d5-a431-499e-943b-9376733bf52b")
-		(property "Reference" "#PWR0328"
+		(property "Reference" "#PWR031"
 			(at 50.4444 58.5216 0)
 			(effects
 				(font
@@ -4665,7 +4665,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0"
-					(reference "#PWR0328")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
