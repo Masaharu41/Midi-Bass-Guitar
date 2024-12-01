@@ -892,23 +892,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 3.81 -1.27 0)
+			(property "Reference" "D5"
+				(at 6.35 -3.81 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Vz"
-				(at 3.81 -3.81 0)
+			(property "Value" "4148"
+				(at 3.81 -3.81 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4067,7 +4067,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 168.91 69.85 0)
 			(effects
 				(font
@@ -4132,7 +4132,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 29.21 142.24 0)
 			(effects
 				(font
@@ -4893,7 +4893,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 168.91 29.21 0)
 			(effects
 				(font
@@ -5649,7 +5649,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OF footprints:SSOP-28"
 			(at 130.81 52.07 0)
 			(effects
 				(font
@@ -5934,7 +5934,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 55.88 114.3 0)
 			(effects
 				(font
@@ -6071,7 +6071,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 179.07 63.5 0)
 			(effects
 				(font
@@ -6824,7 +6824,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm"
 			(at 58.42 25.4 0)
 			(effects
 				(font
