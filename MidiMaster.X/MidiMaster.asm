@@ -70,8 +70,6 @@
     
 	#INCLUDE "p16f1788.inc"
 	#INCLUDE <MidiMasterSetup.inc>
-	#INCLUDE <MidiMasterEEWRITE.inc>
-	#INCLUDE <MidiMasterEEREAD.inc>
 	#INCLUDE <MidiMasterPOPout.inc>
 	#INCLUDE <MidiMasterPUSHin.inc>
 	#INCLUDE <MidiMasterI2CWRITE.inc>
