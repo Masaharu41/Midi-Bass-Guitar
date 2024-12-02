@@ -1265,6 +1265,24 @@
 		(uuid "028714cf-10d0-4f9c-ba8c-fc0edb084cf9")
 	)
 	(junction
+		(at 231.14 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1734c3ad-860b-47cd-9b40-a57bf48d9fba")
+	)
+	(junction
+		(at 229.87 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f7ccee5-5856-469e-a757-fc4ab9d97a63")
+	)
+	(junction
+		(at 231.14 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38b9d056-dbd7-4452-8e37-3fb2db21cbf1")
+	)
+	(junction
 		(at 73.66 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1283,6 +1301,12 @@
 		(uuid "7b5a636d-a0d9-4fda-93a1-78dee9bb67f5")
 	)
 	(junction
+		(at 229.87 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b80b843a-e1ed-4557-8b33-6d9853be492d")
+	)
+	(junction
 		(at 147.32 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1299,6 +1323,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d8d017af-9170-45d4-8a0e-becd1a153244")
+	)
+	(wire
+		(pts
+			(xy 212.09 121.92) (xy 215.9 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06830faa-6d5a-4956-8793-4ccd0e4126a8")
 	)
 	(wire
 		(pts
@@ -1352,6 +1386,26 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 29.21) (xy 231.14 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "185d7757-a212-4548-b535-77121174345a")
+	)
+	(wire
+		(pts
+			(xy 198.12 71.12) (xy 198.12 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ac859e1-5c6d-410f-ac9f-9be293f94d08")
+	)
+	(wire
+		(pts
 			(xy 110.49 69.85) (xy 109.22 69.85)
 		)
 		(stroke
@@ -1369,6 +1423,36 @@
 			(type default)
 		)
 		(uuid "1bb3a117-206c-400b-b139-8e15e73e270e")
+	)
+	(wire
+		(pts
+			(xy 222.25 71.12) (xy 223.52 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "213f314c-6058-4e21-b11d-2c205f0073e1")
+	)
+	(wire
+		(pts
+			(xy 220.98 105.41) (xy 222.25 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2da70471-6dfe-4b99-90be-7f693597ea92")
+	)
+	(wire
+		(pts
+			(xy 196.85 129.54) (xy 195.58 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31c886d1-533d-4a36-9a0e-6361e7c74f68")
 	)
 	(wire
 		(pts
@@ -1432,6 +1516,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 36.83) (xy 213.36 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b573674-0c56-45c8-a166-959a12ece2f1")
+	)
+	(wire
+		(pts
 			(xy 142.24 109.22) (xy 147.32 109.22)
 		)
 		(stroke
@@ -1439,6 +1533,36 @@
 			(type default)
 		)
 		(uuid "4e1fff47-84cf-4296-9d24-f29feb1a5bc2")
+	)
+	(wire
+		(pts
+			(xy 212.09 129.54) (xy 212.09 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f80056e-24e9-4c63-8667-4481f1384877")
+	)
+	(wire
+		(pts
+			(xy 212.09 100.33) (xy 212.09 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5214f5bd-6c06-4977-8453-1ff931d7a12b")
+	)
+	(wire
+		(pts
+			(xy 214.63 41.91) (xy 213.36 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5343750f-317b-4cdd-bf05-0781dbba1e80")
 	)
 	(wire
 		(pts
@@ -1459,6 +1583,16 @@
 			(type default)
 		)
 		(uuid "63c8c011-25aa-4700-a9e4-53c521652f74")
+	)
+	(wire
+		(pts
+			(xy 198.12 66.04) (xy 196.85 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67cff482-eb23-4f58-9463-a738baba6dda")
 	)
 	(wire
 		(pts
@@ -1502,6 +1636,66 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 105.41) (xy 196.85 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7928db82-88e8-42d2-a204-96f88ed7294b")
+	)
+	(wire
+		(pts
+			(xy 196.85 134.62) (xy 196.85 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a265427-a35c-4603-af22-c48f7154192e")
+	)
+	(wire
+		(pts
+			(xy 214.63 71.12) (xy 213.36 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f80c3a3-4abc-4b54-8e36-9a47931fd072")
+	)
+	(wire
+		(pts
+			(xy 213.36 29.21) (xy 218.44 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "806fc1a3-91b7-4af6-8837-174b5847ed2e")
+	)
+	(wire
+		(pts
+			(xy 213.36 58.42) (xy 217.17 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82bbd873-7419-4f7e-ba4f-98c653fc1f54")
+	)
+	(wire
+		(pts
+			(xy 212.09 92.71) (xy 217.17 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cf39d53-40e9-4af9-aaec-819fc513ff9c")
+	)
+	(wire
+		(pts
 			(xy 129.54 138.43) (xy 129.54 146.05)
 		)
 		(stroke
@@ -1532,6 +1726,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 92.71) (xy 229.87 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9557dce6-832b-4f50-9b11-67233249ffd7")
+	)
+	(wire
+		(pts
 			(xy 129.54 109.22) (xy 129.54 116.84)
 		)
 		(stroke
@@ -1539,6 +1743,16 @@
 			(type default)
 		)
 		(uuid "9b16da4c-6ed3-4c66-9c68-4aaf6b707bc5")
+	)
+	(wire
+		(pts
+			(xy 213.36 66.04) (xy 213.36 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b3497e3-18d6-4827-a946-a150d66ab7d9")
 	)
 	(wire
 		(pts
@@ -1599,6 +1813,26 @@
 			(type default)
 		)
 		(uuid "acb3179a-21de-4bf0-82d0-a3ba52979c3b")
+	)
+	(wire
+		(pts
+			(xy 213.36 105.41) (xy 212.09 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b191fc14-015d-4c64-a80c-d5ad4135d120")
+	)
+	(wire
+		(pts
+			(xy 222.25 41.91) (xy 223.52 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6d10fc9-7b44-4f53-a981-483a8fda1042")
 	)
 	(wire
 		(pts
@@ -1682,6 +1916,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 134.62) (xy 222.25 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca99bbf3-d9af-4208-aca8-e3c66e294507")
+	)
+	(wire
+		(pts
 			(xy 67.31 33.02) (xy 73.66 33.02)
 		)
 		(stroke
@@ -1689,6 +1933,16 @@
 			(type default)
 		)
 		(uuid "caf46720-3147-4e54-a604-88a109b139b1")
+	)
+	(wire
+		(pts
+			(xy 223.52 121.92) (xy 229.87 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cee55afc-07d8-40e8-a826-f6585ed8fb7f")
 	)
 	(wire
 		(pts
@@ -1709,6 +1963,16 @@
 			(type default)
 		)
 		(uuid "d4d9e2d6-bc89-4b2b-9834-82d16b376366")
+	)
+	(wire
+		(pts
+			(xy 224.79 58.42) (xy 231.14 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d976b20c-85b8-4a15-9709-ab9f65ed6512")
 	)
 	(wire
 		(pts
@@ -1752,6 +2016,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 41.91) (xy 198.12 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea2ab94d-0f65-4016-965a-f0cb3bedde6c")
+	)
+	(wire
+		(pts
 			(xy 64.77 110.49) (xy 69.85 110.49)
 		)
 		(stroke
@@ -1779,6 +2053,16 @@
 			(type default)
 		)
 		(uuid "f1604f7e-3135-4f08-bd28-f8e49bd8fa5a")
+	)
+	(wire
+		(pts
+			(xy 213.36 134.62) (xy 212.09 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5581d77-5edb-4afb-bab3-7d42d66be8da")
 	)
 	(wire
 		(pts
@@ -1878,6 +2162,28 @@
 		)
 		(uuid "f21450fa-c45b-4a19-9675-49c269b4b14d")
 	)
+	(global_label "A MUTE"
+		(shape input)
+		(at 196.85 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0634635b-89a7-4add-8e52-801db82eec11")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.9101 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "G0"
 		(shape input)
 		(at 114.3 116.84 180)
@@ -1966,6 +2272,28 @@
 			)
 		)
 	)
+	(global_label "E MUTE"
+		(shape input)
+		(at 198.12 36.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5237f22f-e9fe-4357-80da-ab7fcbcbb074")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 188.1197 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "E0"
 		(shape input)
 		(at 40.64 40.64 180)
@@ -2032,6 +2360,28 @@
 			)
 		)
 	)
+	(global_label "G MUTE"
+		(shape input)
+		(at 195.58 129.54 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c1743488-c770-449d-b23c-fa8ee780547c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.4587 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "E1"
 		(shape input)
 		(at 40.64 69.85 180)
@@ -2045,6 +2395,28 @@
 		(uuid "c8b89140-5f89-4c8e-aa66-712a8db60a08")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 35.2963 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D MUTE"
+		(shape input)
+		(at 196.85 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e3752e40-f924-4cdf-b300-c181a2729938")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.7287 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2349,6 +2721,141 @@
 		)
 	)
 	(symbol
+		(lib_id "Custom Power:Chassis_GND")
+		(at 231.14 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "095e9d6e-f007-46b8-811f-151bfa8167d7")
+		(property "Reference" "#PWR0333"
+			(at 231.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Chassis_GND"
+			(at 231.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 231.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f63c9a16-bdb0-46f3-a2a2-6b03e41a5962")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "#PWR0333")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Symbols:Resistor_Mod")
+		(at 218.44 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a466a6c-6f2a-4a5e-b21c-29df8d2fbcd9")
+		(property "Reference" "R301"
+			(at 218.44 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 218.44 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 217.17 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "24069a9a-c01e-4d90-ae1e-0f3865e7d902")
+		)
+		(pin "1"
+			(uuid "5934adaa-cc69-41b3-a1cf-59508ffabc2f")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "R301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom Power:GND")
 		(at 110.49 85.09 0)
 		(unit 1)
@@ -2477,6 +2984,74 @@
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
 					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Symbols:Resistor_Mod")
+		(at 220.98 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13a1ce88-471d-432c-8531-ae27b8d040ed")
+		(property "Reference" "R302"
+			(at 220.98 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 220.98 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 219.71 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f42f936e-c890-463a-9c9b-27446a3a05ac")
+		)
+		(pin "1"
+			(uuid "92767114-9fa0-40ac-924f-efcefe6b4ca3")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "R302")
 					(unit 1)
 				)
 			)
@@ -2959,6 +3534,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Custom Symbols:Resistor_Mod")
+		(at 220.98 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21154a60-0505-4761-b4bc-23d509955b75")
+		(property "Reference" "R309"
+			(at 220.98 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 220.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 219.71 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3f54f5f0-d752-418d-8333-d39baf0c5a10")
+		)
+		(pin "1"
+			(uuid "65412704-a147-465f-b69b-bc8533b27e2b")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "R309")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
 		(at 147.32 113.03 0)
 		(unit 1)
@@ -3030,6 +3673,76 @@
 	)
 	(symbol
 		(lib_id "Device:L")
+		(at 229.87 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23032c6f-abcb-45ba-be9d-f2022dab89c0")
+		(property "Reference" "L92"
+			(at 231.14 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Solenoid"
+			(at 231.14 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 229.87 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20064f37-83a0-421b-a78f-3aa948109ac8")
+		)
+		(pin "2"
+			(uuid "298a97e6-5b8b-47ae-aae9-5c2cea99b901")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "L92")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
 		(at 73.66 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3093,6 +3806,79 @@
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
 					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_NPN_BCE")
+		(at 227.33 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28fad371-4c32-4cdd-b62d-fb5a89deb0a8")
+		(property "Reference" "Q91"
+			(at 232.41 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BDW93C"
+			(at 232.41 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 232.41 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 227.33 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "NPN transistor, base/collector/emitter"
+			(at 227.33 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a6306e7-4122-4617-8a8d-0b004c584412")
+		)
+		(pin "2"
+			(uuid "0c4d5e58-2e07-4042-8494-5b706a7488c7")
+		)
+		(pin "3"
+			(uuid "9762fbe7-2002-4284-8aca-3e743f949e88")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "Q91")
 					(unit 1)
 				)
 			)
@@ -3450,6 +4236,146 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 231.14 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31951188-ea7b-4f9d-b460-83af28f26f51")
+		(property "Reference" "L89"
+			(at 232.41 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Solenoid"
+			(at 232.41 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.14 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 231.14 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f3712a0-6557-42d8-ab72-86ee9736a6df")
+		)
+		(pin "2"
+			(uuid "7c582804-0e27-4da6-92e0-18a1b471a1d4")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "L89")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Symbols:Resistor_Mod")
+		(at 196.85 140.97 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3253521a-a108-4d8f-a7d9-5739d150bf0d")
+		(property "Reference" "R305"
+			(at 199.39 139.6999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7kΩ"
+			(at 199.39 142.2399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 194.31 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "45129bae-1b00-40d5-a718-9d03bc034e57")
+		)
+		(pin "1"
+			(uuid "cff4d148-9051-43ef-85b2-6e52afd440ab")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "R305")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom Power:+12v")
 		(at 143.51 60.96 0)
 		(unit 1)
@@ -3511,6 +4437,119 @@
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
 					(reference "#PWR057")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:LTV-247")
+		(at 205.74 68.58 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35919df4-d54a-4bbc-b494-fd72dafc1a54")
+		(property "Reference" "U29"
+			(at 205.74 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LTV-247"
+			(at 205.74 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOP-16_4.4x10.4mm_P1.27mm"
+			(at 200.66 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS70-2009-0014/LTV-2X7%20sereis%20Mar17.PDF"
+			(at 205.74 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "DC Quad Optocoupler, Vce 80V, CTR 100-600%, SOP-16"
+			(at 205.74 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "4a4c8c3f-bda2-4004-b46f-0529551196d8")
+		)
+		(pin "16"
+			(uuid "0a5ee9ee-ff8f-4774-aa9b-8aa8743042a7")
+		)
+		(pin "15"
+			(uuid "67d3a7e1-f108-41d8-a12e-66a2b0d74050")
+		)
+		(pin "1"
+			(uuid "7edd72ac-5e21-4bd6-9493-ccba40f40959")
+		)
+		(pin "13"
+			(uuid "ad2a4564-16cb-46cd-bdaf-46db8fa7ca7c")
+		)
+		(pin "7"
+			(uuid "4dd26f04-8c56-4cef-856c-b80e0c9b8eb1")
+		)
+		(pin "12"
+			(uuid "47650037-ab99-4ef5-9a54-9dd7dd41067a")
+		)
+		(pin "10"
+			(uuid "bf99f980-ff85-4796-b15e-e07a09237efa")
+		)
+		(pin "5"
+			(uuid "76d26354-7d22-44cb-a26f-b069bcd52698")
+		)
+		(pin "6"
+			(uuid "9097dc1f-47fc-4770-acb1-3050a9328796")
+		)
+		(pin "11"
+			(uuid "e4957930-d801-4b71-b2ad-2c6710b2db4b")
+		)
+		(pin "9"
+			(uuid "fa6aad8f-3f71-4586-9dd4-5a21fae69250")
+		)
+		(pin "4"
+			(uuid "7aa402e9-040c-4e7c-a4a6-0ab7ad4930c9")
+		)
+		(pin "14"
+			(uuid "991b8fbe-22c5-4158-8b54-f65a5a9468c9")
+		)
+		(pin "3"
+			(uuid "87e0e39b-b780-4e4c-a996-87f3d7bd2744")
+		)
+		(pin "2"
+			(uuid "3d2d0ea9-8ae9-4c7c-b33b-09b91f2f5cf2")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "U29")
+					(unit 3)
 				)
 			)
 		)
@@ -3792,6 +4831,212 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Q_NPN_BCE")
+		(at 228.6 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3df39d0a-ee5e-4a63-bf75-bd5aefc0b0c0")
+		(property "Reference" "Q89"
+			(at 233.68 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BDW93C"
+			(at 233.68 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 233.68 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "NPN transistor, base/collector/emitter"
+			(at 228.6 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d616362-d04a-4ed4-acd0-f9a96932a249")
+		)
+		(pin "2"
+			(uuid "769fa735-2724-4fba-8147-0bf0e0c3a5b8")
+		)
+		(pin "3"
+			(uuid "1962a122-8a81-464e-a3aa-bc31d542e96e")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "Q89")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Power:+12v")
+		(at 231.14 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "416ab98f-36c8-4a02-9856-8f60945b33c6")
+		(property "Reference" "#PWR0334"
+			(at 235.8644 53.4416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12v"
+			(at 231.14 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 231.14 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "35ba1687-2b38-4e82-9356-eaf9839fb8e6")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "#PWR0334")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Power:GND")
+		(at 196.85 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44be1bb0-da75-4298-b96a-49a01159813f")
+		(property "Reference" "#PWR0337"
+			(at 196.85 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "cb8c8c56-700e-484c-b081-0b0503314d1f")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "#PWR0337")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom Power:GND")
 		(at 110.49 55.88 0)
 		(unit 1)
@@ -4002,6 +5247,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Isolator:LTV-247")
+		(at 205.74 39.37 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4cbdb091-50d7-4614-95a1-4399cc8844cd")
+		(property "Reference" "U29"
+			(at 205.74 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LTV-247"
+			(at 205.74 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOP-16_4.4x10.4mm_P1.27mm"
+			(at 200.66 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS70-2009-0014/LTV-2X7%20sereis%20Mar17.PDF"
+			(at 205.74 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "DC Quad Optocoupler, Vce 80V, CTR 100-600%, SOP-16"
+			(at 205.74 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "c1b7c0ca-5f60-48b5-8f59-f23d46379084")
+		)
+		(pin "16"
+			(uuid "0a5ee9ee-ff8f-4774-aa9b-8aa8743042a8")
+		)
+		(pin "15"
+			(uuid "67d3a7e1-f108-41d8-a12e-66a2b0d74051")
+		)
+		(pin "1"
+			(uuid "7edd72ac-5e21-4bd6-9493-ccba40f4095a")
+		)
+		(pin "13"
+			(uuid "ad2a4564-16cb-46cd-bdaf-46db8fa7ca7d")
+		)
+		(pin "7"
+			(uuid "8854162d-e000-45b9-9c38-81683eb30f48")
+		)
+		(pin "12"
+			(uuid "a8dc3d09-9ccc-4ee9-8b5e-db7585b77cf6")
+		)
+		(pin "10"
+			(uuid "badf2004-179d-4536-a3f9-9404600fbbaf")
+		)
+		(pin "5"
+			(uuid "3ad16f88-75d8-41ee-b209-d9a871bb3a8c")
+		)
+		(pin "6"
+			(uuid "b2e881d7-60e4-43ca-8ca9-0cc3731eb778")
+		)
+		(pin "11"
+			(uuid "c8992423-fb78-4137-8ce4-f1082992db9c")
+		)
+		(pin "9"
+			(uuid "d271a681-65b5-4a54-824f-de8a65b43042")
+		)
+		(pin "4"
+			(uuid "7aa402e9-040c-4e7c-a4a6-0ab7ad4930ca")
+		)
+		(pin "14"
+			(uuid "991b8fbe-22c5-4158-8b54-f65a5a9468ca")
+		)
+		(pin "3"
+			(uuid "87e0e39b-b780-4e4c-a996-87f3d7bd2745")
+		)
+		(pin "2"
+			(uuid "3d2d0ea9-8ae9-4c7c-b33b-09b91f2f5cf3")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "U29")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom Symbols:Resistor_Mod")
 		(at 60.96 74.93 0)
 		(unit 1)
@@ -4064,6 +5422,72 @@
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
 					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Power:+12v")
+		(at 229.87 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "530dbc2b-224c-4c92-b43d-90b093f5fe1a")
+		(property "Reference" "#PWR0340"
+			(at 234.5944 116.9416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12v"
+			(at 229.87 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "ca4d2a76-7c50-414e-84d2-c946caa472d4")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "#PWR0340")
 					(unit 1)
 				)
 			)
@@ -4137,6 +5561,74 @@
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
 					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Symbols:Resistor_Mod")
+		(at 219.71 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55c448e3-2c03-423d-8b3c-d60b90175b4f")
+		(property "Reference" "R308"
+			(at 219.71 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 219.71 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 218.44 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 219.71 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3f4c0c9e-b2ef-40a5-8c9a-efad7615f292")
+		)
+		(pin "1"
+			(uuid "d119bc1f-7f90-4630-815e-5b8f9ce5a7cc")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "R308")
 					(unit 1)
 				)
 			)
@@ -4272,6 +5764,119 @@
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
 					(reference "R44")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:LTV-247")
+		(at 204.47 102.87 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5dc0824d-a293-41c2-a716-af782224d19f")
+		(property "Reference" "U30"
+			(at 204.47 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LTV-247"
+			(at 204.47 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOP-16_4.4x10.4mm_P1.27mm"
+			(at 199.39 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS70-2009-0014/LTV-2X7%20sereis%20Mar17.PDF"
+			(at 204.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "DC Quad Optocoupler, Vce 80V, CTR 100-600%, SOP-16"
+			(at 204.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "45c1ffed-82bf-4531-8855-6c1c7c957d1f")
+		)
+		(pin "16"
+			(uuid "0a5ee9ee-ff8f-4774-aa9b-8aa8743042a8")
+		)
+		(pin "15"
+			(uuid "67d3a7e1-f108-41d8-a12e-66a2b0d74051")
+		)
+		(pin "1"
+			(uuid "7edd72ac-5e21-4bd6-9493-ccba40f4095a")
+		)
+		(pin "13"
+			(uuid "ad2a4564-16cb-46cd-bdaf-46db8fa7ca7d")
+		)
+		(pin "7"
+			(uuid "6d995957-3aa8-48b7-99d4-9097c19380fa")
+		)
+		(pin "12"
+			(uuid "a8dc3d09-9ccc-4ee9-8b5e-db7585b77cf6")
+		)
+		(pin "10"
+			(uuid "95da5ce5-280a-4892-ad83-b8b049620b70")
+		)
+		(pin "5"
+			(uuid "3ad16f88-75d8-41ee-b209-d9a871bb3a8c")
+		)
+		(pin "6"
+			(uuid "b2e881d7-60e4-43ca-8ca9-0cc3731eb778")
+		)
+		(pin "11"
+			(uuid "c8992423-fb78-4137-8ce4-f1082992db9c")
+		)
+		(pin "9"
+			(uuid "d076dba0-fb60-48fd-9431-2fb053aa6c01")
+		)
+		(pin "4"
+			(uuid "7aa402e9-040c-4e7c-a4a6-0ab7ad4930ca")
+		)
+		(pin "14"
+			(uuid "991b8fbe-22c5-4158-8b54-f65a5a9468ca")
+		)
+		(pin "3"
+			(uuid "87e0e39b-b780-4e4c-a996-87f3d7bd2745")
+		)
+		(pin "2"
+			(uuid "3d2d0ea9-8ae9-4c7c-b33b-09b91f2f5cf3")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "U30")
+					(unit 4)
 				)
 			)
 		)
@@ -4457,6 +6062,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Custom Power:GND")
+		(at 198.12 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6695b71b-3c83-4384-9ea8-0667442970f4")
+		(property "Reference" "#PWR0331"
+			(at 198.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "da1f9770-57bb-4160-a116-5af21d784573")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "#PWR0331")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom Power:Chassis_GND")
 		(at 69.85 157.48 0)
 		(unit 1)
@@ -4518,6 +6190,214 @@
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
 					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_NPN_BCE")
+		(at 227.33 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6ab7d3c1-c360-4472-9908-951f633e46d8")
+		(property "Reference" "Q92"
+			(at 232.41 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BDW93C"
+			(at 232.41 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 232.41 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 227.33 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "NPN transistor, base/collector/emitter"
+			(at 227.33 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "51b47636-65bd-4d59-b7d6-3c67bfc2ec9a")
+		)
+		(pin "2"
+			(uuid "e8fdde07-ae06-44d3-9673-397f9c2ded67")
+		)
+		(pin "3"
+			(uuid "d3fe4686-820b-455d-9ca0-ede56e88ea64")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "Q92")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Power:GND")
+		(at 196.85 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c4138aa-214f-4a1c-8a82-b531cc663c17")
+		(property "Reference" "#PWR0336"
+			(at 196.85 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "8f08af06-d7f4-41a2-95bc-22700e9906b4")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "#PWR0336")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Symbols:Resistor_Mod")
+		(at 217.17 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f3600b2-2051-4771-9c0d-105b5adc6a20")
+		(property "Reference" "R307"
+			(at 217.17 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 217.17 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 215.9 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 217.17 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8563020f-ddea-488d-8b47-8a4b8260a866")
+		)
+		(pin "1"
+			(uuid "7ed003e3-f9bc-4044-8bdd-93be33b34412")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "R307")
 					(unit 1)
 				)
 			)
@@ -4654,6 +6534,76 @@
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
 					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Symbols:Resistor_Mod")
+		(at 196.85 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80864ad3-98dc-4e84-ab18-9793e6710896")
+		(property "Reference" "R304"
+			(at 199.39 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7kΩ"
+			(at 199.39 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 194.31 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "29ebc88f-eb8a-4d6d-bd97-dd1e2883ba65")
+		)
+		(pin "1"
+			(uuid "b32ee73f-13bc-4f28-92ae-4c719b6d6082")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "R304")
 					(unit 1)
 				)
 			)
@@ -4999,6 +6949,141 @@
 	)
 	(symbol
 		(lib_id "Custom Symbols:Resistor_Mod")
+		(at 218.44 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d9a7a4a-74c6-454a-a784-073402e310af")
+		(property "Reference" "R300"
+			(at 218.44 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 218.44 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 217.17 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "44588a00-b23f-4d48-8a4c-3cac6ae159ab")
+		)
+		(pin "1"
+			(uuid "dd1e4acd-8368-415e-be0e-b9e5fc829258")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "R300")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Power:Chassis_GND")
+		(at 229.87 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90036a5b-deb7-45c7-adb7-ce0bc320e709")
+		(property "Reference" "#PWR0339"
+			(at 229.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Chassis_GND"
+			(at 229.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17acb2a1-ff6d-462d-a5da-a896743a58a8")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "#PWR0339")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Symbols:Resistor_Mod")
 		(at 130.81 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5179,6 +7264,141 @@
 		)
 	)
 	(symbol
+		(lib_id "Custom Power:Chassis_GND")
+		(at 231.14 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93dd7d9a-84bf-491e-83ac-c3ebefcf5471")
+		(property "Reference" "#PWR0335"
+			(at 231.14 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Chassis_GND"
+			(at 231.14 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 231.14 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7532a2e-807f-48b5-8e53-fe3dd626fc51")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "#PWR0335")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Symbols:Resistor_Mod")
+		(at 217.17 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "951a541b-c67f-466f-a806-444f20084400")
+		(property "Reference" "R306"
+			(at 217.17 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 217.17 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 215.9 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 217.17 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "76ee8380-26c3-4b2f-a09f-58e871566a9f")
+		)
+		(pin "1"
+			(uuid "b1169ec2-33ae-4f9c-bbef-f55f37a85a90")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "R306")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom Symbols:Resistor_Mod")
 		(at 134.62 121.92 0)
 		(unit 1)
@@ -5241,6 +7461,73 @@
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
 					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Power:Chassis_GND")
+		(at 229.87 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99c8af2d-8020-4de5-848a-745204aa10bc")
+		(property "Reference" "#PWR0341"
+			(at 229.87 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Chassis_GND"
+			(at 229.87 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1af582fa-b845-4469-a12a-96e55b186410")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "#PWR0341")
 					(unit 1)
 				)
 			)
@@ -5448,6 +7735,79 @@
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_NPN_BCE")
+		(at 228.6 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0a50d4f-9b40-43c2-bcbe-1776b0115c80")
+		(property "Reference" "Q90"
+			(at 233.68 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BDW93C"
+			(at 233.68 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 233.68 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "NPN transistor, base/collector/emitter"
+			(at 228.6 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b320052-0e9a-4bdd-a929-2b6bd88b976a")
+		)
+		(pin "2"
+			(uuid "20d063f1-5663-4d24-b064-6888ac1a1253")
+		)
+		(pin "3"
+			(uuid "861862e7-4960-44a8-aed4-19a4c7a183e4")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "Q90")
 					(unit 1)
 				)
 			)
@@ -5796,6 +8156,143 @@
 		)
 	)
 	(symbol
+		(lib_id "Custom Symbols:Resistor_Mod")
+		(at 198.12 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a62d4e86-0dea-47c3-afc4-a8aea79dd0bd")
+		(property "Reference" "R298"
+			(at 200.66 46.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7kΩ"
+			(at 200.66 49.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 195.58 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e6a00d67-fc53-4ce6-ade8-479a2cecd3e4")
+		)
+		(pin "1"
+			(uuid "8662b40f-4880-4ce0-bd4c-d7af2e716379")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "R298")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Power:GND")
+		(at 198.12 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aeb8e7ad-6e2f-42a9-89d3-7f1a26445145")
+		(property "Reference" "#PWR0330"
+			(at 198.12 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.12 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "7b91da08-d6b4-4326-89b2-838cc5392cf4")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "#PWR0330")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
 		(at 73.66 66.04 0)
 		(unit 1)
@@ -5931,6 +8428,185 @@
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
 					(reference "R25")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Power:+12v")
+		(at 229.87 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba09cab5-4296-4936-a6bf-4e04ac4b58d1")
+		(property "Reference" "#PWR0338"
+			(at 234.5944 87.7316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12v"
+			(at 229.87 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "d59bb918-e6f9-48cc-888b-140a09e8b118")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "#PWR0338")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:LTV-247")
+		(at 204.47 132.08 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc1b0e8a-e11a-4264-89a0-a888d4efcb51")
+		(property "Reference" "U30"
+			(at 204.47 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LTV-247"
+			(at 204.47 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOP-16_4.4x10.4mm_P1.27mm"
+			(at 199.39 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS70-2009-0014/LTV-2X7%20sereis%20Mar17.PDF"
+			(at 204.47 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "DC Quad Optocoupler, Vce 80V, CTR 100-600%, SOP-16"
+			(at 204.47 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "4a4c8c3f-bda2-4004-b46f-0529551196d8")
+		)
+		(pin "16"
+			(uuid "0a5ee9ee-ff8f-4774-aa9b-8aa8743042a7")
+		)
+		(pin "15"
+			(uuid "67d3a7e1-f108-41d8-a12e-66a2b0d74050")
+		)
+		(pin "1"
+			(uuid "7edd72ac-5e21-4bd6-9493-ccba40f40959")
+		)
+		(pin "13"
+			(uuid "ad2a4564-16cb-46cd-bdaf-46db8fa7ca7c")
+		)
+		(pin "7"
+			(uuid "4dd26f04-8c56-4cef-856c-b80e0c9b8eb1")
+		)
+		(pin "12"
+			(uuid "b4263ef3-3d20-47c0-be28-b95062c49aa7")
+		)
+		(pin "10"
+			(uuid "bf99f980-ff85-4796-b15e-e07a09237efa")
+		)
+		(pin "5"
+			(uuid "fac600a3-b527-4368-b478-5a3376658687")
+		)
+		(pin "6"
+			(uuid "aa8b8223-9777-48d3-93ff-440c1231b818")
+		)
+		(pin "11"
+			(uuid "60aa72a1-4454-48d1-a409-b50d4ec022c8")
+		)
+		(pin "9"
+			(uuid "fa6aad8f-3f71-4586-9dd4-5a21fae69250")
+		)
+		(pin "4"
+			(uuid "7aa402e9-040c-4e7c-a4a6-0ab7ad4930c9")
+		)
+		(pin "14"
+			(uuid "991b8fbe-22c5-4158-8b54-f65a5a9468c9")
+		)
+		(pin "3"
+			(uuid "87e0e39b-b780-4e4c-a996-87f3d7bd2744")
+		)
+		(pin "2"
+			(uuid "3d2d0ea9-8ae9-4c7c-b33b-09b91f2f5cf2")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "U30")
+					(unit 3)
 				)
 			)
 		)
@@ -6709,6 +9385,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Custom Symbols:Resistor_Mod")
+		(at 198.12 77.47 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc71f837-0cb6-407d-af99-c2c75dd84d05")
+		(property "Reference" "R299"
+			(at 200.66 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7kΩ"
+			(at 200.66 78.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 195.58 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "512bb55e-0534-4157-b278-2097e9366491")
+		)
+		(pin "1"
+			(uuid "23729df2-f008-44ce-887d-d7af4142699e")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "R299")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Isolator:LTV-247")
 		(at 48.26 43.18 0)
 		(unit 1)
@@ -6895,6 +9641,144 @@
 		)
 	)
 	(symbol
+		(lib_id "Custom Symbols:Resistor_Mod")
+		(at 222.25 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6c53aa1-d08d-4b57-abe8-a423d72e5322")
+		(property "Reference" "R303"
+			(at 222.25 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 222.25 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 220.98 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 222.25 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c0961fdf-bebb-42ce-ade0-a8e779a4cd5a")
+		)
+		(pin "1"
+			(uuid "b7400eac-1107-4ed1-b02a-e0c917020f41")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "R303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 229.87 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec03cf1d-221e-4e9b-9539-b02bc4af49f4")
+		(property "Reference" "L91"
+			(at 231.14 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Solenoid"
+			(at 231.14 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 229.87 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3993e87-e399-490b-9c4c-ce61a86d9669")
+		)
+		(pin "2"
+			(uuid "d0e83d7e-8ea5-4252-a28b-51c6c3bb7329")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "L91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Isolator:LTV-247")
 		(at 44.45 120.65 0)
 		(unit 1)
@@ -7072,6 +9956,142 @@
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
 					(reference "L6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 231.14 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f01451ae-a8b0-491b-bb28-960504321c5f")
+		(property "Reference" "L90"
+			(at 232.41 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Solenoid"
+			(at 232.41 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.14 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 231.14 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50556640-49de-4642-89a8-7cb377677109")
+		)
+		(pin "2"
+			(uuid "9ae6eb4a-bae4-430d-a06b-b37147b17a98")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "L90")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Power:+12v")
+		(at 231.14 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f57b829f-186b-4ace-886b-947f952dba58")
+		(property "Reference" "#PWR0332"
+			(at 235.8644 24.2316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12v"
+			(at 231.14 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 231.14 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "1f3ac278-d385-4486-81b8-6ad220864785")
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0/a9c725c7-a2b4-4653-bf22-cca353cf3c61"
+					(reference "#PWR0332")
 					(unit 1)
 				)
 			)
