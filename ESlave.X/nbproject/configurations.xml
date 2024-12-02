@@ -18,7 +18,6 @@
       <itemPath>ESlaveSetup.inc</itemPath>
       <itemPath>ESlavePOPout.inc</itemPath>
       <itemPath>ESlavePUSHin.inc</itemPath>
-      <itemPath>StepperDrive.inc</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
