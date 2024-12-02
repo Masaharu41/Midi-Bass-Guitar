@@ -1,8 +1,8 @@
 ;***************************************************************************
 ;
 ;	    Filename: I2CWRITE.inc
-;	    Date: 10/28/2024
-;	    File Version: 1
+;	    Date: 11/20/2024
+;	    File Version: 2
 ;	    Author: Owen Fujii
 ;	    Company: Idaho State University
 ;	    Description: A Sub routine for I2C master transmit that can

@@ -40,14 +40,14 @@ Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 86 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 88 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 91 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 235 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 246 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 249 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 260 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 277 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 281 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 291 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 297 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 307 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 315 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Warning[205] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 336 : Found directive in column 1. (END)
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 257 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 268 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 272 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 283 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 301 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 305 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 316 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 322 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 332 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 340 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[205] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\PLUCKSLAVE.X\PLUCK SLAVE.ASM 361 : Found directive in column 1. (END)
