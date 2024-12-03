@@ -1692,7 +1692,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 45.72 -68.58 180)
+					(at -39.37 -17.78 0)
 					(length 5.08)
 					(name "RC7/RX/DT/C4Out"
 						(effects
@@ -1836,7 +1836,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -39.37 -15.24 0)
+					(at 45.72 -49.53 180)
 					(length 5.08)
 					(name "RA0/AN0/CxIN0-"
 						(effects
@@ -1872,7 +1872,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -39.37 -19.05 0)
+					(at 45.72 -53.34 180)
 					(length 5.08)
 					(name "RA1/AN1/CxIN1-/OPA1OUT"
 						(effects
@@ -1890,7 +1890,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -39.37 -22.86 0)
+					(at 45.72 -57.15 180)
 					(length 5.08)
 					(name "RA2/AN2/CxIN0+/DAC1OUT1"
 						(effects
@@ -1908,7 +1908,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -39.37 -26.67 0)
+					(at 45.72 -60.96 180)
 					(length 5.08)
 					(name "RA3/AN3/VREF+/C1IN1+"
 						(effects
@@ -1926,7 +1926,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -39.37 -30.48 0)
+					(at 45.72 -64.77 180)
 					(length 5.08)
 					(name "RA4/C1OUT/OPA1IN+/T0CKI"
 						(effects
@@ -1944,7 +1944,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -39.37 -34.29 0)
+					(at 45.72 -68.58 180)
 					(length 5.08)
 					(name "RA5/AN4/C2OUT/OPA1IN+"
 						(effects
@@ -2070,7 +2070,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -39.37 -41.91 0)
+					(at -39.37 -58.42 0)
 					(length 5.08)
 					(name "RA7/PSMCxCLK"
 						(effects
@@ -2088,7 +2088,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 45.72 -49.53 180)
+					(at -39.37 -36.83 0)
 					(length 5.08)
 					(name "RC0/T1CKI/PSMC1A"
 						(effects
@@ -2106,7 +2106,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 45.72 -53.34 180)
+					(at -39.37 -33.02 0)
 					(length 5.08)
 					(name "RC1/T1OSI/CCP2"
 						(effects
@@ -2124,7 +2124,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 45.72 -57.15 180)
+					(at -39.37 -29.21 0)
 					(length 5.08)
 					(name "RC2/CCP1/PSMC1C"
 						(effects
@@ -2268,7 +2268,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 45.72 -60.96 180)
+					(at -39.37 -25.4 0)
 					(length 5.08)
 					(name "RC5/SDO/PSMC1F"
 						(effects
@@ -2286,7 +2286,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 45.72 -64.77 180)
+					(at -39.37 -21.59 0)
 					(length 5.08)
 					(name "RC6/TX/CK/PSMC2A"
 						(effects
@@ -2688,19 +2688,19 @@
 		(uuid "f0733c59-0c9a-4ebd-94ee-08acadbd3226")
 	)
 	(no_connect
-		(at 80.01 69.85)
+		(at 80.01 86.36)
 		(uuid "2ada916d-722b-4216-94be-081130986c3e")
 	)
 	(no_connect
-		(at 80.01 46.99)
+		(at 80.01 49.53)
 		(uuid "33da0fe2-8229-4ca2-a04f-e18b92c53fcb")
 	)
 	(no_connect
-		(at 80.01 58.42)
+		(at 80.01 60.96)
 		(uuid "4d9a21cc-b777-42ff-ade9-3935f1f9fac4")
 	)
 	(no_connect
-		(at 80.01 43.18)
+		(at 80.01 45.72)
 		(uuid "4f4d0da7-7955-4b38-b8ab-b30c3c109b80")
 	)
 	(no_connect
@@ -2708,7 +2708,7 @@
 		(uuid "7c17b9df-93bf-4846-96bf-3e61564b5c2a")
 	)
 	(no_connect
-		(at 80.01 62.23)
+		(at 80.01 64.77)
 		(uuid "7df14256-adad-448c-8c0d-da4bb2ab3245")
 	)
 	(no_connect
@@ -2720,7 +2720,7 @@
 		(uuid "cbb5554e-6acb-4885-a9ee-0388629f417a")
 	)
 	(no_connect
-		(at 80.01 50.8)
+		(at 80.01 53.34)
 		(uuid "d41a672c-86be-41f3-a942-138d69a6699c")
 	)
 	(no_connect
@@ -2728,7 +2728,7 @@
 		(uuid "e1212231-596b-4c0a-b443-f707fb3a6eb2")
 	)
 	(no_connect
-		(at 80.01 54.61)
+		(at 80.01 57.15)
 		(uuid "e60bec39-493f-48f5-b6cd-4d66cdfb850d")
 	)
 	(wire
