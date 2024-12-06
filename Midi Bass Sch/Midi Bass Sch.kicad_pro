@@ -442,6 +442,10 @@
     [
       "6647718b-e0eb-4ffe-84db-a4a2cb4ee4c0",
       "G Solenoid Array"
+    ],
+    [
+      "b03edaf9-bff0-4d7c-9ae3-3086f8e495f2",
+      "Power In"
     ]
   ],
   "text_variables": {}

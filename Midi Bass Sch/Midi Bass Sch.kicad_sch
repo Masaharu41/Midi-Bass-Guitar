@@ -196,6 +196,44 @@
 		)
 	)
 	(sheet
+		(at 53.975 51.435)
+		(size 40.005 23.495)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "b03edaf9-bff0-4d7c-9ae3-3086f8e495f2")
+		(property "Sheetname" "Power In"
+			(at 53.975 50.7234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PowerIn.kicad_sch"
+			(at 53.975 75.5146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Midi Bass Sch"
+				(path "/06818073-fb22-48ee-acc5-6dedd827034e"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 158.115 90.17)
 		(size 35.56 25.4)
 		(fields_autoplaced yes)
