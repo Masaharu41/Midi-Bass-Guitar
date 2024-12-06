@@ -2894,6 +2894,12 @@
 		(uuid "8236aab7-6e3f-41c8-9f78-d6cfb0a2c807")
 	)
 	(junction
+		(at 50.8 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8cf764da-ab5b-4c27-9858-29a4792192c9")
+	)
+	(junction
 		(at 67.31 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2916,12 +2922,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d6a15b73-ac64-4247-a6ae-c74d430fe548")
-	)
-	(junction
-		(at 57.15 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df4974e2-633b-43b4-bd8c-b6b8ec1df5e3")
 	)
 	(junction
 		(at 173.99 69.85)
@@ -3013,7 +3013,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 48.26) (xy 166.37 34.29)
+			(xy 168.91 48.26) (xy 168.91 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3050,16 +3050,6 @@
 			(type default)
 		)
 		(uuid "20ee158b-6a29-4c61-ac09-d0855ab001c0")
-	)
-	(wire
-		(pts
-			(xy 57.15 114.3) (xy 60.96 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24630f45-aa98-4e68-9ee1-21b3d2b2d66b")
 	)
 	(wire
 		(pts
@@ -3263,7 +3253,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 114.3) (xy 57.15 114.3)
+			(xy 39.37 114.3) (xy 50.8 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3333,7 +3323,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 105.41) (xy 57.15 114.3)
+			(xy 50.8 105.41) (xy 50.8 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3433,7 +3423,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 34.29) (xy 200.66 34.29)
+			(xy 168.91 34.29) (xy 200.66 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3663,6 +3653,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 114.3) (xy 60.96 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e564a766-893c-4070-a727-a9ca6e5d17cd")
+	)
+	(wire
+		(pts
 			(xy 173.99 63.5) (xy 171.45 63.5)
 		)
 		(stroke
@@ -3723,7 +3723,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 48.26) (xy 166.37 48.26)
+			(xy 163.83 48.26) (xy 168.91 48.26)
 		)
 		(stroke
 			(width 0)
@@ -4263,7 +4263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "092ee4e5-bacd-4fcb-b523-51cd4983cb44")
-		(property "Reference" "R2"
+		(property "Reference" "R3"
 			(at 54.61 163.8299 90)
 			(effects
 				(font
@@ -4317,7 +4317,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "R2")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -4664,7 +4664,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 57.15 101.6 90)
+		(at 50.8 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4672,8 +4672,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3768209a-48d2-41e6-8918-b95d75f940da")
-		(property "Reference" "D2"
-			(at 60.96 101.9174 90)
+		(property "Reference" "D1"
+			(at 54.61 101.9174 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4682,7 +4682,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 60.96 104.4574 90)
+			(at 54.61 104.4574 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4691,7 +4691,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 57.15 101.6 0)
+			(at 50.8 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4700,7 +4700,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 101.6 0)
+			(at 50.8 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4709,7 +4709,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 57.15 101.6 0)
+			(at 50.8 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4726,7 +4726,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "D2")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -5217,7 +5217,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64d3c9d6-3e35-4727-a927-45a40e92312b")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR05"
 			(at 52.07 175.26 0)
 			(effects
 				(font
@@ -5268,7 +5268,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "#PWR04")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -5424,7 +5424,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74dfce39-e2c3-4292-b26f-0b5cea2464c1")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR07"
 			(at 55.88 57.15 0)
 			(effects
 				(font
@@ -5475,7 +5475,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "#PWR06")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -5838,7 +5838,7 @@
 	)
 	(symbol
 		(lib_id "Owen's Symbols:Resistor_Mod")
-		(at 57.15 93.98 90)
+		(at 50.8 93.98 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5846,8 +5846,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8864f92c-3c7c-44ef-81b9-24ff275e99c4")
-		(property "Reference" "R3"
-			(at 59.69 92.7099 90)
+		(property "Reference" "R2"
+			(at 53.34 92.7099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5856,7 +5856,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 59.69 95.2499 90)
+			(at 53.34 95.2499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5865,7 +5865,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 54.61 95.25 0)
+			(at 48.26 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5874,7 +5874,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 95.25 0)
+			(at 48.26 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5883,7 +5883,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 57.15 93.98 0)
+			(at 50.8 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5900,7 +5900,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "R3")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6187,7 +6187,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9827102d-23cc-4bc6-ac2b-dd270496502f")
-		(property "Reference" "D1"
+		(property "Reference" "D2"
 			(at 55.88 173.0374 90)
 			(effects
 				(font
@@ -6241,7 +6241,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "D1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -6868,7 +6868,7 @@
 	)
 	(symbol
 		(lib_id "Custom Power:+5v")
-		(at 57.15 88.9 0)
+		(at 50.8 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -6876,8 +6876,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd35637b-1ea7-41fc-957a-1d7a61a189f6")
-		(property "Reference" "#PWR07"
-			(at 61.8744 85.1916 0)
+		(property "Reference" "#PWR04"
+			(at 55.5244 85.1916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6886,7 +6886,7 @@
 			)
 		)
 		(property "Value" "+5v"
-			(at 57.15 83.82 0)
+			(at 50.8 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6894,7 +6894,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 85.09 0)
+			(at 50.8 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6903,7 +6903,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 85.09 0)
+			(at 50.8 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6912,7 +6912,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 57.15 88.9 0)
+			(at 50.8 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6926,7 +6926,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "#PWR07")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -7570,7 +7570,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fafc259d-3c38-43b4-9009-41832ab143a5")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR06"
 			(at 60.6044 44.5516 0)
 			(effects
 				(font
@@ -7620,7 +7620,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/0dc3b915-e001-48bd-b9bb-7010249087fd"
-					(reference "#PWR05")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
