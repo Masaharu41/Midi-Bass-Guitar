@@ -4176,7 +4176,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "093db2f3-d40b-4f53-a3c1-3457151f99f8")
-		(property "Reference" "#PWR0343"
+		(property "Reference" "#PWR038"
 			(at 182.9816 91.7956 0)
 			(effects
 				(font
@@ -4227,7 +4227,7 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0"
-					(reference "#PWR0343")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -4243,7 +4243,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19c1e97e-2e4c-49d7-af52-7a9f4df0e21a")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR040"
 			(at 187.96 143.51 0)
 			(effects
 				(font
@@ -4294,7 +4294,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0"
-					(reference "#PWR038")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -4724,7 +4724,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7b447ad2-ef26-494b-8658-ca42bfb1092a")
-		(property "Reference" "J?"
+		(property "Reference" "J5"
 			(at 191.77 68.58 0)
 			(effects
 				(font
@@ -4800,7 +4800,7 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0"
-					(reference "J?")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -5275,7 +5275,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c23c65e0-57e2-4c5f-9048-7e0c68fa80e7")
-		(property "Reference" "#PWR0342"
+		(property "Reference" "#PWR039"
 			(at 186.69 101.6 0)
 			(effects
 				(font
@@ -5326,7 +5326,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/673444b1-2638-4f61-b545-e7cdf999c0e0"
-					(reference "#PWR0342")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
