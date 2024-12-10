@@ -4835,7 +4835,7 @@
 				)
 			)
 		)
-		(property "Value" "A SLAVE ISCP"
+		(property "Value" "Pluck ISCP"
 			(at 34.29 60.96 0)
 			(effects
 				(font
