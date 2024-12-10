@@ -4578,7 +4578,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BDW93C"
+		(property "Value" "STN851-A"
 			(at 223.52 110.4899 0)
 			(effects
 				(font
@@ -4719,7 +4719,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BDW93C"
+		(property "Value" "STN851-A"
 			(at 140.97 73.6599 0)
 			(effects
 				(font
@@ -4792,7 +4792,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BDW93C"
+		(property "Value" "STN851-A"
 			(at 67.31 121.9199 0)
 			(effects
 				(font
@@ -5597,7 +5597,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BDW93C"
+		(property "Value" "STN851-A"
 			(at 224.79 46.9899 0)
 			(effects
 				(font
@@ -5870,7 +5870,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BDW93C"
+		(property "Value" "STN851-A"
 			(at 144.78 149.8599 0)
 			(effects
 				(font
@@ -6260,7 +6260,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BDW93C"
+		(property "Value" "STN851-A"
 			(at 71.12 73.6599 0)
 			(effects
 				(font
@@ -6962,7 +6962,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BDW93C"
+		(property "Value" "STN851-A"
 			(at 223.52 139.6999 0)
 			(effects
 				(font
@@ -8434,7 +8434,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BDW93C"
+		(property "Value" "STN851-A"
 			(at 67.31 151.1299 0)
 			(effects
 				(font
@@ -8507,7 +8507,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BDW93C"
+		(property "Value" "STN851-A"
 			(at 224.79 76.1999 0)
 			(effects
 				(font
@@ -8712,7 +8712,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BDW93C"
+		(property "Value" "STN851-A"
 			(at 71.12 44.4499 0)
 			(effects
 				(font
@@ -10501,7 +10501,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BDW93C"
+		(property "Value" "STN851-A"
 			(at 140.97 44.4499 0)
 			(effects
 				(font
@@ -11231,7 +11231,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BDW93C"
+		(property "Value" "STN851-A"
 			(at 144.78 120.6499 0)
 			(effects
 				(font
