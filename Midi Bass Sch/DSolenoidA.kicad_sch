@@ -4,6 +4,11 @@
 	(generator_version "8.0")
 	(uuid "1c1a32d9-1594-4357-a63d-917ae0744462")
 	(paper "A")
+	(title_block
+		(title "D-Slave Solenoid Array")
+		(date "2024-12-10")
+		(rev "A")
+	)
 	(lib_symbols
 		(symbol "Custom Power:+12v"
 			(power)

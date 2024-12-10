@@ -4,6 +4,11 @@
 	(generator_version "8.0")
 	(uuid "13d8f38f-0f95-4862-a761-d18b4c8b6dc9")
 	(paper "A")
+	(title_block
+		(title "E-Slave Processor Schematic")
+		(date "2024-12-10")
+		(rev "A")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)

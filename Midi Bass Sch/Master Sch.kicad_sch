@@ -4,6 +4,11 @@
 	(generator_version "8.0")
 	(uuid "4bd77684-47ec-4c53-bc49-818bd0564f2e")
 	(paper "A")
+	(title_block
+		(title "Master Schematic")
+		(date "2024-12-10")
+		(rev "A")
+	)
 	(lib_symbols
 		(symbol "Connector:DIN-5"
 			(pin_names

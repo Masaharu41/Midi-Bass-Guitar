@@ -4,6 +4,11 @@
 	(generator_version "8.0")
 	(uuid "06818073-fb22-48ee-acc5-6dedd827034e")
 	(paper "A")
+	(title_block
+		(title "MIDI Bass Guitar Schmatic")
+		(date "2024-12-10")
+		(rev "A")
+	)
 	(lib_symbols)
 	(sheet
 		(at 97.155 51.435)
