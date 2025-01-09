@@ -1489,7 +1489,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 156.21 78.74 0)
 			(effects
 				(font
@@ -1556,7 +1556,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 97.79 78.74 0)
 			(effects
 				(font
@@ -1605,7 +1605,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "219fbe53-833c-4d9a-8e2b-363efb38f6d0")
-		(property "Reference" "#PWR0350"
+		(property "Reference" "#PWR0173"
 			(at 148.2344 73.7616 0)
 			(effects
 				(font
@@ -1655,7 +1655,7 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/b03edaf9-bff0-4d7c-9ae3-3086f8e495f2"
-					(reference "#PWR0350")
+					(reference "#PWR0173")
 					(unit 1)
 				)
 			)
@@ -1671,7 +1671,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "366de976-b32c-461b-9597-6389da4abbb5")
-		(property "Reference" "L93"
+		(property "Reference" "L33"
 			(at 132.08 73.66 90)
 			(effects
 				(font
@@ -1687,7 +1687,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2"
 			(at 132.08 78.74 0)
 			(effects
 				(font
@@ -1723,7 +1723,7 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/b03edaf9-bff0-4d7c-9ae3-3086f8e495f2"
-					(reference "L93")
+					(reference "L33")
 					(unit 1)
 				)
 			)
@@ -1739,7 +1739,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a6ebf98-c077-42a8-9aa3-6aa96a907fea")
-		(property "Reference" "#PWR0351"
+		(property "Reference" "#PWR0174"
 			(at 146.05 88.9 0)
 			(effects
 				(font
@@ -1790,7 +1790,7 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/b03edaf9-bff0-4d7c-9ae3-3086f8e495f2"
-					(reference "#PWR0351")
+					(reference "#PWR0174")
 					(unit 1)
 				)
 			)
@@ -1824,7 +1824,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 99.06 77.47 0)
 			(effects
 				(font
@@ -1894,7 +1894,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 151.13 78.74 0)
 			(effects
 				(font
@@ -1964,7 +1964,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P2.50mm"
 			(at 139.7 78.74 0)
 			(effects
 				(font
@@ -2016,7 +2016,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2e702b8-97b5-403d-846a-c490b7931f66")
-		(property "Reference" "J13"
+		(property "Reference" "J16"
 			(at 72.39 71.12 0)
 			(effects
 				(font
@@ -2032,7 +2032,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OF footprints:Two_Pin_Screw_Terminal"
 			(at 72.39 74.93 0)
 			(effects
 				(font
@@ -2068,7 +2068,7 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/b03edaf9-bff0-4d7c-9ae3-3086f8e495f2"
-					(reference "J13")
+					(reference "J16")
 					(unit 1)
 				)
 			)
@@ -2084,7 +2084,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cab565a0-9bf2-40cb-bafb-4b7819b3e591")
-		(property "Reference" "U31"
+		(property "Reference" "U16"
 			(at 118.11 72.39 0)
 			(effects
 				(font
@@ -2139,7 +2139,7 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/b03edaf9-bff0-4d7c-9ae3-3086f8e495f2"
-					(reference "U31")
+					(reference "U16")
 					(unit 1)
 				)
 			)
@@ -2155,7 +2155,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e56e4c32-b70e-44ea-b683-88e38a3c0d8f")
-		(property "Reference" "#PWR0349"
+		(property "Reference" "#PWR0172"
 			(at 93.98 88.9 0)
 			(effects
 				(font
@@ -2206,7 +2206,7 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/b03edaf9-bff0-4d7c-9ae3-3086f8e495f2"
-					(reference "#PWR0349")
+					(reference "#PWR0172")
 					(unit 1)
 				)
 			)
@@ -2240,7 +2240,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P2.50mm"
 			(at 87.63 77.47 0)
 			(effects
 				(font
@@ -2292,7 +2292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f82e36b3-1dc7-43b8-b28f-2f2b7d5c0775")
-		(property "Reference" "#PWR0348"
+		(property "Reference" "#PWR0171"
 			(at 87.2744 73.7616 0)
 			(effects
 				(font
@@ -2342,7 +2342,7 @@
 		(instances
 			(project ""
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/b03edaf9-bff0-4d7c-9ae3-3086f8e495f2"
-					(reference "#PWR0348")
+					(reference "#PWR0171")
 					(unit 1)
 				)
 			)

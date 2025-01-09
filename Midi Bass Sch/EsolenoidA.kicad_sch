@@ -3209,7 +3209,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "001b65d9-f2ee-4ee2-9524-6dfd00d487da")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR0116"
 			(at 26.67 43.18 0)
 			(effects
 				(font
@@ -3260,7 +3260,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0113")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -3389,7 +3389,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01178f09-615f-4749-a1bf-b802281e8784")
-		(property "Reference" "#PWR0144"
+		(property "Reference" "#PWR0147"
 			(at 134.62 44.45 0)
 			(effects
 				(font
@@ -3440,7 +3440,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0144")
+					(reference "#PWR0147")
 					(unit 1)
 				)
 			)
@@ -3569,7 +3569,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0206b0de-c564-4f35-997d-aab16e405080")
-		(property "Reference" "#PWR0158"
+		(property "Reference" "#PWR0161"
 			(at 198.12 106.68 0)
 			(effects
 				(font
@@ -3620,7 +3620,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0158")
+					(reference "#PWR0161")
 					(unit 1)
 				)
 			)
@@ -3774,7 +3774,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03fc05ee-1734-4740-92d8-52d10e72bd2c")
-		(property "Reference" "#PWR0119"
+		(property "Reference" "#PWR0122"
 			(at 59.69 134.62 0)
 			(effects
 				(font
@@ -3825,7 +3825,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0119")
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -3909,7 +3909,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08d3fa99-8ef3-4f26-b84f-2b68793688f8")
-		(property "Reference" "#PWR0145"
+		(property "Reference" "#PWR0148"
 			(at 134.62 76.2 0)
 			(effects
 				(font
@@ -3960,7 +3960,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0145")
+					(reference "#PWR0148")
 					(unit 1)
 				)
 			)
@@ -4293,7 +4293,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 170.18 58.42 0)
 			(effects
 				(font
@@ -4526,7 +4526,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "139f84aa-2397-4fc0-9c1e-6db5a0e99f50")
-		(property "Reference" "#PWR0121"
+		(property "Reference" "#PWR0124"
 			(at 59.69 166.37 0)
 			(effects
 				(font
@@ -4577,7 +4577,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0121")
+					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -5274,7 +5274,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17a1e027-62de-4238-ae3f-53893b687e29")
-		(property "Reference" "#PWR0157"
+		(property "Reference" "#PWR0160"
 			(at 198.12 76.2 0)
 			(effects
 				(font
@@ -5325,7 +5325,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0157")
+					(reference "#PWR0160")
 					(unit 1)
 				)
 			)
@@ -5414,7 +5414,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c04dbd3-712d-4c30-bcaa-91bb23381199")
-		(property "Reference" "#PWR0123"
+		(property "Reference" "#PWR0126"
 			(at 60.96 71.12 0)
 			(effects
 				(font
@@ -5465,7 +5465,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0123")
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)
@@ -5481,7 +5481,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f0e0d5e-b62d-478e-ba44-74c07e1a8b2d")
-		(property "Reference" "#PWR0159"
+		(property "Reference" "#PWR0162"
 			(at 199.39 140.97 0)
 			(effects
 				(font
@@ -5532,7 +5532,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0159")
+					(reference "#PWR0162")
 					(unit 1)
 				)
 			)
@@ -5661,7 +5661,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2056e97d-2157-4294-8a82-063942b0cd52")
-		(property "Reference" "#PWR0127"
+		(property "Reference" "#PWR0130"
 			(at 80.01 168.91 0)
 			(effects
 				(font
@@ -5712,7 +5712,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0127")
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
@@ -5728,7 +5728,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "228439ee-5e6d-46f8-9b37-88684a69cbbb")
-		(property "Reference" "#PWR0153"
+		(property "Reference" "#PWR0156"
 			(at 170.18 101.6 0)
 			(effects
 				(font
@@ -5779,7 +5779,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0153")
+					(reference "#PWR0156")
 					(unit 1)
 				)
 			)
@@ -5863,7 +5863,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23a014f1-b1ca-49ab-a01a-bac9a5e9afc5")
-		(property "Reference" "#PWR0154"
+		(property "Reference" "#PWR0157"
 			(at 174.9044 113.1316 0)
 			(effects
 				(font
@@ -5913,7 +5913,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0154")
+					(reference "#PWR0157")
 					(unit 1)
 				)
 			)
@@ -5929,7 +5929,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25ec240d-60d1-4ccc-b660-561b21553208")
-		(property "Reference" "#PWR0112"
+		(property "Reference" "#PWR0115"
 			(at 25.4 76.2 0)
 			(effects
 				(font
@@ -5980,7 +5980,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0112")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -6223,7 +6223,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 170.18 88.9 0)
 			(effects
 				(font
@@ -6413,7 +6413,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36317bac-f022-4d3b-b5df-08b16a5bedc9")
-		(property "Reference" "#PWR0129"
+		(property "Reference" "#PWR0132"
 			(at 81.28 43.18 0)
 			(effects
 				(font
@@ -6464,7 +6464,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0129")
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -6661,7 +6661,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3bb01f0a-f608-457c-9391-bd5676fe49ee")
-		(property "Reference" "#PWR0140"
+		(property "Reference" "#PWR0143"
 			(at 121.5644 48.3616 0)
 			(effects
 				(font
@@ -6711,7 +6711,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0140")
+					(reference "#PWR0143")
 					(unit 1)
 				)
 			)
@@ -6795,7 +6795,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4018bf9c-630d-4efd-b5b3-883d8c51a3b3")
-		(property "Reference" "#PWR0131"
+		(property "Reference" "#PWR0134"
 			(at 81.28 105.41 0)
 			(effects
 				(font
@@ -6846,7 +6846,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0131")
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
@@ -6930,7 +6930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41c42a7e-e18e-4432-8811-a4f21e63e123")
-		(property "Reference" "#PWR0167"
+		(property "Reference" "#PWR0170"
 			(at 234.95 135.89 0)
 			(effects
 				(font
@@ -6981,7 +6981,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0167")
+					(reference "#PWR0170")
 					(unit 1)
 				)
 			)
@@ -6997,7 +6997,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41fe2321-f2f5-419b-bbec-7a0e12524266")
-		(property "Reference" "#PWR0124"
+		(property "Reference" "#PWR0127"
 			(at 66.9544 16.6116 0)
 			(effects
 				(font
@@ -7047,7 +7047,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0124")
+					(reference "#PWR0127")
 					(unit 1)
 				)
 			)
@@ -7463,7 +7463,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fe00ebd-1d79-4b37-ac89-fcc0b713ac3e")
-		(property "Reference" "#PWR0115"
+		(property "Reference" "#PWR0118"
 			(at 58.42 196.85 0)
 			(effects
 				(font
@@ -7514,7 +7514,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0115")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -7600,7 +7600,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "545b776f-79e8-4f51-8781-d51e29b3457f")
-		(property "Reference" "#PWR0133"
+		(property "Reference" "#PWR0136"
 			(at 115.57 130.81 0)
 			(effects
 				(font
@@ -7651,7 +7651,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0133")
+					(reference "#PWR0136")
 					(unit 1)
 				)
 			)
@@ -7873,7 +7873,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ef12a85-3ce0-4eae-bda0-535c6b3e0b3b")
-		(property "Reference" "#PWR0160"
+		(property "Reference" "#PWR0163"
 			(at 238.4044 17.8816 0)
 			(effects
 				(font
@@ -7923,7 +7923,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0160")
+					(reference "#PWR0163")
 					(unit 1)
 				)
 			)
@@ -7939,7 +7939,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60b2e5fc-eb2b-4169-ac54-4f150c26ee81")
-		(property "Reference" "#PWR0109"
+		(property "Reference" "#PWR0112"
 			(at 22.86 199.39 0)
 			(effects
 				(font
@@ -7990,7 +7990,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0109")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -8079,7 +8079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64468307-e9df-4f2b-81b1-0fe662fadac0")
-		(property "Reference" "#PWR0126"
+		(property "Reference" "#PWR0129"
 			(at 80.01 135.89 0)
 			(effects
 				(font
@@ -8130,7 +8130,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0126")
+					(reference "#PWR0129")
 					(unit 1)
 				)
 			)
@@ -8417,7 +8417,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 170.18 26.67 0)
 			(effects
 				(font
@@ -8673,7 +8673,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 60.96 58.42 0)
 			(effects
 				(font
@@ -8795,7 +8795,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75afbdf5-bd20-4712-9860-64ea1089066a")
-		(property "Reference" "#PWR0149"
+		(property "Reference" "#PWR0152"
 			(at 170.18 39.37 0)
 			(effects
 				(font
@@ -8846,7 +8846,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0149")
+					(reference "#PWR0152")
 					(unit 1)
 				)
 			)
@@ -8932,7 +8932,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7699a74b-ef72-4aac-bd66-6cb254d218e7")
-		(property "Reference" "#PWR0164"
+		(property "Reference" "#PWR0167"
 			(at 238.4044 80.1116 0)
 			(effects
 				(font
@@ -8982,7 +8982,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0164")
+					(reference "#PWR0167")
 					(unit 1)
 				)
 			)
@@ -8998,7 +8998,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76d8fcca-8cf5-4fe5-9444-828ebcbe6144")
-		(property "Reference" "#PWR0142"
+		(property "Reference" "#PWR0145"
 			(at 121.5644 78.8416 0)
 			(effects
 				(font
@@ -9048,7 +9048,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0142")
+					(reference "#PWR0145")
 					(unit 1)
 				)
 			)
@@ -9137,7 +9137,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77b26003-bad6-4313-80f2-08171880d032")
-		(property "Reference" "#PWR0125"
+		(property "Reference" "#PWR0128"
 			(at 62.23 38.1 0)
 			(effects
 				(font
@@ -9188,7 +9188,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0125")
+					(reference "#PWR0128")
 					(unit 1)
 				)
 			)
@@ -9204,7 +9204,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77c599b4-8f61-4307-a34f-0c53bcdd6c83")
-		(property "Reference" "#PWR0128"
+		(property "Reference" "#PWR0131"
 			(at 80.01 199.39 0)
 			(effects
 				(font
@@ -9255,7 +9255,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0128")
+					(reference "#PWR0131")
 					(unit 1)
 				)
 			)
@@ -9357,7 +9357,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 233.68 58.42 0)
 			(effects
 				(font
@@ -9477,7 +9477,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8065f868-b15e-4bdd-83ce-2426c13c738d")
-		(property "Reference" "#PWR0143"
+		(property "Reference" "#PWR0146"
 			(at 116.84 100.33 0)
 			(effects
 				(font
@@ -9528,7 +9528,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0143")
+					(reference "#PWR0146")
 					(unit 1)
 				)
 			)
@@ -9562,7 +9562,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 170.18 121.92 0)
 			(effects
 				(font
@@ -9745,7 +9745,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 116.84 57.15 0)
 			(effects
 				(font
@@ -10048,7 +10048,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c2728c2-6078-4e67-85ae-0992f8dd850e")
-		(property "Reference" "#PWR0134"
+		(property "Reference" "#PWR0137"
 			(at 120.2944 142.3416 0)
 			(effects
 				(font
@@ -10098,7 +10098,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0134")
+					(reference "#PWR0137")
 					(unit 1)
 				)
 			)
@@ -10114,7 +10114,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ee946de-ce45-41b9-a66a-ef4dab449e37")
-		(property "Reference" "#PWR0150"
+		(property "Reference" "#PWR0153"
 			(at 174.9044 49.6316 0)
 			(effects
 				(font
@@ -10164,7 +10164,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0150")
+					(reference "#PWR0153")
 					(unit 1)
 				)
 			)
@@ -10180,7 +10180,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f6b48fb-7c49-409a-9b7b-a7d84557ccd0")
-		(property "Reference" "#PWR0165"
+		(property "Reference" "#PWR0168"
 			(at 233.68 101.6 0)
 			(effects
 				(font
@@ -10231,7 +10231,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0165")
+					(reference "#PWR0168")
 					(unit 1)
 				)
 			)
@@ -10514,7 +10514,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 116.84 87.63 0)
 			(effects
 				(font
@@ -10634,7 +10634,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "994113e5-62f1-4fd2-876e-3b71d376e940")
-		(property "Reference" "#PWR0166"
+		(property "Reference" "#PWR0169"
 			(at 239.6744 114.4016 0)
 			(effects
 				(font
@@ -10684,7 +10684,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0166")
+					(reference "#PWR0169")
 					(unit 1)
 				)
 			)
@@ -10700,7 +10700,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99c71129-e897-4a05-9c45-0b8af37cf8b6")
-		(property "Reference" "#PWR0136"
+		(property "Reference" "#PWR0139"
 			(at 120.2944 172.8216 0)
 			(effects
 				(font
@@ -10750,7 +10750,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0136")
+					(reference "#PWR0139")
 					(unit 1)
 				)
 			)
@@ -10766,7 +10766,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a1b299a-c0b6-4f5e-8e60-863821c79486")
-		(property "Reference" "#PWR0117"
+		(property "Reference" "#PWR0120"
 			(at 59.69 102.87 0)
 			(effects
 				(font
@@ -10817,7 +10817,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0117")
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -10906,7 +10906,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c29f228-0c46-4d80-bce7-6176f156ae96")
-		(property "Reference" "#PWR0151"
+		(property "Reference" "#PWR0154"
 			(at 170.18 71.12 0)
 			(effects
 				(font
@@ -10957,7 +10957,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0151")
+					(reference "#PWR0154")
 					(unit 1)
 				)
 			)
@@ -10973,7 +10973,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ccb005c-66b9-4412-80cb-2eb2184d86ad")
-		(property "Reference" "#PWR0147"
+		(property "Reference" "#PWR0150"
 			(at 134.62 139.7 0)
 			(effects
 				(font
@@ -11024,7 +11024,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0147")
+					(reference "#PWR0150")
 					(unit 1)
 				)
 			)
@@ -11040,7 +11040,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f540e5a-9490-46bd-a794-52e96c656461")
-		(property "Reference" "#PWR0118"
+		(property "Reference" "#PWR0121"
 			(at 64.4144 113.1316 0)
 			(effects
 				(font
@@ -11090,7 +11090,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0118")
+					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -11315,7 +11315,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5ebddce-9c78-41f2-8e76-09f0c5a8af28")
-		(property "Reference" "#PWR0156"
+		(property "Reference" "#PWR0159"
 			(at 198.12 44.45 0)
 			(effects
 				(font
@@ -11366,7 +11366,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0156")
+					(reference "#PWR0159")
 					(unit 1)
 				)
 			)
@@ -11382,7 +11382,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6ae53dc-f93b-49e6-8848-49dd07686474")
-		(property "Reference" "#PWR0146"
+		(property "Reference" "#PWR0149"
 			(at 134.62 106.68 0)
 			(effects
 				(font
@@ -11433,7 +11433,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0146")
+					(reference "#PWR0149")
 					(unit 1)
 				)
 			)
@@ -11535,7 +11535,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 115.57 118.11 0)
 			(effects
 				(font
@@ -11678,7 +11678,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 59.69 121.92 0)
 			(effects
 				(font
@@ -11979,7 +11979,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "adef5d16-793d-45d1-9f74-b6031d08bd75")
-		(property "Reference" "#PWR0138"
+		(property "Reference" "#PWR0141"
 			(at 121.5644 16.6116 0)
 			(effects
 				(font
@@ -12029,7 +12029,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0138")
+					(reference "#PWR0141")
 					(unit 1)
 				)
 			)
@@ -12226,7 +12226,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b18924d2-93d2-4c01-8780-20cb1fff5907")
-		(property "Reference" "#PWR0135"
+		(property "Reference" "#PWR0138"
 			(at 115.57 163.83 0)
 			(effects
 				(font
@@ -12277,7 +12277,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0135")
+					(reference "#PWR0138")
 					(unit 1)
 				)
 			)
@@ -12293,7 +12293,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3570c14-a349-4216-bd01-5e9ec5344b24")
-		(property "Reference" "#PWR0141"
+		(property "Reference" "#PWR0144"
 			(at 116.84 69.85 0)
 			(effects
 				(font
@@ -12344,7 +12344,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0141")
+					(reference "#PWR0144")
 					(unit 1)
 				)
 			)
@@ -12378,7 +12378,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 233.68 26.67 0)
 			(effects
 				(font
@@ -12500,7 +12500,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b913c99b-9f2b-463c-abed-63cad7e54e70")
-		(property "Reference" "#PWR0155"
+		(property "Reference" "#PWR0158"
 			(at 170.18 134.62 0)
 			(effects
 				(font
@@ -12551,7 +12551,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0155")
+					(reference "#PWR0158")
 					(unit 1)
 				)
 			)
@@ -12635,7 +12635,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc525455-3153-4546-b53b-a0474eccd900")
-		(property "Reference" "#PWR0162"
+		(property "Reference" "#PWR0165"
 			(at 238.4044 49.6316 0)
 			(effects
 				(font
@@ -12685,7 +12685,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0162")
+					(reference "#PWR0165")
 					(unit 1)
 				)
 			)
@@ -12769,7 +12769,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be1989ea-4be3-4552-bd61-c9ff13f34076")
-		(property "Reference" "#PWR0110"
+		(property "Reference" "#PWR0113"
 			(at 24.13 107.95 0)
 			(effects
 				(font
@@ -12820,7 +12820,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0110")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -12836,7 +12836,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bed321bd-7b9a-45c4-8953-720a6ffbc32d")
-		(property "Reference" "#PWR0108"
+		(property "Reference" "#PWR0111"
 			(at 22.86 139.7 0)
 			(effects
 				(font
@@ -12887,7 +12887,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0108")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -12903,7 +12903,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c02499fc-7e28-4984-95cc-451fef29334a")
-		(property "Reference" "#PWR0139"
+		(property "Reference" "#PWR0142"
 			(at 116.84 38.1 0)
 			(effects
 				(font
@@ -12954,7 +12954,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0139")
+					(reference "#PWR0142")
 					(unit 1)
 				)
 			)
@@ -13113,7 +13113,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c26fffcf-ae59-4885-b86d-c63812ee2d2e")
-		(property "Reference" "#PWR0130"
+		(property "Reference" "#PWR0133"
 			(at 81.28 74.93 0)
 			(effects
 				(font
@@ -13164,7 +13164,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0130")
+					(reference "#PWR0133")
 					(unit 1)
 				)
 			)
@@ -13680,7 +13680,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cff417e5-f47d-485a-a99e-426cf4407c27")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR0117"
 			(at 63.1444 175.3616 0)
 			(effects
 				(font
@@ -13730,7 +13730,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0114")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -13764,7 +13764,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 59.69 153.67 0)
 			(effects
 				(font
@@ -13834,7 +13834,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 58.42 184.15 0)
 			(effects
 				(font
@@ -13886,7 +13886,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d442d0e2-78a0-4d4e-ab35-5ce7038695a7")
-		(property "Reference" "#PWR0161"
+		(property "Reference" "#PWR0164"
 			(at 233.68 39.37 0)
 			(effects
 				(font
@@ -13937,7 +13937,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0161")
+					(reference "#PWR0164")
 					(unit 1)
 				)
 			)
@@ -13953,7 +13953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d513a4d0-9b74-42b8-86aa-65b89f047711")
-		(property "Reference" "#PWR0122"
+		(property "Reference" "#PWR0125"
 			(at 65.6844 49.6316 0)
 			(effects
 				(font
@@ -14003,7 +14003,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0122")
+					(reference "#PWR0125")
 					(unit 1)
 				)
 			)
@@ -14180,7 +14180,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 233.68 88.9 0)
 			(effects
 				(font
@@ -14250,7 +14250,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 234.95 123.19 0)
 			(effects
 				(font
@@ -14388,7 +14388,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 59.69 90.17 0)
 			(effects
 				(font
@@ -14440,7 +14440,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd21b5aa-e858-48a9-9e7f-4aa5fd6c40dc")
-		(property "Reference" "#PWR0120"
+		(property "Reference" "#PWR0123"
 			(at 64.4144 144.8816 0)
 			(effects
 				(font
@@ -14490,7 +14490,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0120")
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -14524,7 +14524,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 115.57 181.61 0)
 			(effects
 				(font
@@ -14576,7 +14576,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "deb40d7e-2799-4a87-82ec-e4e88988379a")
-		(property "Reference" "#PWR0163"
+		(property "Reference" "#PWR0166"
 			(at 233.68 71.12 0)
 			(effects
 				(font
@@ -14627,7 +14627,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0163")
+					(reference "#PWR0166")
 					(unit 1)
 				)
 			)
@@ -15053,7 +15053,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 62.23 25.4 0)
 			(effects
 				(font
@@ -15175,7 +15175,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb565456-c67f-4314-a26e-1c5582553b1c")
-		(property "Reference" "#PWR0152"
+		(property "Reference" "#PWR0155"
 			(at 174.9044 80.1116 0)
 			(effects
 				(font
@@ -15225,7 +15225,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0152")
+					(reference "#PWR0155")
 					(unit 1)
 				)
 			)
@@ -15241,7 +15241,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec02bad4-dbfe-44ca-a37f-cac4cac4eea6")
-		(property "Reference" "#PWR0132"
+		(property "Reference" "#PWR0135"
 			(at 120.2944 109.3216 0)
 			(effects
 				(font
@@ -15291,7 +15291,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0132")
+					(reference "#PWR0135")
 					(unit 1)
 				)
 			)
@@ -15713,7 +15713,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 115.57 151.13 0)
 			(effects
 				(font
@@ -15902,7 +15902,7 @@
 		(on_board no)
 		(dnp no)
 		(uuid "f672609f-1886-4750-b6b3-5e5d542c32c5")
-		(property "Reference" "#PWR0148"
+		(property "Reference" "#PWR0151"
 			(at 174.9044 17.8816 0)
 			(effects
 				(font
@@ -15952,7 +15952,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0148")
+					(reference "#PWR0151")
 					(unit 1)
 				)
 			)
@@ -16109,7 +16109,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7d6b5e8-70b6-40bf-92ff-dca0481141b1")
-		(property "Reference" "#PWR0137"
+		(property "Reference" "#PWR0140"
 			(at 115.57 194.31 0)
 			(effects
 				(font
@@ -16160,7 +16160,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0137")
+					(reference "#PWR0140")
 					(unit 1)
 				)
 			)
@@ -16176,7 +16176,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe8357bf-6fb8-400b-8a4c-6dfa16219526")
-		(property "Reference" "#PWR0116"
+		(property "Reference" "#PWR0119"
 			(at 64.4144 81.3816 0)
 			(effects
 				(font
@@ -16226,7 +16226,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0116")
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -16260,7 +16260,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 116.84 25.4 0)
 			(effects
 				(font
@@ -16312,7 +16312,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff6a5af2-dce6-476e-a00d-1e7236417f5b")
-		(property "Reference" "#PWR0111"
+		(property "Reference" "#PWR0114"
 			(at 24.13 171.45 0)
 			(effects
 				(font
@@ -16363,7 +16363,7 @@
 		(instances
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860/53a25049-8626-4b4b-b3ea-55f1e76cc726"
-					(reference "#PWR0111")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
