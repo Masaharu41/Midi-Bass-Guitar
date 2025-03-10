@@ -4248,7 +4248,6 @@
 	)
 	(label "E0"
 		(at 229.87 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4259,7 +4258,6 @@
 	)
 	(label "A1"
 		(at 229.87 74.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4270,7 +4268,6 @@
 	)
 	(label "RB6 P"
 		(at 227.33 82.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4281,7 +4278,6 @@
 	)
 	(label "E MUTE"
 		(at 226.06 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4292,7 +4288,6 @@
 	)
 	(label "A0"
 		(at 229.87 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4303,7 +4298,6 @@
 	)
 	(label "D0"
 		(at 229.87 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4314,7 +4308,6 @@
 	)
 	(label "D MUTE"
 		(at 226.06 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4325,7 +4318,6 @@
 	)
 	(label "E1"
 		(at 229.87 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4336,7 +4328,6 @@
 	)
 	(label "A MUTE"
 		(at 226.06 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4347,7 +4338,6 @@
 	)
 	(label "G MUTE"
 		(at 226.06 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4358,7 +4348,6 @@
 	)
 	(label "RB7 P"
 		(at 227.33 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4369,7 +4358,6 @@
 	)
 	(label "D1"
 		(at 229.87 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
