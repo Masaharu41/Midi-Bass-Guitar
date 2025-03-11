@@ -1425,6 +1425,130 @@
 				)
 			)
 		)
+		(symbol "Owen's Symbols:Header_1x2"
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -7.62 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "?"
+				(at -7.62 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -3.81 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at -3.81 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Header_1x2_0_1"
+				(rectangle
+					(start -5.08 2.54)
+					(end -2.54 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.699 -5.08) (xy -4.699 -5.588) (xy -2.921 -5.588) (xy -2.921 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.699 2.54) (xy -4.699 3.048) (xy -2.921 3.048) (xy -2.921 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Header_1x2_1_1"
+				(pin passive line
+					(at 0 0 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Owen's Symbols:Header_1x21"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -3178,6 +3302,26 @@
 	)
 	(wire
 		(pts
+			(xy 22.86 151.13) (xy 22.86 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1483451-48ef-4e03-aeb3-061c6a6120ef")
+	)
+	(wire
+		(pts
+			(xy 20.32 151.13) (xy 22.86 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c240d34b-5218-43ae-9ca9-e7969cbb837a")
+	)
+	(wire
+		(pts
 			(xy 20.32 102.87) (xy 24.13 102.87)
 		)
 		(stroke
@@ -3185,6 +3329,16 @@
 			(type default)
 		)
 		(uuid "c2583278-26ce-41d2-acae-015749da0ca3")
+	)
+	(wire
+		(pts
+			(xy 22.86 148.59) (xy 22.86 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2c13083-a681-4098-9b7c-a5a531d32621")
 	)
 	(wire
 		(pts
@@ -3265,6 +3419,16 @@
 			(type default)
 		)
 		(uuid "d1318e42-d581-4702-bac3-4ababdd1a960")
+	)
+	(wire
+		(pts
+			(xy 20.32 148.59) (xy 22.86 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d14d0d17-1f96-45b2-a964-94f598cfa262")
 	)
 	(wire
 		(pts
@@ -13073,6 +13237,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Owen's Symbols:Header_1x2")
+		(at 20.32 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4826b9a-8077-4f11-a192-2f5e89abf2b9")
+		(property "Reference" "J2"
+			(at 16.51 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Pwr IN"
+			(at 16.51 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 16.51 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 16.51 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 20.32 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9d7ab00a-dcf2-4a6a-99b0-dcec20f1f4c0")
+		)
+		(pin "1"
+			(uuid "dfe0e84b-7889-4699-a1d8-798627a8dbff")
+		)
+		(instances
+			(project ""
+				(path "/2b4cb468-ebc7-4952-9328-7c324ac62f95"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom Symbols:Resistor_Mod")
 		(at 171.45 34.29 0)
 		(unit 1)
@@ -15161,6 +15393,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Custom Power:Chassis_GND")
+		(at 22.86 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3c34e66-86d9-435d-820a-c5c8abbd4fa4")
+		(property "Reference" "#PWR062"
+			(at 22.86 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Chassis_GND"
+			(at 22.86 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.86 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 22.86 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5bd171a-d56d-427f-9e26-fa75a85e0b3a")
+		)
+		(instances
+			(project "Solenoid Breakout Board"
+				(path "/2b4cb468-ebc7-4952-9328-7c324ac62f95"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Q_NPN_BCE")
 		(at 182.88 66.04 0)
 		(unit 1)
@@ -16369,6 +16668,72 @@
 			(project ""
 				(path "/2b4cb468-ebc7-4952-9328-7c324ac62f95"
 					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Power:+12v")
+		(at 22.86 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da033f47-e2e2-4f0d-bd64-cbe9455b27a5")
+		(property "Reference" "#PWR063"
+			(at 27.5844 142.3416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12v"
+			(at 22.86 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.86 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 22.86 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "e57b71c3-cbf4-471e-81fc-acfd30cfb379")
+		)
+		(instances
+			(project "Solenoid Breakout Board"
+				(path "/2b4cb468-ebc7-4952-9328-7c324ac62f95"
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
