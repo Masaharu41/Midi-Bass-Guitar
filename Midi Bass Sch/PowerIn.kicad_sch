@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "ef59e9d6-ef5e-4d6b-80c3-61816fc638ea")
 	(paper "A")
 	(title_block
@@ -11,9 +11,13 @@
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -111,11 +115,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Custom Power:+12v"
 			(power)
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board no)
@@ -196,11 +205,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Custom Power:+5v"
 			(power)
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board no)
@@ -281,11 +295,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Custom Power:Earth_GND"
 			(power)
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board no)
@@ -392,11 +411,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Custom Power:GND"
 			(power)
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board no)
@@ -479,11 +503,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:L"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -550,32 +579,8 @@
 			)
 			(symbol "L_0_1"
 				(arc
-					(start 0 -2.54)
-					(mid 0.6323 -1.905)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 0.635)
+					(start 0 2.54)
+					(mid 0.6323 1.905)
 					(end 0 1.27)
 					(stroke
 						(width 0)
@@ -587,8 +592,32 @@
 				)
 				(arc
 					(start 0 1.27)
-					(mid 0.6323 1.905)
-					(end 0 2.54)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -636,10 +665,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Owen's Symbols:Capacitor"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -689,7 +723,7 @@
 			(symbol "Capacitor_1_1"
 				(polyline
 					(pts
-						(xy -1.27 -3.81) (xy 1.27 -3.81)
+						(xy -1.27 -2.54) (xy 1.27 -2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -701,7 +735,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -2.54) (xy 1.27 -2.54)
+						(xy -1.27 -3.81) (xy 1.27 -3.81)
 					)
 					(stroke
 						(width 0.254)
@@ -748,9 +782,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Owen's Symbols:Capacitor_pol"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -825,9 +862,9 @@
 					)
 				)
 				(arc
-					(start 1.27 -3.6657)
+					(start -1.27 -3.6657)
 					(mid 0 -3.2373)
-					(end -1.27 -3.6657)
+					(end 1.27 -3.6657)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -873,9 +910,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Owen's Symbols:Header_1x2"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -936,7 +976,7 @@
 				)
 				(polyline
 					(pts
-						(xy -4.699 -5.08) (xy -4.699 -5.588) (xy -2.921 -5.588) (xy -2.921 -5.08)
+						(xy -4.699 2.54) (xy -4.699 3.048) (xy -2.921 3.048) (xy -2.921 2.54)
 					)
 					(stroke
 						(width 0)
@@ -948,7 +988,7 @@
 				)
 				(polyline
 					(pts
-						(xy -4.699 2.54) (xy -4.699 3.048) (xy -2.921 3.048) (xy -2.921 2.54)
+						(xy -4.699 -5.08) (xy -4.699 -5.588) (xy -2.921 -5.588) (xy -2.921 -5.08)
 					)
 					(stroke
 						(width 0)
@@ -997,6 +1037,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Regulator_Linear:LM1117MP-1.8"
 			(exclude_from_sim no)
@@ -1079,6 +1120,24 @@
 			)
 			(symbol "LM1117MP-1.8_1_1"
 				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at 0 -7.62 90)
 					(length 2.54)
 					(name "GND"
@@ -1114,25 +1173,8 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
