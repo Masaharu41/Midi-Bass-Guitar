@@ -4259,7 +4259,7 @@
 			)
 		)
 	)
-	(global_label "RB7 A"
+	(global_label "RB7 G"
 		(shape output)
 		(at 170.18 66.04 0)
 		(fields_autoplaced yes)
@@ -4271,7 +4271,7 @@
 		)
 		(uuid "04c46948-3c61-41af-8584-b560944e0f85")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 178.9709 66.04 0)
+			(at 179.1523 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4281,7 +4281,7 @@
 			)
 		)
 	)
-	(global_label "RB6 A"
+	(global_label "RB6 G"
 		(shape output)
 		(at 160.02 66.04 0)
 		(fields_autoplaced yes)
@@ -4293,7 +4293,7 @@
 		)
 		(uuid "23111618-9407-45ff-b36a-602b052605df")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.8109 66.04 0)
+			(at 168.9923 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
