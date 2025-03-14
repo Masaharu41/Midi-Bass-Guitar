@@ -5996,7 +5996,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x21_P2.54mm_Vertical"
+		(property "Footprint" "OF Footprints:PinHeader_2x21_P2.54mm_Vertical"
 			(at 218.44 34.29 0)
 			(effects
 				(font
