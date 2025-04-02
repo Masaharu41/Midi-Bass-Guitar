@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.4224,
-          "height": 2.3114,
-          "width": 2.3114
+          "drill": 0.381,
+          "height": 1.4,
+          "width": 1.2
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -575,6 +575,18 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -628,6 +640,10 @@
     [
       "2b4cb468-ebc7-4952-9328-7c324ac62f95",
       "Root"
+    ],
+    [
+      "8106bbc6-bec3-4307-a752-0b78bd2a68b9",
+      "Solenoids Extended"
     ]
   ],
   "text_variables": {}
