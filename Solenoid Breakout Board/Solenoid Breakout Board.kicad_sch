@@ -3076,6 +3076,16 @@
 	)
 	(wire
 		(pts
+			(xy 22.86 171.45) (xy 22.86 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a4a45b8-fcbe-4f95-8ba1-9d37fddd6873")
+	)
+	(wire
+		(pts
 			(xy 194.31 38.1) (xy 191.77 38.1)
 		)
 		(stroke
@@ -3323,16 +3333,6 @@
 			(type default)
 		)
 		(uuid "4de08215-ba42-408e-b9d5-288579ba3e91")
-	)
-	(wire
-		(pts
-			(xy 22.86 175.26) (xy 22.86 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e81008b-de11-4bce-94a8-a8076592e8a0")
 	)
 	(wire
 		(pts
@@ -4286,16 +4286,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 172.72) (xy 22.86 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db8a03d7-4c2c-43bb-80d9-0e25d302d770")
-	)
-	(wire
-		(pts
 			(xy 116.84 36.83) (xy 114.3 36.83)
 		)
 		(stroke
@@ -4336,7 +4326,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 172.72) (xy 22.86 172.72)
+			(xy 20.32 172.72) (xy 24.13 172.72)
 		)
 		(stroke
 			(width 0)
@@ -4493,6 +4483,16 @@
 			(type default)
 		)
 		(uuid "f78cd7ad-4932-48b2-bafc-10f237f48903")
+	)
+	(wire
+		(pts
+			(xy 24.13 172.72) (xy 24.13 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9bb5078-a308-4984-8f69-b70a4a40f4c6")
 	)
 	(wire
 		(pts
@@ -5651,7 +5651,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 86.36 48.895 0)
 			(effects
 				(font
@@ -5912,7 +5912,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 152.4 48.895 0)
 			(effects
 				(font
@@ -6353,7 +6353,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 164.592 36.576 90)
 			(effects
 				(font
@@ -6362,7 +6362,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 160.02 36.83 0)
 			(effects
 				(font
@@ -6472,7 +6472,7 @@
 	)
 	(symbol
 		(lib_id "Custom Power:Chassis_GND")
-		(at 22.86 177.8 0)
+		(at 24.13 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -6481,7 +6481,7 @@
 		(fields_autoplaced yes)
 		(uuid "257f953e-f216-497b-af53-24900445c874")
 		(property "Reference" "#PWR05"
-			(at 22.86 176.53 0)
+			(at 24.13 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6490,7 +6490,7 @@
 			)
 		)
 		(property "Value" "Chassis_GND"
-			(at 22.86 176.53 0)
+			(at 24.13 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6499,7 +6499,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 22.86 176.53 0)
+			(at 24.13 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6508,7 +6508,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 176.53 0)
+			(at 24.13 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6517,7 +6517,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 22.86 177.8 0)
+			(at 24.13 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6923,7 +6923,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 229.87 50.165 0)
 			(effects
 				(font
@@ -7205,7 +7205,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 229.87 102.235 0)
 			(effects
 				(font
@@ -7271,7 +7271,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 242.062 89.916 90)
 			(effects
 				(font
@@ -7280,7 +7280,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 237.49 90.17 0)
 			(effects
 				(font
@@ -7423,7 +7423,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 86.36 94.615 0)
 			(effects
 				(font
@@ -7795,7 +7795,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 152.4 97.155 0)
 			(effects
 				(font
@@ -8271,7 +8271,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 242.062 37.846 90)
 			(effects
 				(font
@@ -8280,7 +8280,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 237.49 38.1 0)
 			(effects
 				(font
@@ -8626,7 +8626,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 98.552 129.286 90)
 			(effects
 				(font
@@ -8635,7 +8635,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 93.98 129.54 0)
 			(effects
 				(font
@@ -9179,7 +9179,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 87.63 188.595 0)
 			(effects
 				(font
@@ -9568,7 +9568,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 164.592 84.836 90)
 			(effects
 				(font
@@ -9577,7 +9577,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 160.02 85.09 0)
 			(effects
 				(font
@@ -10301,7 +10301,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 98.552 36.576 90)
 			(effects
 				(font
@@ -10310,7 +10310,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 93.98 36.83 0)
 			(effects
 				(font
@@ -10572,7 +10572,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 99.822 176.276 90)
 			(effects
 				(font
@@ -10581,7 +10581,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 95.25 176.53 0)
 			(effects
 				(font
@@ -10778,7 +10778,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 98.552 82.296 90)
 			(effects
 				(font
@@ -10787,7 +10787,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 93.98 82.55 0)
 			(effects
 				(font
@@ -11408,7 +11408,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 152.4 147.955 0)
 			(effects
 				(font
@@ -13439,7 +13439,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 86.36 141.605 0)
 			(effects
 				(font
@@ -13668,7 +13668,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 164.592 135.636 90)
 			(effects
 				(font
@@ -13677,7 +13677,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 160.02 135.89 0)
 			(effects
 				(font

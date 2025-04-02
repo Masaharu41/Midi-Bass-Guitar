@@ -5129,7 +5129,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 71.882 180.086 90)
 			(effects
 				(font
@@ -5138,7 +5138,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 67.31 180.34 0)
 			(effects
 				(font
@@ -7479,7 +7479,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 134.62 95.885 0)
 			(effects
 				(font
@@ -7889,7 +7889,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 73.152 37.846 90)
 			(effects
 				(font
@@ -7898,7 +7898,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 68.58 38.1 0)
 			(effects
 				(font
@@ -7958,7 +7958,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 146.812 83.566 90)
 			(effects
 				(font
@@ -7967,7 +7967,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 142.24 83.82 0)
 			(effects
 				(font
@@ -8114,7 +8114,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 146.812 131.826 90)
 			(effects
 				(font
@@ -8123,7 +8123,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 142.24 132.08 0)
 			(effects
 				(font
@@ -8250,7 +8250,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 235.712 86.106 90)
 			(effects
 				(font
@@ -8259,7 +8259,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 231.14 86.36 0)
 			(effects
 				(font
@@ -8655,7 +8655,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 235.712 41.656 90)
 			(effects
 				(font
@@ -8664,7 +8664,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 231.14 41.91 0)
 			(effects
 				(font
@@ -9163,7 +9163,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 130.81 189.865 0)
 			(effects
 				(font
@@ -9767,7 +9767,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 60.96 50.165 0)
 			(effects
 				(font
@@ -10562,7 +10562,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 148.082 39.116 90)
 			(effects
 				(font
@@ -10571,7 +10571,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 143.51 39.37 0)
 			(effects
 				(font
@@ -10778,7 +10778,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 223.52 53.975 0)
 			(effects
 				(font
@@ -11276,7 +11276,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 223.52 98.425 0)
 			(effects
 				(font
@@ -11647,7 +11647,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 60.96 147.955 0)
 			(effects
 				(font
@@ -12460,7 +12460,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 143.002 177.546 90)
 			(effects
 				(font
@@ -12469,7 +12469,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 138.43 177.8 0)
 			(effects
 				(font
@@ -12529,7 +12529,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 73.152 135.636 90)
 			(effects
 				(font
@@ -12538,7 +12538,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 68.58 135.89 0)
 			(effects
 				(font
@@ -12742,7 +12742,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 60.96 100.965 0)
 			(effects
 				(font
@@ -13137,7 +13137,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 59.69 192.405 0)
 			(effects
 				(font
@@ -13280,7 +13280,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 134.62 144.145 0)
 			(effects
 				(font
@@ -13356,7 +13356,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 135.89 51.435 0)
 			(effects
 				(font
@@ -13684,7 +13684,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 223.52 144.145 0)
 			(effects
 				(font
@@ -13750,7 +13750,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 235.712 131.826 90)
 			(effects
 				(font
@@ -13759,7 +13759,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 231.14 132.08 0)
 			(effects
 				(font
@@ -13956,7 +13956,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68Ω"
+		(property "Value" "1kΩ-P"
 			(at 73.152 88.646 90)
 			(effects
 				(font
@@ -13965,7 +13965,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 68.58 88.9 0)
 			(effects
 				(font
