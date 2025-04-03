@@ -6242,7 +6242,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x21_P2.54mm_Vertical"
+		(property "Footprint" "OF Footprints:PinHeader_2x21_P2.54mm_Vertical"
 			(at 201.93 43.18 0)
 			(effects
 				(font
@@ -6857,7 +6857,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OF footprints:TQFN-44_7x7_Pitch0.4mm"
+		(property "Footprint" "OF Footprints:TQFP-44_10x10mm_P0.8mm_Handsolder"
 			(at 90.17 41.91 0)
 			(effects
 				(font
