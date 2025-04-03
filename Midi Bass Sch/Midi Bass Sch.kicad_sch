@@ -53,48 +53,6 @@
 		)
 	)
 	(sheet
-		(at 199.39 52.07)
-		(size 27.305 21.59)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 255 194 1.0000)
-		)
-		(uuid "4e89443f-252f-4d60-96aa-3cd5b0237902")
-		(property "Sheetname" "D String Slave"
-			(at 199.39 51.3584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Dslave Sch.kicad_sch"
-			(at 199.39 74.2446 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Midi Bass Sch"
-				(path "/06818073-fb22-48ee-acc5-6dedd827034e"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 157.48 51.435)
 		(size 36.195 22.225)
 		(exclude_from_sim no)
@@ -179,48 +137,6 @@
 		)
 	)
 	(sheet
-		(at 199.39 90.17)
-		(size 27.94 24.13)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 255 194 1.0000)
-		)
-		(uuid "a79027be-e76c-43a0-a80a-a6c6a159c340")
-		(property "Sheetname" "G String Slave"
-			(at 199.39 89.4584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Gslave Sch.kicad_sch"
-			(at 199.39 114.8846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Midi Bass Sch"
-				(path "/06818073-fb22-48ee-acc5-6dedd827034e"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 53.975 51.435)
 		(size 40.005 23.495)
 		(exclude_from_sim no)
@@ -258,48 +174,6 @@
 			(project "Midi Bass Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e"
 					(page "13")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 158.115 90.17)
-		(size 35.56 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 255 194 1.0000)
-		)
-		(uuid "c3b9cd48-3fcf-4fda-9d60-ef0911073906")
-		(property "Sheetname" "A String Slave"
-			(at 158.115 89.4584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Aslave Sch.kicad_sch"
-			(at 158.115 116.1546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Midi Bass Sch"
-				(path "/06818073-fb22-48ee-acc5-6dedd827034e"
-					(page "6")
 				)
 			)
 		)

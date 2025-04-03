@@ -7678,46 +7678,4 @@
 			)
 		)
 	)
-	(sheet
-		(at 118.11 175.26)
-		(size 15.875 7.62)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 255 194 1.0000)
-		)
-		(uuid "53a25049-8626-4b4b-b3ea-55f1e76cc726")
-		(property "Sheetname" "E Slave Solenoid Array"
-			(at 118.11 174.5484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "EsolenoidA.kicad_sch"
-			(at 118.11 183.4646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Midi Bass Sch"
-				(path "/06818073-fb22-48ee-acc5-6dedd827034e/55f5fc9c-362b-429f-ad6f-f98ffe4c4860"
-					(page "9")
-				)
-			)
-		)
-	)
 )
