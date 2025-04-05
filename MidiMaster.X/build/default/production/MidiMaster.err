@@ -100,5 +100,6 @@ Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 184 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 186 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 188 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 544 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Warning[205] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 586 : Found directive in column 1. (END)
+Message[305] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 487 : Using default destination of 1 (file).
+Message[302] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 546 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[205] C:\USERS\JACKEL\DOCUMENTS\MIDI-BASS-GUITAR\MIDIMASTER.X\MIDIMASTER.ASM 588 : Found directive in column 1. (END)
