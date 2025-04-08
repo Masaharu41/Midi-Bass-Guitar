@@ -1,0 +1,3 @@
+I noticed that in the full schematic (pdf) that the slave ICs are 44 pin. The physical ones we are using are 40 pin.
+Maybe this is fixed in the KiCad files but i need to update my KiCad to view them so I'm not sure.
+If I'm right about this error not being corrected i suspect this is why version 1 of the PCBs failed.
