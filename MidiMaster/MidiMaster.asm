@@ -29,7 +29,7 @@
 ;			  <Pitch> = xPPP PPPP // Note 0-127
 ;			  <Velocity> = xVVV VVVV // Attack 0-127
 ;    
-;	Note Slaves: <Pitch>
+;	Note Slaves: <Pitch>, <String>
 ;	    MPPP PPPP xxxx SSSS 
 ;		P = The pitch index from 0-127, min is E1//28, max is D#4//63
 ;		M = Mute control boolean based on upper control, 0 = Mute
@@ -541,7 +541,7 @@ INTER
     CALL POPOUT
     RETFIE
     
-RECIEVE
+RECIEVE ; MIDI/UART DATA
     BANKSEL RCREG
     MOVF RCREG,0
     BANKSEL PORTB
