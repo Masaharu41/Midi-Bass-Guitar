@@ -4,6 +4,7 @@
 ;	    Date: 11/05/2024
 ;	    File Version: 1
 ;	    Author: Owen Fujii
+;	    Co-Author: Justin Bell
 ;	    Company: Idaho State University
 ;	    Description: A Program for a slave I2C device that plays notes on the
 ;			    E string of a Bass guitar
@@ -18,7 +19,7 @@
 ;
 ;*************************************************************************
     
-    ; PIC16F1788 Configuration Bit Settings
+; PIC16F1788 Configuration Bit Settings
 
 ; Assembly source line config statements
 
@@ -34,46 +35,10 @@
 ; __config 0xDFFF
  __CONFIG _CONFIG2, _WRT_OFF & _VCAPEN_OFF & _PLLEN_ON & _STVREN_ON & _BORV_LO & _LPBOR_OFF & _LVP_OFF
 
- 
- ;*********************
- ;Define Constants
- ;*********************
- 
-        PITCH	    EQU H'022'
-	BUFFER	    EQU H'041'
-	TEMP	    EQU H'042'
-	STRSEL	    EQU H'044'
-; SET STORAGE REGISTERS FOR EACH NOTE AND ITS MIDI VALUES
-	E1MIDI	    EQU H'023'
-	F1MIDI	    EQU H'024'
-	FS1MIDI	    EQU H'025'
-	G1MIDI	    EQU H'026'
-	GS1MIDI	    EQU H'027'
-	A1MIDI	    EQU H'028'
-	AS1MIDI	    EQU H'029'
-	B1MIDI	    EQU H'030'
-	C2MIDI	    EQU H'031'
-	CS2MIDI	    EQU H'032'
-	D2MIDI	    EQU H'033'
-	DS2MIDI	    EQU H'034'
-	E2MIDI	    EQU H'035'
-	F2MIDI	    EQU H'036'
-	FS2MIDI	    EQU H'037'
-	G2MIDI	    EQU H'038'
-	GS2MIDI	    EQU H'039'
-	A2MIDI	    EQU H'040'
-	AS2MIDI	    EQU H'041'
-	B2MIDI	    EQU H'042'
-	C3MIDI	    EQU H'043'
-	  
-	
-
     ORG H'000'					
     GOTO SETUP					;RESET CONDITION GOTO SETUP
     ORG H'004'
     GOTO INTER
-    
-    
     
 SETUP
     BANKSEL OSCCON
@@ -83,73 +48,6 @@ SETUP
     BTFSC OSCSTAT,OSTS	    ; WAIT FOR OSSCILATOR TO BE READY
     GOTO $-1
     CALL START		    ; CALL SETUP INCLUDE
-    ; SET UP I2C AS SLAVE
-    BANKSEL SSP1CON1
-    MOVLW H'036'	    ; SET 7 BIT SLAVE I2C
-    MOVWF SSP1CON1
-    BANKSEL SSP1ADD
-    MOVLW H'002'	    ; SET SLAVE ADDRESS A 0X01
-    MOVWF SSP1ADD
-    BANKSEL SSP1CON2
-    CLRF SSP1CON2
-    BSF SSP1CON2,SEN	    ; ENABLE CLOCK STRETCH
-    BANKSEL SSP1CON3
-    CLRF SSP1CON3
-    BSF SSP1CON3,BOEN
-    BSF SSP1CON3,AHEN	    ; ENABLE CLOCK STRETCH FOR ADDRESS AND DATA
-    BSF SSP1CON3,DHEN
-    ; CONFIGURE PORT PINS
-    BANKSEL APFCON1
-    CLRF APFCON1	    ; SET PORTS
-    BANKSEL APFCON2
-    CLRF APFCON2	    ; SET PORTS
-    ; SET MIDI NOTES INTO GPRS
-    MOVLW H'01C'    ; MIDI 28 // E1
-    MOVWF E1MIDI
-    MOVLW H'01D'    ; MIDI 29 // F1
-    MOVWF F1MIDI
-    MOVLW H'01E'    ; MIDI 30 // F#1
-    MOVWF FS1MIDI
-    MOVLW H'01F'    ; MIDI 31 // G1
-    MOVWF G1MIDI
-    MOVLW H'020'    ; MIDI 32 // G#1
-    MOVWF GS1MIDI
-    MOVLW H'021'    ; MIDI 33 // A1
-    MOVWF A1MIDI
-    MOVLW H'022'    ; MIDI 34 // A#1
-    MOVWF AS1MIDI
-    MOVLW H'023'    ; MIDI 35 // B1
-    MOVWF B1MIDI
-    MOVLW H'024'    ; MIDI 36 // C2
-    MOVWF C2MIDI
-    MOVLW H'025'    ; MIDI 37 // C#2
-    MOVWF CS2MIDI
-    MOVLW H'026'    ; MIDI 38 // D2
-    MOVWF D2MIDI
-    MOVLW H'027'    ; MIDI 39 // D#2
-    MOVWF DS2MIDI
-    MOVLW H'028'    ; MIDI 40 // E2
-    MOVWF E2MIDI
-    MOVLW H'029'    ; MIDI 41 // F2
-    MOVWF F2MIDI
-    MOVLW H'02A'    ; MIDI 42 // F#2
-    MOVWF FS2MIDI
-    MOVLW H'02B'    ; MIDI 43 // G2
-    MOVWF G2MIDI
-    MOVLW H'02C'    ; MIDI 44 // G#2
-    MOVWF GS2MIDI
-    MOVLW H'02D'    ; MIDI 45 // A2
-    MOVWF A2MIDI
-    MOVLW H'02E'    ; MIDI 46 // A#2
-    MOVWF AS2MIDI
-    MOVLW H'02F'    ; MIDI 47 // B2
-    MOVWF B2MIDI
-    MOVLW H'030'    ; MIDI 48 // C3
-    MOVWF C3MIDI    
-    ; SET GPRS
-    CLRF BUFFER
-    CLRF PITCH
-    CLRF STRSEL
     ; ENABLE INTERRUPTS
     BANKSEL PIE1
     BSF PIE1,SSP1IE
@@ -164,8 +62,10 @@ MAIN
     BANKSEL PORTB
     BTFSS BUFFER,0	; WAIT FOR DATA BUFFER FLAG TO BE SET
     GOTO MAIN
-;   EVALUATION AFTER DATA HAS BEEN CONFIRMED
+    BSF PORTE,2		; SET ACTIVE FLAG
+;   
     CALL DECSTRING
+    BCF PORTE,2		; CLEAR ACTIVE FLAG
     GOTO MAIN
     
 ;   BEGIN EVAL OF STRING BY ACCOUNTING OF OFFSETS
@@ -205,11 +105,56 @@ FRETSELECT
     SUBLW H'02B'    ; THE MIDI NOTE HIGH ENOUGH 
     MOVWF TEMP	    ; MOVE RESULT TO TEMP REGISTER
     BTFSC STATUS,C
-    GOTO PORTD_OUT
+    GOTO NOTE_ENCODER
     MOVFW PITCH
     RETURN
     
-PORTD_OUT
+NOTE_ENCODER
+    BANKSEL PORTA	;Clear previous fret position before new position is assigned
+    CLRF PORTA
+    CLRF PORTB
+    CLRF PORTD
+    LSLF TEMP, 0	;Multiply the pitch by two for using in the table
+    ADDWF PCL	;Look-up table that will direct to the proper port encoding 
+    BSF PORTB, 0
+    RETURN
+    BSF PORTB, 1
+    RETURN
+    BSF PORTB, 2
+    RETURN
+    BSF PORTB, 3
+    RETURN
+    BSF PORTB, 4
+    RETURN
+    BSF PORTB, 5
+    RETURN
+    BSF PORTB, 6
+    RETURN
+    BSF PORTB, 7
+    RETURN
+    BSF PORTA, 0
+    RETURN
+    BSF PORTA, 1
+    RETURN
+    BSF PORTA, 2
+    RETURN
+    BSF PORTA, 3
+    RETURN
+    BSF PORTA, 4
+    RETURN
+    BSF PORTA, 5
+    RETURN
+    BSF PORTD, 0
+    RETURN
+    BSF PORTD, 1
+    RETURN
+    BSF PORTD, 2
+    RETURN
+    BSF PORTD, 3
+    RETURN
+    BSF PORTD, 4
+    RETURN
+    BSF PORTD, 5
     RETURN
     
 CLEAR
@@ -248,10 +193,10 @@ INTER
     RETFIE
     
 RECIEVE
+    BANKSEL SSP1CON1	
+    BSF SSP1CON1,CKP	; HOLD CLOCK LINE
     BANKSEL PORTD
-    BSF PORTC,0		; SET ACTIVE FLAG
     BCF PIR1,SSP1IF
-    BSF PORTD,7
     BANKSEL SSP1BUF 
     MOVFW SSP1BUF	; READ RECIEVED DATA
     BANKSEL PORTB
@@ -266,7 +211,6 @@ RECIEVE
     MOVFW TEMP
     MOVWF PITCH
     BSF BUFFER,0	; SET VELOCITY BYTE RECIEVE FLAG
-    BSF PORTC,0		; SET ACTIVE FLAG
     BANKSEL SSP1CON1	
     BSF SSP1CON1,CKP	; RELEASE CLOCK LINE
     RETURN
