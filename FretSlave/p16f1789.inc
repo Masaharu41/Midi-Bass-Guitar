@@ -2,7 +2,7 @@
 
 ;==========================================================================
 ; Build date : Oct 24 2019
-;  MPASM PIC16F1788 processor include
+;  MPASM PIC16F1789 processor include
 ; 
 ;  (c) Copyright 1999-2019 Microchip Technology, All rights reserved
 ;==========================================================================
@@ -11,16 +11,16 @@
 
 ;==========================================================================
 ;  This header file defines configurations, registers, and other useful
-;  bits of information for the PIC16F1788 microcontroller.  These names
+;  bits of information for the PIC16F1789 microcontroller.  These names
 ;  are taken to match the data sheets as closely as possible.
 ;
 ;  Note that the processor must be selected before this file is included.
 ;  The processor may be selected the following ways:
 ;
 ;       1. Command line switch:
-;               C:\MPASM MYFILE.ASM /PIC16F1788
+;               C:\MPASM MYFILE.ASM /PIC16F1789
 ;       2. LIST directive in the source file
-;               LIST   P=PIC16F1788
+;               LIST   P=PIC16F1789
 ;       3. Processor Type entry in the MPASM full-screen interface
 ;       4. Setting the processor in the MPLAB Project Dialog
 ;==========================================================================
@@ -30,7 +30,7 @@
 ;       Verify Processor
 ;
 ;==========================================================================
-        IFNDEF __16F1788
+        IFNDEF __16F1789
            MESSG "Processor-header file mismatch.  Verify selected processor."
         ENDIF
 
@@ -65,6 +65,7 @@ INTCON           EQU  H'000B'
 PORTA            EQU  H'000C'
 PORTB            EQU  H'000D'
 PORTC            EQU  H'000E'
+PORTD            EQU  H'000F'
 PORTE            EQU  H'0010'
 PIR1             EQU  H'0011'
 PIR2             EQU  H'0012'
@@ -84,6 +85,7 @@ T2CON            EQU  H'001C'
 TRISA            EQU  H'008C'
 TRISB            EQU  H'008D'
 TRISC            EQU  H'008E'
+TRISD            EQU  H'008F'
 TRISE            EQU  H'0090'
 PIE1             EQU  H'0091'
 PIE2             EQU  H'0092'
@@ -106,6 +108,8 @@ ADCON2           EQU  H'009F'
 LATA             EQU  H'010C'
 LATB             EQU  H'010D'
 LATC             EQU  H'010E'
+LATD             EQU  H'010F'
+LATE             EQU  H'0110'
 CM1CON0          EQU  H'0111'
 CM1CON1          EQU  H'0112'
 CM2CON0          EQU  H'0113'
@@ -128,6 +132,8 @@ CM3CON1          EQU  H'011F'
 ANSELA           EQU  H'018C'
 ANSELB           EQU  H'018D'
 ANSELC           EQU  H'018E'
+ANSELD           EQU  H'018F'
+ANSELE           EQU  H'0190'
 EEADR            EQU  H'0191'
 EEADRL           EQU  H'0191'
 EEADRH           EQU  H'0192'
@@ -167,6 +173,7 @@ BAUDCTL1         EQU  H'019F'
 WPUA             EQU  H'020C'
 WPUB             EQU  H'020D'
 WPUC             EQU  H'020E'
+WPUD             EQU  H'020F'
 WPUE             EQU  H'0210'
 SSP1BUF          EQU  H'0211'
 SSPBUF           EQU  H'0211'
@@ -189,6 +196,8 @@ SSPCON3          EQU  H'0217'
 ODCONA           EQU  H'028C'
 ODCONB           EQU  H'028D'
 ODCONC           EQU  H'028E'
+ODCOND           EQU  H'028F'
+ODCONE           EQU  H'0290'
 CCPR1            EQU  H'0291'
 CCPR1L           EQU  H'0291'
 CCPR1H           EQU  H'0292'
@@ -202,6 +211,8 @@ CCP2CON          EQU  H'029A'
 SLRCONA          EQU  H'030C'
 SLRCONB          EQU  H'030D'
 SLRCONC          EQU  H'030E'
+SLRCOND          EQU  H'030F'
+SLRCONE          EQU  H'0310'
 CCPR3            EQU  H'0311'
 CCPR3L           EQU  H'0311'
 CCPR3H           EQU  H'0312'
@@ -211,6 +222,7 @@ CCP3CON          EQU  H'0313'
 INLVLA           EQU  H'038C'
 INLVLB           EQU  H'038D'
 INLVLC           EQU  H'038E'
+INLVLD           EQU  H'038F'
 INLVLE           EQU  H'0390'
 IOCAP            EQU  H'0391'
 IOCAN            EQU  H'0392'
@@ -228,6 +240,7 @@ IOCEF            EQU  H'039F'
 ;-----Bank10------------------
 OPA1CON          EQU  H'0511'
 OPA2CON          EQU  H'0513'
+OPA3CON          EQU  H'0515'
 CLKRCON          EQU  H'051A'
 
 ;-----Bank11------------------
@@ -465,7 +478,22 @@ RC7              EQU  H'0007'
 
 
 
+;----- PORTD Bits -----------------------------------------------------
+RD0              EQU  H'0000'
+RD1              EQU  H'0001'
+RD2              EQU  H'0002'
+RD3              EQU  H'0003'
+RD4              EQU  H'0004'
+RD5              EQU  H'0005'
+RD6              EQU  H'0006'
+RD7              EQU  H'0007'
+
+
+
 ;----- PORTE Bits -----------------------------------------------------
+RE0              EQU  H'0000'
+RE1              EQU  H'0001'
+RE2              EQU  H'0002'
 RE3              EQU  H'0003'
 
 
@@ -577,7 +605,22 @@ TRISC7           EQU  H'0007'
 
 
 
+;----- TRISD Bits -----------------------------------------------------
+TRISD0           EQU  H'0000'
+TRISD1           EQU  H'0001'
+TRISD2           EQU  H'0002'
+TRISD3           EQU  H'0003'
+TRISD4           EQU  H'0004'
+TRISD5           EQU  H'0005'
+TRISD6           EQU  H'0006'
+TRISD7           EQU  H'0007'
+
+
+
 ;----- TRISE Bits -----------------------------------------------------
+TRISE0           EQU  H'0000'
+TRISE1           EQU  H'0001'
+TRISE2           EQU  H'0002'
 TRISE3           EQU  H'0003'
 
 
@@ -760,6 +803,25 @@ LATC4            EQU  H'0004'
 LATC5            EQU  H'0005'
 LATC6            EQU  H'0006'
 LATC7            EQU  H'0007'
+
+
+
+;----- LATD Bits -----------------------------------------------------
+LATD0            EQU  H'0000'
+LATD1            EQU  H'0001'
+LATD2            EQU  H'0002'
+LATD3            EQU  H'0003'
+LATD4            EQU  H'0004'
+LATD5            EQU  H'0005'
+LATD6            EQU  H'0006'
+LATD7            EQU  H'0007'
+
+
+
+;----- LATE Bits -----------------------------------------------------
+LATE0            EQU  H'0000'
+LATE1            EQU  H'0001'
+LATE2            EQU  H'0002'
 
 
 
@@ -988,6 +1050,20 @@ ANSC6            EQU  H'0006'
 ANSC7            EQU  H'0007'
 
 
+;----- ANSELD Bits -----------------------------------------------------
+ANSD0            EQU  H'0000'
+ANSD1            EQU  H'0001'
+ANSD2            EQU  H'0002'
+
+
+
+;----- ANSELE Bits -----------------------------------------------------
+ANSE0            EQU  H'0000'
+ANSE1            EQU  H'0001'
+ANSE2            EQU  H'0002'
+
+
+
 ;----- EECON1 Bits -----------------------------------------------------
 RD               EQU  H'0000'
 WR               EQU  H'0001'
@@ -1150,7 +1226,22 @@ WPUC7            EQU  H'0007'
 
 
 
+;----- WPUD Bits -----------------------------------------------------
+WPUD0            EQU  H'0000'
+WPUD1            EQU  H'0001'
+WPUD2            EQU  H'0002'
+WPUD3            EQU  H'0003'
+WPUD4            EQU  H'0004'
+WPUD5            EQU  H'0005'
+WPUD6            EQU  H'0006'
+WPUD7            EQU  H'0007'
+
+
+
 ;----- WPUE Bits -----------------------------------------------------
+WPUE0            EQU  H'0000'
+WPUE1            EQU  H'0001'
+WPUE2            EQU  H'0002'
 WPUE3            EQU  H'0003'
 
 
@@ -1437,6 +1528,25 @@ ODCONC7          EQU  H'0007'
 
 
 
+;----- ODCOND Bits -----------------------------------------------------
+ODCOND0          EQU  H'0000'
+ODCOND1          EQU  H'0001'
+ODCOND2          EQU  H'0002'
+ODCOND3          EQU  H'0003'
+ODCOND4          EQU  H'0004'
+ODCOND5          EQU  H'0005'
+ODCOND6          EQU  H'0006'
+ODCOND7          EQU  H'0007'
+
+
+
+;----- ODCONE Bits -----------------------------------------------------
+ODCONE0          EQU  H'0000'
+ODCONE1          EQU  H'0001'
+ODCONE2          EQU  H'0002'
+
+
+
 ;----- CCP1CON Bits -----------------------------------------------------
 CCP1M0           EQU  H'0000'
 CCP1M1           EQU  H'0001'
@@ -1491,6 +1601,25 @@ SLRCONC7         EQU  H'0007'
 
 
 
+;----- SLRCOND Bits -----------------------------------------------------
+SLRCOND0         EQU  H'0000'
+SLRCOND1         EQU  H'0001'
+SLRCOND2         EQU  H'0002'
+SLRCOND3         EQU  H'0003'
+SLRCOND4         EQU  H'0004'
+SLRCOND5         EQU  H'0005'
+SLRCOND6         EQU  H'0006'
+SLRCOND7         EQU  H'0007'
+
+
+
+;----- SLRCONE Bits -----------------------------------------------------
+SLRCONE0         EQU  H'0000'
+SLRCONE1         EQU  H'0001'
+SLRCONE2         EQU  H'0002'
+
+
+
 ;----- CCP3CON Bits -----------------------------------------------------
 CCP3M0           EQU  H'0000'
 CCP3M1           EQU  H'0001'
@@ -1536,7 +1665,22 @@ INLVLC7          EQU  H'0007'
 
 
 
+;----- INLVLD Bits -----------------------------------------------------
+INLVLD0          EQU  H'0000'
+INLVLD1          EQU  H'0001'
+INLVLD2          EQU  H'0002'
+INLVLD3          EQU  H'0003'
+INLVLD4          EQU  H'0004'
+INLVLD5          EQU  H'0005'
+INLVLD6          EQU  H'0006'
+INLVLD7          EQU  H'0007'
+
+
+
 ;----- INLVLE Bits -----------------------------------------------------
+INLVLE0          EQU  H'0000'
+INLVLE1          EQU  H'0001'
+INLVLE2          EQU  H'0002'
 INLVLE3          EQU  H'0003'
 
 
@@ -1684,6 +1828,22 @@ OPA2PCH2         EQU  H'0002'
 
 OPA2SP           EQU  H'0006'
 OPA2EN           EQU  H'0007'
+
+SP               EQU  H'0006'
+EN               EQU  H'0007'
+
+PCH0             EQU  H'0000'
+PCH1             EQU  H'0001'
+PCH2             EQU  H'0002'
+
+
+;----- OPA3CON Bits -----------------------------------------------------
+OPA3PCH0         EQU  H'0000'
+OPA3PCH1         EQU  H'0001'
+OPA3PCH2         EQU  H'0002'
+
+OPA3SP           EQU  H'0006'
+OPA3EN           EQU  H'0007'
 
 SP               EQU  H'0006'
 EN               EQU  H'0007'
@@ -2346,11 +2506,19 @@ P3CPRE1          EQU  H'0005'
 ;----- PSMC3OEN Bits -----------------------------------------------------
 P3OEA            EQU  H'0000'
 P3OEB            EQU  H'0001'
+P3OEC            EQU  H'0002'
+P3OED            EQU  H'0003'
+P3OEE            EQU  H'0004'
+P3OEF            EQU  H'0005'
 
 
 ;----- PSMC3POL Bits -----------------------------------------------------
 P3POLA           EQU  H'0000'
 P3POLB           EQU  H'0001'
+P3POLC           EQU  H'0002'
+P3POLD           EQU  H'0003'
+P3POLE           EQU  H'0004'
+P3POLF           EQU  H'0005'
 P3INPOL          EQU  H'0006'
 
 
@@ -2414,6 +2582,10 @@ P3ASE            EQU  H'0007'
 ;----- PSMC3ASDL Bits -----------------------------------------------------
 P3ASDLA          EQU  H'0000'
 P3ASDLB          EQU  H'0001'
+P3ASDLC          EQU  H'0002'
+P3ASDLD          EQU  H'0003'
+P3ASDLE          EQU  H'0004'
+P3ASDLF          EQU  H'0005'
 
 
 ;----- PSMC3ASDS Bits -----------------------------------------------------
@@ -2577,6 +2749,10 @@ PSMC3FFA3        EQU  H'0003'
 ;----- PSMC3STR0 Bits -----------------------------------------------------
 P3STRA           EQU  H'0000'
 P3STRB           EQU  H'0001'
+P3STRC           EQU  H'0002'
+P3STRD           EQU  H'0003'
+P3STRE           EQU  H'0004'
+P3STRF           EQU  H'0005'
 
 
 ;----- PSMC3STR1 Bits -----------------------------------------------------
@@ -2880,26 +3056,19 @@ Z_SHAD           EQU  H'0002'
 ;
 ;==========================================================================
        __MAXRAM  H'0FFF'
-       __BADRAM  H'000F'
        __BADRAM  H'001D'-H'001F'
-       __BADRAM  H'008F'
-       __BADRAM  H'010F'-H'0110'
-       __BADRAM  H'018F'-H'0190'
        __BADRAM  H'0198'
-       __BADRAM  H'020F'
        __BADRAM  H'0218'-H'021F'
-       __BADRAM  H'028F'-H'0290'
        __BADRAM  H'0294'-H'0297'
        __BADRAM  H'029B'-H'029F'
-       __BADRAM  H'030F'-H'0310'
        __BADRAM  H'0314'-H'031F'
-       __BADRAM  H'038F'
        __BADRAM  H'039A'-H'039C'
        __BADRAM  H'040C'-H'041F'
        __BADRAM  H'048C'-H'049F'
        __BADRAM  H'050C'-H'0510'
        __BADRAM  H'0512'
-       __BADRAM  H'0514'-H'0519'
+       __BADRAM  H'0514'
+       __BADRAM  H'0516'-H'0519'
        __BADRAM  H'051B'-H'051F'
        __BADRAM  H'058C'-H'0590'
        __BADRAM  H'0597'-H'059F'

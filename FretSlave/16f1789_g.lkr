@@ -1,5 +1,5 @@
-// File: 16f1788_g.lkr
-// Generic linker script for the PIC16F1788 processor
+// File: 16f1789_g.lkr
+// Generic linker script for the PIC16F1789 processor
 
 LIBPATH .
 
