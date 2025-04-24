@@ -27,6 +27,7 @@
 	#INCLUDE <ESlaveSetup.inc>
 	#INCLUDE <ESlavePOPout.inc>
 	#INCLUDE <ESlavePUSHin.inc>
+	#INCLUDE <Hex_to_One.inc>
 
 ; CONFIG1
 ; __config 0xE9A4
