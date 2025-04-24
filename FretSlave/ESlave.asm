@@ -108,63 +108,25 @@ G_OFFSET
     MOVWF PITCH	    ; MOVE RESULT INTO PITCH REGISTER
     GOTO FRETSELECT
     
-FRETSELECT    
+FRETSELECT	; START READING HERE!!!!!!!!!
     MOVFW PITCH
-    SUBLW H'02B'    ; THE MIDI NOTE HIGH ENOUGH 
-    MOVWF TEMP	    ; MOVE RESULT TO TEMP REGISTER
+    SUBLW H'02B',1    ; THE MIDI NOTE HIGH ENOUGH 
     BTFSC STATUS,C
-    GOTO NOTE_ENCODER
+    GOTO PORT_B_SET	
     MOVFW PITCH
     RETURN
     
-NOTE_ENCODER
-    BANKSEL PORTA	;Clear previous fret position before new position is assigned
-    CLRF PORTA
-    CLRF PORTB
-    CLRF PORTD
-    CLRF BUFFER
-    LSLF TEMP, 0	;Multiply the pitch by two for using in the table
-    ADDWF PCL	;Look-up table that will direct to the proper port encoding 
-    BSF PORTB, 0
-    RETURN
-    BSF PORTB, 1
-    RETURN
-    BSF PORTB, 2
-    RETURN
-    BSF PORTB, 3
-    RETURN
-    BSF PORTB, 4
-    RETURN
-    BSF PORTB, 5
-    RETURN
-    BSF PORTB, 6
-    RETURN
-    BSF PORTB, 7
-    RETURN
-    BSF PORTA, 0
-    RETURN
-    BSF PORTA, 1
-    RETURN
-    BSF PORTA, 2
-    RETURN
-    BSF PORTA, 3
-    RETURN
-    BSF PORTA, 4
-    RETURN
-    BSF PORTA, 5
-    RETURN
-    BSF PORTD, 0
-    RETURN
-    BSF PORTD, 1
-    RETURN
-    BSF PORTD, 2
-    RETURN
-    BSF PORTD, 3
-    RETURN
-    BSF PORTD, 4
-    RETURN
-    BSF PORTD, 5
-    RETURN
+PORT_B_SET
+    BANKSEL PORTA	
+    MOVFW PITCH
+    BCF STATUS,C	; CLEAR STATUS
+    SUBLW H'01B'	; REDUCE MIDI BY OFFSET TO GET 0X00 TO 0X08
+    CALL Hex_To_One
+    MOVWF PORTB		; MOVE RETURNED LITERAL TO PORTB
+    RETURN	    
+    
+PORT_A_SET
+
     
 CLEAR
     BANKSEL PORTA
