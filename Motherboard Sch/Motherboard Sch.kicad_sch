@@ -5,9 +5,9 @@
 	(uuid "06818073-fb22-48ee-acc5-6dedd827034e")
 	(paper "A")
 	(title_block
-		(title "MIDI Bass Guitar Schmatic")
+		(title "Bass Guitar Motherboard Sch")
 		(date "2024-12-10")
-		(rev "A")
+		(rev "B")
 	)
 	(lib_symbols)
 	(sheet
@@ -45,7 +45,7 @@
 			)
 		)
 		(instances
-			(project "Midi Bass Sch"
+			(project "Motherboard Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e"
 					(page "2")
 				)
@@ -87,7 +87,7 @@
 			)
 		)
 		(instances
-			(project "Midi Bass Sch"
+			(project "Motherboard Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e"
 					(page "3")
 				)
@@ -129,7 +129,7 @@
 			)
 		)
 		(instances
-			(project "Midi Bass Sch"
+			(project "Motherboard Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e"
 					(page "4")
 				)
@@ -171,7 +171,7 @@
 			)
 		)
 		(instances
-			(project "Midi Bass Sch"
+			(project "Motherboard Sch"
 				(path "/06818073-fb22-48ee-acc5-6dedd827034e"
 					(page "13")
 				)

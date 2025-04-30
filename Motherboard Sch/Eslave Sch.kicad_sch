@@ -7,7 +7,7 @@
 	(title_block
 		(title "E-Slave Processor Schematic")
 		(date "2024-12-10")
-		(rev "A")
+		(rev "B")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
