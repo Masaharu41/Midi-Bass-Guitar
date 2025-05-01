@@ -1,12 +1,11 @@
 ;***************************************************************************
 ;
 ;	    Filename: Eslave.ASM
-;	    Date: 11/05/2024
-;	    File Version: 1
-;	    Author: Owen Fujii
+;	    Date: 5/1/2025
+;	    File Version: 2
+;	    Contributors: Owen Fujii, Justin Bell
 ;	    Company: Idaho State University
-;	    Description: A Program for a slave I2C device that plays notes on the
-;			    E string of a Bass guitar
+;	    Description: A Program for a slave I2C device that frets the guitar
 ;**************************************************************************
 	
 ;*************************************************************************
