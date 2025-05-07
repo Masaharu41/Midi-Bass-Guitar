@@ -2558,6 +2558,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "For Plucking unit only solder components for L1-L12"
+		(exclude_from_sim no)
+		(at 131.572 200.152 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "517a24c5-56cf-4a59-bfa2-568af934f575")
+	)
 	(junction
 		(at 85.09 180.34)
 		(diameter 0)
@@ -13941,7 +13951,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 255 194 1.0000)
 		)
 		(uuid "8106bbc6-bec3-4307-a752-0b78bd2a68b9")
 		(property "Sheetname" "Solenoids Extended"
